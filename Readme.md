@@ -17,3 +17,7 @@
 # Day 02
  - Ana səhifənin header və about bölməsinin tamamlanması
  - HTML və CSS strukturun tamamlanması
+
+# Day 03
+- Lahiye Sass struktoruna keçildi
+- Header.scss ve About.scss-in strukturu sazlandı
