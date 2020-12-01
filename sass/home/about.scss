@@ -1,0 +1,51 @@
+/* section about */
+
+#about {
+  width: 100%;
+  height: 665px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about div {
+  width: 100%;
+  margin: 0px 53px;
+  line-height: 1.8;
+  display: flex;
+  justify-content: center;
+}
+
+#about-logo img {
+  margin: 0px;
+  width: 550px;
+  object-fit: cover;
+}
+
+#about-metn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-metn p {
+  margin-bottom: 36px;
+}
+
+#about-metn ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#about-metn h2 {
+  font-size: 30px;
+  font-weight: 550;
+}
+#about-metn h4 {
+  font-size: 25px;
+  font-weight: 400;
+}
+#about-metn h4 span {
+  color: red;
+}

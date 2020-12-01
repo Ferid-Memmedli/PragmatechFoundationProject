@@ -1,0 +1,223 @@
+a:link,
+a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a.one:link {
+  color: #ff0000;
+}
+
+a.one:visited {
+  -webkit-columns: #000000;
+          columns: #000000;
+}
+
+a.one:hover {
+  font-size: 110%;
+}
+
+#header {
+  width: 1349px;
+  height: 665px;
+  background: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 400px;
+  position: relative;
+  z-index: 0;
+}
+
+.ovarlay {
+  width: 1349px;
+  height: 665px;
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 400px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content h4 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 580;
+  margin-bottom: 30px;
+}
+
+.content p {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.content button {
+  border: 2px solid white;
+  padding: 15px 60px;
+  background: none;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+}
+
+.nav {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 40px;
+  padding: 20px 0px;
+}
+
+.nav-bar {
+  width: 1100px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar-left a img {
+  width: 100px;
+}
+
+.nav-bar-right {
+  display: inline-block;
+}
+
+.nav-bar-right ul {
+  width: 609px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-bar-right ul li {
+  display: inline-block;
+  border-left: 1px solid red;
+  padding: 3px 0px 3px 3px;
+  font-size: 14px;
+}
+
+/* section about */
+#about {
+  width: 100%;
+  height: 665px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about div {
+  width: 100%;
+  margin: 0px 53px;
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-logo img {
+  margin: 0px;
+  width: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about-metn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about-metn p {
+  margin-bottom: 36px;
+}
+
+#about-metn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#about-metn h2 {
+  font-size: 30px;
+  font-weight: 550;
+}
+
+#about-metn h4 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#about-metn h4 span {
+  color: red;
+}
+/*# sourceMappingURL=home.css.map */
