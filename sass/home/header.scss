@@ -1,7 +1,7 @@
-      // header home
+// header home
 #header {
-  width: 1349px;
-  height: 665px;
+  width: $main-width;
+  height: $main-height;
   background: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,8 +11,8 @@
   position: relative;
   z-index: 0;
   .ovarlay {
-    width: 1349px;
-    height: 665px;
+    width: $main-width;
+    height: $main-height;
     border-bottom-left-radius: 400px;
     border-bottom-right-radius: 400px;
     position: absolute;
