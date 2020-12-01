@@ -1,27 +1,3 @@
-a:link,
-a:visited {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-}
-
-a.one:link {
-  color: #ff0000;
-}
-
-a.one:visited {
-  -webkit-columns: #000000;
-          columns: #000000;
-}
-
-a.one:hover {
-  font-size: 110%;
-}
-
 #header {
   width: 1349px;
   height: 665px;
@@ -35,7 +11,7 @@ a.one:hover {
   z-index: 0;
 }
 
-.ovarlay {
+#header .ovarlay {
   width: 1349px;
   height: 665px;
   border-bottom-left-radius: 400px;
@@ -47,7 +23,7 @@ a.one:hover {
   background-color: rgba(0, 0, 0, 0.69);
 }
 
-.content {
+#header .content {
   width: 100%;
   height: 100%;
   color: white;
@@ -71,27 +47,27 @@ a.one:hover {
           justify-content: center;
 }
 
-.content h4 {
+#header .content h4 {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 400;
 }
 
-.content h1 {
+#header .content h1 {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 580;
   margin-bottom: 30px;
 }
 
-.content p {
+#header .content p {
   width: 50%;
   text-align: center;
   margin-bottom: 30px;
   line-height: 1.8;
 }
 
-.content button {
+#header .content button {
   border: 2px solid white;
   padding: 15px 60px;
   background: none;
@@ -100,7 +76,31 @@ a.one:hover {
   border-radius: 25px;
 }
 
-.nav {
+#header .content button a:link,
+#header .content button a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+#header .content button a:hover {
+  color: red;
+}
+
+#header .content button a.one:link {
+  color: #ff0000;
+}
+
+#header .content button a.one:visited {
+  -webkit-columns: #000000;
+          columns: #000000;
+}
+
+#header .content button a.one:hover {
+  font-size: 110%;
+}
+
+#header .nav {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -108,7 +108,7 @@ a.one:hover {
   padding: 20px 0px;
 }
 
-.nav-bar {
+#header .nav .nav-bar {
   width: 1100px;
   margin: 0px auto;
   display: -webkit-box;
@@ -122,15 +122,15 @@ a.one:hover {
           align-items: center;
 }
 
-.nav-bar-left a img {
+#header .nav .nav-bar .nav-bar-left a img {
   width: 100px;
 }
 
-.nav-bar-right {
+#header .nav .nav-bar .nav-bar-right {
   display: inline-block;
 }
 
-.nav-bar-right ul {
+#header .nav .nav-bar .nav-bar-right ul {
   width: 609px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +139,7 @@ a.one:hover {
       justify-content: space-around;
 }
 
-.nav-bar-right ul li {
+#header .nav .nav-bar .nav-bar-right ul li {
   display: inline-block;
   border-left: 1px solid red;
   padding: 3px 0px 3px 3px;

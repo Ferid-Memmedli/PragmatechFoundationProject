@@ -6,15 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  div {
+    width: 100%;
+    margin: 0px 53px;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-#about div {
-  width: 100%;
-  margin: 0px 53px;
-  line-height: 1.8;
-  display: flex;
-  justify-content: center;
-}
 
 #about-logo img {
   margin: 0px;
