@@ -3,15 +3,17 @@
 #about {
   width: $main-width;
   height: $main-height;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend .flex-full-cente;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   position: relative;
   div {
     width: 100%;
     margin: 0px 53px;
     line-height: 1.8;
-    display: flex;
+    @extend .flex;
+    // display: flex;
     justify-content: center;
     #about-logo img {
       margin: 0px;
@@ -20,7 +22,8 @@
     }
     #about-metn {
       width: 100%;
-      display: flex;
+      @extend .flex;
+      // display: flex;
       flex-direction: column;
       h2 {
         font-size: 30px;
@@ -37,7 +40,8 @@
         margin-bottom: 36px;
       }
       ul {
-        display: flex;
+        @extend .flex;
+        // display: flex;
         align-items: center;
         justify-content: flex-start;
       }
