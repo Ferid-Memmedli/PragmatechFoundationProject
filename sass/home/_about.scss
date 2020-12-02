@@ -4,16 +4,12 @@
   width: $main-width;
   height: $main-height;
   @extend .flex-full-center;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   position: relative;
   div {
     width: 100%;
     margin: 0px 53px;
     line-height: 1.8;
     @extend .flex;
-    // display: flex;
     justify-content: center;
     #about-logo img {
       margin: 0px;
@@ -23,7 +19,6 @@
     #about-metn {
       width: 100%;
       @extend .flex;
-      // display: flex;
       flex-direction: column;
       h2 {
         font-size: 30px;
@@ -41,7 +36,6 @@
       }
       ul {
         @extend .flex;
-        // display: flex;
         align-items: center;
         justify-content: flex-start;
       }
