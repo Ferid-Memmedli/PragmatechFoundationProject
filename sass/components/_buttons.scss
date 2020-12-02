@@ -1,41 +1,56 @@
 .btn {
     border: none;
     background: none;
-    padding: 10px 30px;
+    padding: 15px 32px;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.5s ease;
+    outline: none;
+    font-family: $main-font;
+    font-size: 16px;
 }
 
 .btn-border-radius-x {
     border-radius: 5px;
 }
 
+.btn-border-radius-2x {
+    border-radius: 10px;
+}
+.btn-border-radius-3x {
+    border-radius: 15px;
+}
+
 .btn-border-radius-4x {
     border-radius: 20px;
 }
 
-.btn-border-white {
-    border: 1px solid white;
-    &:hover {
-        background: white;
-        color: blue;
-    }
+.btn-border-radius-5x {
+    border-radius: 25px;
 }
 
-.btn-border-blue {
-    border: 1px solid blue;
-    color: blue;
+.btn-border-radius-6x {
+    border-radius: 30px;
+}
+
+.btn-border-white {
+    border: 2px solid white;
+    color: white;
     &:hover {
-        background: blue;
-        color: white;
+        background: white;
+        color: rgb(0, 0, 0);
     }
 }
 
 .btn-border-red {
-    border: 1px solid red;
-    color: red;
+    background: $main-red;
+    color: white;
+}
+
+.btn-red {
+    color: rgb(0, 0, 0);
     &:hover {
-        background: red;
-        color: white;
+        padding: 10px;
+        background: $main-red;
+        color: rgb(255, 255, 255);
     }
 }

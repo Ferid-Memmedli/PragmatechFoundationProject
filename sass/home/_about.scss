@@ -3,7 +3,7 @@
 #about {
   width: $main-width;
   height: $main-height;
-  @extend .flex-full-cente;
+  @extend .flex-full-center;
   // display: flex;
   // align-items: center;
   // justify-content: center;
@@ -33,7 +33,7 @@
         font-size: 25px;
         font-weight: 400;
         span {
-          color: red;
+          color:$main-red;
         }
       }
       p {
