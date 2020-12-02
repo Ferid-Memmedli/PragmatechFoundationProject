@@ -78,7 +78,6 @@
           @extend .justify-content-around;
           li {
             display: inline-block;
-            border-left: 1px solid $main-red;
             padding: 3px 0px 3px 3px;
             font-size: 14px;
             a {
@@ -89,8 +88,6 @@
               &:hover {
                 transition: all 0.3s ease;
                 color: $main-red;
-                font-size: 120%;
-                text-decoration: underline;
               }
             }
           }
