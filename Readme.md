@@ -21,3 +21,7 @@
 # Day 03
 - Lahiye Sass struktoruna keçildi
 - Header.scss ve About.scss-in strukturu sazlandı
+
+# Day 04
+- Linkler uzerinde duzelisler edildi
+- @extend den isdifade olundu
