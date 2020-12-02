@@ -1,11 +1,12 @@
 // section about
 
 #about {
-  width: 100%;
-  height: 665px;
+  width: $main-width;
+  height: $main-height;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   div {
     width: 100%;
     margin: 0px 53px;

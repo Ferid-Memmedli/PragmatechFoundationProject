@@ -1,7 +1,7 @@
 //  header home
 #header {
-  width: 1349px;
-  height: 665px;
+  width: $main-width;
+  height: $main-height;
   background: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,8 +11,8 @@
   position: relative;
   z-index: 0;
   .ovarlay {
-    width: 1349px;
-    height: 665px;
+    width: $main-width;
+    height: $main-height;
     border-bottom-left-radius: 400px;
     border-bottom-right-radius: 400px;
     position: absolute;
@@ -30,7 +30,7 @@
     left: 0px;
     z-index: 2;
     text-align: center;
-    display: flex;
+    @extend .flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -52,8 +52,7 @@
       line-height: 1.8;
     }
     button {
-      border: 2px solid rgb(255, 0, 0);
-      color: rgb(0, 0, 0);
+      border: 2px solid rgb(255, 255, 255);
       padding: 15px 60px;
       background: none;
       outline: none;
@@ -69,9 +68,7 @@
     .nav-bar {
       width: 1100px;
       margin: 0px auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @extend .flex-full-center;
       .nav-bar-left a img {
         width: 100px;
       }
@@ -79,8 +76,8 @@
         display: inline-block;
         ul {
           width: 609px;
-          display: flex;
-          justify-content: space-around;
+          @extend .flex;
+          @extend .justify-content-around;
           li {
             display: inline-block;
             border-left: 1px solid rgb(255, 0, 0);
