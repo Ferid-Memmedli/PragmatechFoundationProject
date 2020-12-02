@@ -57,6 +57,18 @@
       background: none;
       outline: none;
       border-radius: 25px;
+      font-family: $main-font;
+      font-size: 14px;
+      a {
+        color: white;
+        &:link {
+          text-decoration: none;
+        }
+        &:hover {
+          color: red;
+          font-size: 120%;
+        }
+      }
     }
   }
   .nav {
@@ -83,6 +95,17 @@
             border-left: 1px solid rgb(255, 0, 0);
             padding: 3px 0px 3px 3px;
             font-size: 14px;
+            a {
+              color: white;
+              &:link {
+                text-decoration: none;
+              }
+              &:hover {
+                color: red;
+                font-size: 120%;
+                text-decoration: underline;
+              }
+            }
           }
         }
       }

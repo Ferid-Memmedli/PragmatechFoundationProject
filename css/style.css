@@ -123,6 +123,20 @@
   background: none;
   outline: none;
   border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+#header .content button a {
+  color: white;
+}
+
+#header .content button a:link {
+  text-decoration: none;
+}
+
+#header .content button a:hover {
+  color: red;
+  font-size: 120%;
 }
 
 #header .nav {
@@ -155,6 +169,20 @@
   border-left: 1px solid red;
   padding: 3px 0px 3px 3px;
   font-size: 14px;
+}
+
+#header .nav .nav-bar .nav-bar-right ul li a {
+  color: white;
+}
+
+#header .nav .nav-bar .nav-bar-right ul li a:link {
+  text-decoration: none;
+}
+
+#header .nav .nav-bar .nav-bar-right ul li a:hover {
+  color: red;
+  font-size: 120%;
+  text-decoration: underline;
 }
 
 #about {
