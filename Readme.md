@@ -25,3 +25,8 @@
 # Day 04
 - Linkler uzerinde duzelisler edildi
 - @extend den isdifade olundu
+
+# Day 05
+- Headerda hissinde dubl-down animasiya yerlesdirildi
+- Compenents struktura kecildi
+- Component strukturunda button.scss de web saytin butun button kodlarli yazildi
