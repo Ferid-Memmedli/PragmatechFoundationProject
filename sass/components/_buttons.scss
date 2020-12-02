@@ -1,0 +1,41 @@
+.btn {
+    border: none;
+    background: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-border-radius-x {
+    border-radius: 5px;
+}
+
+.btn-border-radius-4x {
+    border-radius: 20px;
+}
+
+.btn-border-white {
+    border: 1px solid white;
+    &:hover {
+        background: white;
+        color: blue;
+    }
+}
+
+.btn-border-blue {
+    border: 1px solid blue;
+    color: blue;
+    &:hover {
+        background: blue;
+        color: white;
+    }
+}
+
+.btn-border-red {
+    border: 1px solid red;
+    color: red;
+    &:hover {
+        background: red;
+        color: white;
+    }
+}
