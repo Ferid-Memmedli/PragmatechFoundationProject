@@ -483,7 +483,8 @@
   padding-top: 100px;
 }
 
-#servies .container .row .col-4 h2 {
+#servies .container .row .col-4 h4 {
+  font-size: 180%;
   color: black;
 }
 
