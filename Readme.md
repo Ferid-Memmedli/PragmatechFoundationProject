@@ -31,6 +31,6 @@
 - Compenents struktura kecildi
 - Component strukturunda button.scss de web saytin butun button kodlarli yazildi
 
-# Day 05
+# Day 06
 - Grid sisteme kecildi
 - Servies hissenin strukturu grid ile yazildi
