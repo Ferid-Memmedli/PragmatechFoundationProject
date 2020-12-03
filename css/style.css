@@ -1,3 +1,84 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.container-full {
+  width: 100%;
+}
+
+.box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+  height: 260px;
+  width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+[class^="col-"] {
+  margin: 10px;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 .flex, #header .content, #header .nav .nav-bar .nav-bar-right ul, #about div, #about div #about-metn, #about div #about-metn ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +141,8 @@
   transition: all 0.5s ease;
   outline: none;
   font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .btn-border-radius-x {
@@ -88,17 +170,18 @@
 }
 
 .btn-border-white, #header .content button {
-  border: 2px solid white;
+  border: 2px solid #cf5b70;
   color: white;
 }
 
 .btn-border-white:hover, #header .content button:hover {
-  background: white;
+  background: #cf5b70;
+  border: none;
   color: black;
 }
 
 .btn-border-red {
-  background: #e65f78;
+  background: #cf5b70;
   color: white;
 }
 
@@ -108,7 +191,7 @@
 
 .btn-red:hover {
   padding: 10px;
-  background: #e65f78;
+  background: #cf5b70;
   color: white;
 }
 
@@ -179,6 +262,11 @@
   color: rgba(255, 255, 255, 0.69);
 }
 
+#header .content button {
+  position: absolute;
+  top: 440px;
+}
+
 #header .content .dubl-down {
   position: relative;
   cursor: pointer;
@@ -190,6 +278,10 @@
   z-index: 8;
   -webkit-animation: mymove 2s infinite;
           animation: mymove 2s infinite;
+}
+
+#header .content .dubl-down .down {
+  color: #cf5b70;
 }
 
 @-webkit-keyframes mymove {
@@ -214,7 +306,7 @@
   70% {
     top: 150px;
   }
-  85% {
+  82% {
     top: 150px;
   }
   100% {
@@ -244,7 +336,7 @@
   70% {
     top: 150px;
   }
-  85% {
+  82% {
     top: 150px;
   }
   100% {
@@ -293,7 +385,7 @@
 #header .nav .nav-bar .nav-bar-right ul li a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #e65f78;
+  color: #cf5b70;
 }
 
 #about {
@@ -337,11 +429,12 @@
 }
 
 #about div #about-metn h4 span {
-  color: #e65f78;
+  color: #cf5b70;
 }
 
 #about div #about-metn p {
   margin-bottom: 36px;
+  color: rgba(0, 0, 0, 0.69);
 }
 
 #about div #about-metn ul {
@@ -351,5 +444,52 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+#servies {
+  width: 1349px;
+  height: 800px;
+  background-color: rgba(230, 224, 224, 0.69);
+  position: relative;
+}
+
+#servies h2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 42px;
+}
+
+#servies p {
+  margin: 20px auto;
+  width: 600px;
+  text-align: center;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.69);
+}
+
+#servies .container .row .col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+}
+
+#servies .container .row .col-4 h2 {
+  color: black;
+}
+
+#servies .container .row .col-4 p {
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.69);
 }
 /*# sourceMappingURL=style.css.map */
