@@ -29,21 +29,21 @@
     @extend .flex-columun-center;
     h4 {
       margin-bottom: 30px;
-      @include font-size-weight(30px, 400);
+      @include font-size-weig-align-liheig(30px, 400, none, none);
     }
     h1 {
       text-transform: uppercase;
-      @include font-size-weight(50px, 600);
+      @include font-size-weig-align-liheig(50px, 600, none, none);
       margin-bottom: 30px;
     }
     p {
       width: 50%;
-      @extend .font-center;
+      @include font-size-weig-align-liheig(none, none, center, 1.8);
       margin-bottom: 30px;
       color: $main-p;
     }
     button {
-      @include font-size-weight(15px, 600);
+      @include font-size-weig-align-liheig(15px, 600, none, none);
       position: absolute;
       top: 440px;
       @extend .btn;
@@ -54,8 +54,7 @@
       position: relative;
       bottom: 5vh;
       width: 100%;
-      text-align: center;
-      font-size: 30px;
+      @include font-size-weig-align-liheig(30px, none, center, none);
       z-index: 8;
       animation: mymove 2s infinite;
       .down {

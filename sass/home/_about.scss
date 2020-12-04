@@ -19,19 +19,18 @@
     #about-metn {
       width: 100%;
       box-sizing: border-box;
-      display: flex;;
+      display: flex;
       flex-direction: column;
       padding: 0px 10px;
       h2 {
         font-family: $font-family;
-        @include font-size-weight(32px, 700);
-        line-height: 1;
+        @include font-size-weig-align-liheig(32px, 700, none, 1);
         span {
           font-weight: 500;
         }
       }
       h4 {
-        @include font-size-weight(25px, 500);
+        @include font-size-weig-align-liheig(25px, 500, none, none);
         font-family: $font-family;
         span {
           color: $main-red;

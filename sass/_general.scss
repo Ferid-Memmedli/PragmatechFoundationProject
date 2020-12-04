@@ -57,14 +57,12 @@
 // mixin class
 
 
-.font-center {
-        text-align: center;
-        line-height: 1.8;
-}
 
-@mixin font-size-weight($siz, $weig) {
+@mixin font-size-weig-align-liheig($siz, $weig, $align, $line) {
         font-size: $siz;
         font-weight: $weig;
+        text-align: $align;
+        line-height: $line;
 }
 
 
