@@ -257,16 +257,14 @@
 }
 
 #header {
-  margin: 0px auto;
+  margin: 0 auto;
+  position: relative;
   width: 1349px;
   height: 637px;
-  background: url("../img/header-bg.jpg");
+  background: url("../img/header-bg.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
-  position: relative;
   z-index: 0;
 }
 
@@ -435,10 +433,10 @@
 }
 
 #about {
-  margin: 0px auto;
+  margin: 0 auto;
+  position: relative;
   width: 1349px;
   height: 637px;
-  position: relative;
 }
 
 #about div {
@@ -499,10 +497,11 @@
 }
 
 #servies {
-  margin: 0px auto;
-  width: 1349px;
-  background-color: rgba(230, 224, 224, 0.69);
+  margin: 0 auto;
   position: relative;
+  width: 1349px;
+  height: none;
+  background-color: rgba(230, 224, 224, 0.69);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 100px 0;

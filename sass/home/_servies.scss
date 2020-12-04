@@ -1,9 +1,7 @@
 // section servies
 #servies {
-    margin: 0px auto;
-    width: $main-width;
+    @include defaultmain($main-width, none);
     background-color: rgba(230, 224, 224, 0.69);
-    position: relative;
     box-sizing: border-box;
     padding: 100px 0;
     h2 {

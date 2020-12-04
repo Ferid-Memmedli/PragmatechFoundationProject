@@ -1,11 +1,8 @@
 // section about
 
 #about {
-  margin: 0px auto;
-  width: $main-width;
-  height: $main-height;
+  @include defaultmain($main-width, $main-height);
   @extend .flex-full-center;
-  position: relative;
   div {
     box-sizing: border-box;
     width: $width;
@@ -14,9 +11,9 @@
     #about-logo {
       margin-right: 30px;
       img {
-      box-shadow: 0px 0px 10px $main-red;
-      width: 100%;
-      object-fit: cover;
+        box-shadow: 0px 0px 10px $main-red;
+        width: 100%;
+        object-fit: cover;
       }
     }
     #about-metn {
@@ -39,7 +36,7 @@
         font-weight: 500;
         font-family: $font-family;
         span {
-          color:$main-red;
+          color: $main-red;
           font-weight: 500;
         }
       }

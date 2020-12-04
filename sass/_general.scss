@@ -76,3 +76,9 @@
 
 // mixin class
 
+@mixin defaultmain($gen, $hun) {
+        margin: 0 auto;
+        position: relative;
+        width: $gen;
+        height: $hun;
+}

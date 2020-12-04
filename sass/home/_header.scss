@@ -1,15 +1,10 @@
 //  header home
 #header {
-  margin: 0px auto;
-  width: $main-width;
-  height: $main-height;
-  background: url("../img/header-bg.jpg");
+  @include defaultmain($main-width, $main-height);
+  background: url("../img/header-bg.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
-  position: relative;
   z-index: 0;
   .ovarlay {
     width: 100%;
