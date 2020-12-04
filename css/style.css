@@ -204,8 +204,6 @@
   transition: all 0.5s ease;
   outline: none;
   font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 15px;
-  font-weight: 600;
 }
 
 .btn-border-radius-x {
@@ -311,6 +309,8 @@
 }
 
 #header .content button {
+  font-size: 15px;
+  font-weight: 600;
   position: absolute;
   top: 440px;
 }

@@ -48,6 +48,8 @@
       color: $main-p;
     }
     button {
+      font-size: 15px;
+      font-weight: 600;
       position: absolute;
       top: 440px;
       @extend .btn;
