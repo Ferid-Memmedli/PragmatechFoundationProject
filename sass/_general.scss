@@ -32,3 +32,24 @@
         justify-content: flex-start;
         align-items: center;
 }
+
+.flex-columun-center {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.font-h1-size-weight {
+        font-size: 50px;
+        font-weight: 580;
+}
+
+.font-h4-size-weight {
+        font-size: 30px;
+        font-weight: 400;
+}
+
+.font-center {
+        text-align: center;
+        line-height: 1.8;
+}
