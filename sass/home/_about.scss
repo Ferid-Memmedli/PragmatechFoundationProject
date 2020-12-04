@@ -3,11 +3,11 @@
 #about {
   width: $main-width;
   height: $main-height;
-  @extend .flex-full-center;
+  @extend .flex-spacearound-center;
   position: relative;
   div {
-    width: 100%;
-    margin: 0px 53px;
+    width: $width;
+    margin-right: 30px;
     line-height: 1.8;
     @extend .flex;
     justify-content: center;

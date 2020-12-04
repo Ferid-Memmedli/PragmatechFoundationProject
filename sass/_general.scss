@@ -21,9 +21,15 @@
 }
 
 // Bu class elementlerin hem x hem de y oxunda ortalanmasini temin edir
-.flex-full-center {
+.flex-spacebetween-center {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+}
+
+.flex-spacearound-center {
+        display: flex;
+        justify-content: space-around;
         align-items: center;
 }
 
@@ -34,6 +40,7 @@
 }
 
 .flex-columun-center {
+        display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -53,3 +60,4 @@
         text-align: center;
         line-height: 1.8;
 }
+
