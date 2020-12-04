@@ -259,6 +259,7 @@
 }
 
 #header {
+  margin: 0px auto;
   width: 1349px;
   height: 637px;
   background: url("../img/header-bg.jpg");
@@ -434,6 +435,7 @@
 }
 
 #about {
+  margin: 0px auto;
   width: 1349px;
   height: 637px;
   position: relative;
@@ -497,6 +499,7 @@
 }
 
 #servies {
+  margin: 0px auto;
   width: 1349px;
   background-color: rgba(230, 224, 224, 0.69);
   position: relative;
