@@ -34,3 +34,7 @@
 # Day 06
 - Grid sisteme kecildi
 - Servies hissenin strukturu grid ile yazildi
+
+# Day 07
+- Lahiye uzerinde xetalar fixed edildi
+- Daha canfortlu sistemde duzelisler edildi
