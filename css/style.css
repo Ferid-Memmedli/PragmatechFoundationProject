@@ -1,5 +1,5 @@
 .container {
-  width: 1140px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -10,8 +10,8 @@
 .box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 2px black;
-          box-shadow: 0px 0px 2px black;
+  -webkit-box-shadow: 0px 0px 1px black;
+          box-shadow: 0px 0px 1px black;
   height: 260px;
   width: 350px;
   border-radius: 5px;
@@ -391,7 +391,7 @@
 }
 
 #header .nav {
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
   height: 70px;
@@ -451,7 +451,8 @@
 }
 
 #about div #about-logo img {
-  border: 2px solid #dee2e6;
+  -webkit-box-shadow: 0px 0px 10px #cf5b70;
+          box-shadow: 0px 0px 10px #cf5b70;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -497,17 +498,17 @@
 
 #servies {
   width: 1349px;
-  height: 1000px;
   background-color: rgba(230, 224, 224, 0.69);
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 100px 0;
 }
 
 #servies h2 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-top: 100px;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 42px;
+  font-size: 2rem;
 }
 
 #servies p {
@@ -516,28 +517,28 @@
   text-align: center;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.69);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 70px;
 }
 
 #servies .container .row .col-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 120px;
 }
 
 #servies .container .row .col-4 h4 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
   font-size: 180%;
   color: black;
 }
 
 #servies .container .row .col-4 p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   text-align: center;
   color: rgba(0, 0, 0, 0.69);

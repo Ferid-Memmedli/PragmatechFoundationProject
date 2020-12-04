@@ -1,14 +1,14 @@
 // section servies
 #servies {
     width: $main-width;
-    height: 1000px;
     background-color: rgba(230, 224, 224, 0.69);
     position: relative;
+    box-sizing: border-box;
+    padding: 100px 0;
     h2 {
-        box-sizing: border-box;
-        padding-top: 100px;
+        font-family: $font-family;
         text-align: center;
-        font-size: 42px;
+        font-size: 2rem;
     }
     p {
         margin: 20px auto;
@@ -16,19 +16,22 @@
         text-align: center;
         line-height: 1.8;
         color: $main-pp;
+        box-sizing: border-box;
+        margin-bottom: 70px;
     }
     .container {
         .row {
             .col-4 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-top: 100px;
+                box-sizing: border-box;
+                padding-top: 120px;
                 h4 {
+                    box-sizing: border-box;
+                    text-align: center;
                     font-size: 180%;
                     color: black;
                 }
                 p {
+                    box-sizing: border-box;
                     width: 100%;
                     text-align: center;
                     color: $main-pp;
