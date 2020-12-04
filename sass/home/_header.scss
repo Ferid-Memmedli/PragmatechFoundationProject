@@ -29,11 +29,11 @@
     @extend .flex-columun-center;
     h4 {
       margin-bottom: 30px;
-      @extend .font-h4-size-weight;
+      @include font-size-weight(30px, 400);
     }
     h1 {
       text-transform: uppercase;
-      @extend .font-h1-size-weight;
+      @include font-size-weight(50px, 600);
       margin-bottom: 30px;
     }
     p {
@@ -43,8 +43,7 @@
       color: $main-p;
     }
     button {
-      font-size: 15px;
-      font-weight: 600;
+      @include font-size-weight(15px, 600);
       position: absolute;
       top: 440px;
       @extend .btn;

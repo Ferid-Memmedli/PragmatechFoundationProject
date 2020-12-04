@@ -38,3 +38,6 @@
 # Day 07
 - Lahiye uzerinde xetalar fixed edildi
 - Daha canfortlu sistemde duzelisler edildi
+
+# Day 08
+- Lahiye kodlarin daha kanfortlu olmasi ucun, mixin include sisteminnen isdifade

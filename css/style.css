@@ -79,12 +79,6 @@
   width: 100%;
 }
 
-.flex, #about div #about-metn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .justify-content-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -180,17 +174,7 @@
           justify-content: center;
 }
 
-.font-h1-size-weight, #header .content h1 {
-  font-size: 50px;
-  font-weight: 600;
-}
-
-.font-h4-size-weight, #header .content h4 {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.font-center, #header .content p {
+.font-center, #header .content p, #servies p {
   text-align: center;
   line-height: 1.8;
 }
@@ -293,10 +277,14 @@
 
 #header .content h4 {
   margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 #header .content h1 {
   text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -462,6 +450,9 @@
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -516,8 +507,6 @@
 #servies p {
   margin: 20px auto;
   width: 600px;
-  text-align: center;
-  line-height: 1.8;
   color: rgba(0, 0, 0, 0.69);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

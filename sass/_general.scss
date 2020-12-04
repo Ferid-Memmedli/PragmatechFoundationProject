@@ -1,9 +1,5 @@
 // common classes
 
-.flex {
-        display: flex;
-}
-
 .justify-content-between {
         justify-content: space-between;
 }
@@ -58,23 +54,20 @@
 }
 
 // font size weight
+// mixin class
 
-.font-h1-size-weight {
-        font-size: 50px;
-        font-weight: 600;
-}
-
-.font-h4-size-weight {
-        font-size: 30px;
-        font-weight: 400;
-}
 
 .font-center {
         text-align: center;
         line-height: 1.8;
 }
 
-// mixin class
+@mixin font-size-weight($siz, $weig) {
+        font-size: $siz;
+        font-weight: $weig;
+}
+
+
 
 @mixin defaultmain($gen, $hun) {
         margin: 0 auto;
