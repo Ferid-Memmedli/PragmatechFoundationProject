@@ -21,6 +21,17 @@
 }
 
 // Bu class elementlerin hem x hem de y oxunda ortalanmasini temin edir
+.flex-spacebetween {
+        display: flex;
+        justify-content: space-between;
+}
+
+.flex-full-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
 .flex-spacebetween-center {
         display: flex;
         justify-content: space-between;
@@ -48,7 +59,7 @@
 
 .font-h1-size-weight {
         font-size: 50px;
-        font-weight: 580;
+        font-weight: 600;
 }
 
 .font-h4-size-weight {

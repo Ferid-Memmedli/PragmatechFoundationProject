@@ -97,13 +97,13 @@
     }
   }
   .nav {
-    position: relative;
-    z-index: 25;
+    @extend .flex-full-center;
+    position: fixed;
+    z-index: 999;
     width: 100%;
-    padding: 20px 0px;
+    height: 70px;
     .nav-bar {
       width: $width;
-      margin: 0px auto;
       @extend .flex-spacebetween-center;
       .nav-bar-left a img {
         width: 100px;
