@@ -3,9 +3,9 @@
   margin: 0 auto;
 }
 
-.container-full, #freelancer div {
-  width: 100%;
-  margin: 0 auto;
+.container-width, #freelancer div {
+  width: 83%;
+  margin: 0px auto;
 }
 
 .box {
@@ -182,7 +182,6 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   outline: none;
-  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .btn-border-radius-x, #freelancer div .divhire button {
@@ -498,7 +497,7 @@
   color: rgba(0, 0, 0, 0.69);
 }
 
-#about div #about-metn ul li {
+#about div #about-metn ul a {
   color: #000;
   display: inline-block;
   height: 40px;
@@ -512,7 +511,7 @@
   margin-left: 10px;
 }
 
-#about div #about-metn ul li:hover {
+#about div #about-metn ul a:hover {
   color: #cf5b70;
   border: 2px solid #cf5b70;
 }

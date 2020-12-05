@@ -106,8 +106,8 @@ section {
 	display: block;
 }
 body {
-	font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	line-height: 1;
 }
 ol,
@@ -129,6 +129,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
- a {
-	 color: white;
- }
+a {
+	color: white;
+}

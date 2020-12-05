@@ -44,7 +44,7 @@
       }
       ul {
         @extend .flex-horizontal-start;
-        li {
+        a {
           color: #000;
           display: inline-block;
           height: 40px;

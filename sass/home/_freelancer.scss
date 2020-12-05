@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 100px 0px;
     div {
-        @extend .container-full;
+        @extend .container-width;
         .divfree {
             @extend .col-12;
             h2 {
