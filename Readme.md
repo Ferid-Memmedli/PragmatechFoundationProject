@@ -44,3 +44,4 @@
 
 # Day 09
 - Section Freelancer bolmesi grid vasiyesi ile yazildi
+- Logolar elave olundu
