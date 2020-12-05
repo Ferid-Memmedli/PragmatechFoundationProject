@@ -41,3 +41,6 @@
 
 # Day 08
 - Lahiye kodlarin daha kanfortlu olmasi ucun, mixin include sisteminnen isdifade
+
+# Day 09
+- Section Freelancer bolmesi grid vasiyesi ile yazildi
