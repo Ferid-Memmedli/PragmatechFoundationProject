@@ -556,7 +556,7 @@
 #freelancer {
   margin: 0 auto;
   position: relative;
-  width: 1349px;
+  width: none;
   height: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -572,5 +572,12 @@
 
 #freelancer div .divhire {
   margin-top: 24px;
+}
+
+#freelancer div .divhire button {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 #freelancer {
-    @include defaultmain($main-width, none);
+    @include defaultmain(none, none);
     box-sizing: border-box;
     padding: 100px 0px;
     div {
@@ -15,6 +15,7 @@
             margin-top: 24px;
             @extend .flex-full-center;
             button {
+                @include font-size-weig-align-liheig(15px, 600, center, none);
                 @extend .btn;
                 @extend .btn-border-radius-x;
                 @extend .btn-border-red;
