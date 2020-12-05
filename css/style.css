@@ -498,6 +498,25 @@
   color: rgba(0, 0, 0, 0.69);
 }
 
+#about div #about-metn ul li {
+  color: #000;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #d4d4d4;
+  line-height: 39px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  text-align: center;
+  margin-left: 10px;
+}
+
+#about div #about-metn ul li:hover {
+  color: #cf5b70;
+  border: 2px solid #cf5b70;
+}
+
 #servies {
   margin: 0 auto;
   position: relative;

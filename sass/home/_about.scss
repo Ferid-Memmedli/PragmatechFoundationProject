@@ -44,6 +44,22 @@
       }
       ul {
         @extend .flex-horizontal-start;
+        li {
+          color: #000;
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          border: 2px solid #d4d4d4;
+          line-height: 39px;
+          transition: all 0.6s;
+          text-align: center;
+          margin-left: 10px;
+          &:hover {
+            color : $main-red;
+            border: 2px solid $main-red;
+          }
+        }
       }
     }
   }
