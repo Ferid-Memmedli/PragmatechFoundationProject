@@ -3,8 +3,9 @@
   margin: 0 auto;
 }
 
-.container-full {
+.container-full, #freelancer div {
   width: 100%;
+  margin: 0 auto;
 }
 
 .box {
@@ -74,7 +75,7 @@
   width: 91.66667%;
 }
 
-.col-12 {
+.col-12, #freelancer div .divfree, #freelancer div .divhire {
   width: 100%;
 }
 
@@ -110,7 +111,7 @@
           justify-content: space-between;
 }
 
-.flex-full-center, #header .nav, #about {
+.flex-full-center, #header .nav, #about, #freelancer div .divhire {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +174,7 @@
           justify-content: center;
 }
 
-.btn, #header .content button {
+.btn, #header .content button, #freelancer div .divhire button {
   border: none;
   background: none;
   padding: 15px 32px;
@@ -184,7 +185,7 @@
   font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.btn-border-radius-x {
+.btn-border-radius-x, #freelancer div .divhire button {
   border-radius: 5px;
 }
 
@@ -219,7 +220,7 @@
   color: black;
 }
 
-.btn-border-red {
+.btn-border-red, #freelancer div .divhire button {
   background: #cf5b70;
   color: white;
 }
@@ -550,5 +551,26 @@
   width: 100%;
   text-align: center;
   color: rgba(0, 0, 0, 0.69);
+}
+
+#freelancer {
+  margin: 0 auto;
+  position: relative;
+  width: 1349px;
+  height: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 100px 0px;
+}
+
+#freelancer div .divfree h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.8;
+}
+
+#freelancer div .divhire {
+  margin-top: 24px;
 }
 /*# sourceMappingURL=style.css.map */

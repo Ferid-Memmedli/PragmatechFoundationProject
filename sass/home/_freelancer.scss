@@ -1,0 +1,24 @@
+#freelancer {
+    @include defaultmain($main-width, none);
+    box-sizing: border-box;
+    padding: 100px 0px;
+    div {
+        @extend .container-full;
+        .divfree {
+            @extend .col-12;
+            h2 {
+                @include font-size-weig-align-liheig(30px,600,center,1.8);
+            }
+        }
+        .divhire {
+            @extend .col-12;
+            margin-top: 24px;
+            @extend .flex-full-center;
+            button {
+                @extend .btn;
+                @extend .btn-border-radius-x;
+                @extend .btn-border-red;
+            }
+        }
+    }
+}
