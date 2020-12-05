@@ -468,6 +468,7 @@
 }
 
 #about div #about-metn h2 {
+  letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -509,6 +510,7 @@
 }
 
 #servies h2 {
+  letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: none;
@@ -536,6 +538,7 @@
 }
 
 #servies .container .row .col-4 h4 {
+  letter-spacing: 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 180%;
@@ -564,6 +567,7 @@
 }
 
 #freelancer div .divfree h2 {
+  letter-spacing: 1px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -575,6 +579,7 @@
 }
 
 #freelancer div .divhire button {
+  letter-spacing: 1px;
   font-size: 15px;
   font-weight: 600;
   text-align: center;

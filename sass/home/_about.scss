@@ -23,6 +23,7 @@
       flex-direction: column;
       padding: 0px 10px;
       h2 {
+        letter-spacing: 1px;
         font-family: $font-family;
         @include font-size-weig-align-liheig(32px, 700, none, 1);
         span {

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 100px 0;
     h2 {
+        letter-spacing: 1px;
         font-family: $font-family;
         @include font-size-weig-align-liheig(2rem, none, center, none);
     }
@@ -22,6 +23,7 @@
                 box-sizing: border-box;
                 padding-top: 120px;
                 h4 {
+                    letter-spacing: 1px;
                     box-sizing: border-box;
                     @include font-size-weig-align-liheig(180%, none, center, none);
                     color: black;
