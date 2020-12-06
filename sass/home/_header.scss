@@ -93,15 +93,15 @@
       width: $width;
       @extend .flex-spacebetween-center;
       .nav-bar-left a img {
-        width: 100px;
+        width: 80px;
       }
       .nav-bar-right {
-        display: inline-block;
+        display: flex;
         ul {
           width: 609px;
           @extend .flex-spacearound-center;
           li {
-            display: inline-block;
+            display: flex;
             padding: 3px 0px 3px 3px;
             font-size: 16px;
             a {

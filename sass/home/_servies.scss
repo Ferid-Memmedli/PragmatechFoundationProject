@@ -5,12 +5,13 @@
     box-sizing: border-box;
     padding: ($mp-5*2) 0px;
     h2 {
+        @extend .col-12;
         letter-spacing: 1px;
         @include font-size-weig-align-liheig(2rem, none, center, none);
     }
     p {
+        @extend .col-12;
         margin: $mp-2 auto;
-        width: 600px;
         @include font-size-weig-align-liheig(none, none, center, 1.8);
         color: $main-pp;
         box-sizing: border-box;
@@ -20,7 +21,6 @@
         .row {
             .col-4 {
                 box-sizing: border-box;
-                padding-top: 120px;
                 h4 {
                     letter-spacing: 1px;
                     box-sizing: border-box;
@@ -29,7 +29,7 @@
                 }
                 p {
                     box-sizing: border-box;
-                    width: $full-faiz;
+                    @extend .col-12;
                     text-align: center;
                     color: $main-pp;
                 }
