@@ -45,3 +45,8 @@
 # Day 09
 - Section Freelancer bolmesi grid vasiyesi ile yazildi
 - Logolar elave olundu
+
+# Day 10
+- Bezi deyerler veriables halinda yazildi
+- Padding margin ucun elave veriablesler yazildi
+- Bezi duzelisler edilerek kod setri azaldildi

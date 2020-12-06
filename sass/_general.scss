@@ -56,8 +56,6 @@
 // font size weight
 // mixin class
 
-
-
 @mixin font-size-weig-align-liheig($siz, $weig, $align, $line) {
         font-size: $siz;
         font-weight: $weig;
@@ -65,11 +63,16 @@
         line-height: $line;
 }
 
-
-
 @mixin defaultmain($gen, $hun) {
         margin: 0 auto;
         position: relative;
         width: $gen;
         height: $hun;
+}
+
+@mixin position-top-left-index($position, $top, $left, $zindex) {
+        position: $position;
+        top: $top;
+        left: $left;
+        z-index: $zindex;
 }

@@ -1,7 +1,7 @@
 // section about
 
 #about {
-  @include defaultmain($main-width, $main-height);
+  @include defaultmain($full-faiz, $main-height);
   @extend .flex-full-center;
   div {
     box-sizing: border-box;
@@ -9,22 +9,21 @@
     line-height: 1.8;
     @extend .flex-spacebetween;
     #about-logo {
-      margin-right: 30px;
+      margin-right: $mp-3;
       img {
         box-shadow: 0px 0px 10px $main-red;
-        width: 100%;
+        width: $full-faiz;
         object-fit: cover;
       }
     }
     #about-metn {
-      width: 100%;
+      width: $full-faiz;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       padding: 0px 10px;
       h2 {
         letter-spacing: 1px;
-        font-family: $font-family;
         @include font-size-weig-align-liheig(32px, 700, none, 1);
         span {
           font-weight: 500;
@@ -32,14 +31,13 @@
       }
       h4 {
         @include font-size-weig-align-liheig(25px, 500, none, none);
-        font-family: $font-family;
         span {
           color: $main-red;
           font-weight: 500;
         }
       }
       p {
-        font-family: $font-family2;
+        font-family: $font-family;
         color: $main-pp;
       }
       ul {
@@ -47,14 +45,14 @@
         a {
           color: #000;
           display: inline-block;
-          height: 40px;
-          width: 40px;
-          border-radius: 50%;
+          height: $mp-4;
+          width: $mp-4;
+          border-radius: $full-faiz/2;
           border: 2px solid #d4d4d4;
           line-height: 39px;
           transition: all 0.6s;
           text-align: center;
-          margin-left: 10px;
+          margin-left: $mp-1;
           &:hover {
             color : $main-red;
             border: 2px solid $main-red;

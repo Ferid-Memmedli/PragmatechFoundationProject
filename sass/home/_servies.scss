@@ -1,16 +1,15 @@
 // section servies
 #servies {
-    @include defaultmain($main-width, none);
+    @include defaultmain($full-faiz, none);
     background-color: rgba(230, 224, 224, 0.69);
     box-sizing: border-box;
-    padding: 100px 0;
+    padding: ($mp-5*2) 0px;
     h2 {
         letter-spacing: 1px;
-        font-family: $font-family;
         @include font-size-weig-align-liheig(2rem, none, center, none);
     }
     p {
-        margin: 20px auto;
+        margin: $mp-2 auto;
         width: 600px;
         @include font-size-weig-align-liheig(none, none, center, 1.8);
         color: $main-pp;
@@ -30,7 +29,7 @@
                 }
                 p {
                     box-sizing: border-box;
-                    width: 100%;
+                    width: $full-faiz;
                     text-align: center;
                     color: $main-pp;
                 }

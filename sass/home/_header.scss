@@ -1,61 +1,53 @@
 //  header home
 #header {
-  @include defaultmain($main-width, $main-height);
+  @include defaultmain($full-faiz, $main-height);
   background: url("../img/header-bg.jpg") no-repeat center;
   background-size: cover;
-  border-bottom-left-radius: 400px;
-  border-bottom-right-radius: 400px;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
   z-index: 0;
   .ovarlay {
-    width: 100%;
-    height: 100%;
-    border-bottom-left-radius: 400px;
-    border-bottom-right-radius: 400px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
+    width: $full-faiz;
+    height: $full-faiz;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    @include position-top-left-index(absolute, 0px, 0px, 1);
     background-color: rgba(0, 0, 0, 0.69);
   }
   .content {
-    width: 100%;
-    height: 100%;
+    width: $full-faiz;
+    height: $full-faiz;
     color: white;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
+    @include position-top-left-index(absolute, 0px, 0px, 2);
     text-align: center;
     @extend .flex-columun-center;
     h4 {
-      margin-bottom: 30px;
+      margin-bottom: $mp-3;
       @include font-size-weig-align-liheig(30px, 400, none, none);
     }
     h1 {
       text-transform: uppercase;
       @include font-size-weig-align-liheig(50px, 600, none, none);
-      margin-bottom: 30px;
+      margin-bottom: $mp-3;
     }
     p {
-      width: 50%;
+      width: $full-faiz/2;
       @include font-size-weig-align-liheig(none, none, center, 1.8);
-      margin-bottom: 30px;
+      margin-bottom: $mp-3;
       color: $main-p;
     }
     button {
       @include font-size-weig-align-liheig(15px, 600, none, none);
-      position: absolute;
-      top: 440px;
+      @include position-top-left-index(absolute, 440px, none, none);
       @extend .btn;
       @extend .btn-border-white;
       @extend .btn-border-radius-6x;
     }
     .dubl-down {
-      position: relative;
+      @include position-top-left-index(relative, none, none, 7);
       bottom: 5vh;
-      width: 100%;
+      width: $full-faiz;
       @include font-size-weig-align-liheig(30px, none, center, none);
-      z-index: 8;
       animation: mymove 2s infinite;
       .down {
         color: $main-red;
@@ -94,9 +86,8 @@
   }
   .nav {
     @extend .flex-full-center;
-    position: relative;
-    z-index: 999;
-    width: 100%;
+    @include position-top-left-index(relative, none, none, 999);
+    width: $full-faiz;
     height: 70px;
     .nav-bar {
       width: $width;

@@ -1,7 +1,7 @@
 #freelancer {
     @include defaultmain(none, none);
     box-sizing: border-box;
-    padding: 100px 0px;
+    padding: ($mp-5*2) 0px;
     div {
         @extend .container-width;
         .divfree {
