@@ -1,8 +1,13 @@
 $colWidth: 100%/12;
 
 .container {
-    width: $full-faiz;
+    width: $width;
     margin: 0 auto;
+}
+
+.container-width {
+    width: $width;
+    margin: 0px auto;
 }
 
 .box {
