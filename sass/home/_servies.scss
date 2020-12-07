@@ -2,7 +2,6 @@
 #servies {
     @include defaultmain($full-faiz, none);
     background-color: $main-backcolor;
-    box-sizing: border-box;
     h2 {
         letter-spacing: 1px;
         @include font-size-weig-align-liheig(2rem, none, center, none);
@@ -10,20 +9,16 @@
     p {
         @include font-size-weig-align-liheig(none, none, center, 1.8);
         color: $main-pp;
-        box-sizing: border-box;
     }
     .container {
         .row {
             .col-4 {
-                box-sizing: border-box;
                 h4 {
                     letter-spacing: 1px;
-                    box-sizing: border-box;
                     @include font-size-weig-align-liheig(180%, none, center, none);
                     color: $color-black;
                 }
                 p {
-                    box-sizing: border-box;
                     text-align: center;
                     color: $main-pp;
                 }
