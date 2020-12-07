@@ -50,3 +50,8 @@
 - Bezi deyerler veriables halinda yazildi
 - Padding margin ucun elave veriablesler yazildi
 - Bezi duzelisler edilerek kod setri azaldildi
+
+# Day 11
+- margin padding claslarindan isdifade olundu
+- setting bolmesine common general spacing elave olundu
+- index.html de claslar elave olundu
