@@ -1,0 +1,36 @@
+// Bu class elementlerin hem x hem de y oxunda ortalanmasini temin edir
+.flex-spacebetween {
+        display: flex;
+        justify-content: space-between;
+}
+
+.flex-full-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.flex-spacebetween-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.flex-spacearound-center {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.flex-horizontal-start {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+}
+
+.flex-columun-center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+}

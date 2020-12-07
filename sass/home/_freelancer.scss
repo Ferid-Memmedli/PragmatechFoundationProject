@@ -1,26 +1,17 @@
 #freelancer {
     @include defaultmain(none, none);
     box-sizing: border-box;
-    padding: ($mp-5*2) 0px;
     div {
-        @extend .container;
         .divfree {
-            @extend .col-12;
             h2 {
                 letter-spacing: 1px;
                 @include font-size-weig-align-liheig(30px, 600, center, 1.8);
             }
         }
         .divhire {
-            @extend .col-12;
-            margin-top: 24px;
-            @extend .flex-full-center;
             button {
                 letter-spacing: 1px;
                 @include font-size-weig-align-liheig(15px, 600, center, none);
-                @extend .btn;
-                @extend .btn-border-radius-x;
-                @extend .btn-border-red;
             }
         }
     }

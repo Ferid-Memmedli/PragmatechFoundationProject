@@ -1,4 +1,556 @@
-.container, #freelancer div {
+.m-x {
+  margin: 10px;
+}
+
+.m-2x {
+  margin: 20px;
+}
+
+.m-3x {
+  margin: 30px;
+}
+
+.m-4x {
+  margin: 40px;
+}
+
+.m-5x {
+  margin: 50px;
+}
+
+.m-6x {
+  margin: 60px;
+}
+
+.m-7x {
+  margin: 70px;
+}
+
+.m-8x {
+  margin: 80px;
+}
+
+.m-9x {
+  margin: 90px;
+}
+
+.m-10x {
+  margin: 100px;
+}
+
+.mv-x {
+  margin: 10px 0px;
+}
+
+.mv-2x {
+  margin: 20px 0px;
+}
+
+.mv-3x {
+  margin: 30px 0px;
+}
+
+.mv-4x {
+  margin: 40px 0px;
+}
+
+.mv-5x {
+  margin: 50px 0px;
+}
+
+.mv-6x {
+  margin: 60px 0px;
+}
+
+.mv-7x {
+  margin: 70px 0px;
+}
+
+.mv-8x {
+  margin: 80px 0px;
+}
+
+.mv-9x {
+  margin: 90px 0px;
+}
+
+.mv-10x {
+  margin: 100px 0px;
+}
+
+.mt-x {
+  margin-top: 10px;
+}
+
+.mt-2x {
+  margin-top: 20px;
+}
+
+.mt-3x {
+  margin-top: 30px;
+}
+
+.mt-4x {
+  margin-top: 40px;
+}
+
+.mt-5x {
+  margin-top: 50px;
+}
+
+.mt-6x {
+  margin-top: 60px;
+}
+
+.mt-7x {
+  margin-top: 70px;
+}
+
+.mt-8x {
+  margin-top: 80px;
+}
+
+.mt-9x {
+  margin-top: 90px;
+}
+
+.mt-10x {
+  margin-top: 100px;
+}
+
+.mb-x {
+  margin-bottom: 10px;
+}
+
+.mb-2x {
+  margin-bottom: 20px;
+}
+
+.mb-3x {
+  margin-bottom: 30px;
+}
+
+.mb-4x {
+  margin-bottom: 40px;
+}
+
+.mb-5x {
+  margin-bottom: 50px;
+}
+
+.mb-6x {
+  margin-bottom: 60px;
+}
+
+.mb-7x {
+  margin-bottom: 70px;
+}
+
+.mb-8x {
+  margin-bottom: 80px;
+}
+
+.mb-9x {
+  margin-bottom: 90px;
+}
+
+.mb-10x {
+  margin-bottom: 100px;
+}
+
+.mr-x {
+  margin-right: 10px;
+}
+
+.mr-2x {
+  margin-right: 20px;
+}
+
+.mr-3x {
+  margin-right: 30px;
+}
+
+.mr-4x {
+  margin-right: 40px;
+}
+
+.mr-5x {
+  margin-right: 50px;
+}
+
+.mr-6x {
+  margin-right: 60px;
+}
+
+.mr-7x {
+  margin-right: 70px;
+}
+
+.mr-8x {
+  margin-right: 80px;
+}
+
+.mr-9x {
+  margin-right: 90px;
+}
+
+.mr-10x {
+  margin-right: 100px;
+}
+
+.ml-x {
+  margin-left: 10px;
+}
+
+.ml-2x {
+  margin-left: 20px;
+}
+
+.ml-3x {
+  margin-left: 30px;
+}
+
+.ml-4x {
+  margin-left: 40px;
+}
+
+.ml-5x {
+  margin-left: 50px;
+}
+
+.ml-6x {
+  margin-left: 60px;
+}
+
+.ml-7x {
+  margin-left: 70px;
+}
+
+.ml-8x {
+  margin-left: 80px;
+}
+
+.ml-9x {
+  margin-left: 90px;
+}
+
+.ml-10x {
+  margin-left: 100px;
+}
+
+.p-x {
+  padding: 10px;
+}
+
+.p-2x {
+  padding: 20px;
+}
+
+.p-3x {
+  padding: 30px;
+}
+
+.p-4x {
+  padding: 40px;
+}
+
+.p-5x {
+  padding: 50px;
+}
+
+.p-6x {
+  padding: 60px;
+}
+
+.p-7x {
+  padding: 70px;
+}
+
+.p-8x {
+  padding: 80px;
+}
+
+.p-9x {
+  padding: 90px;
+}
+
+.p-10x {
+  padding: 100px;
+}
+
+.pt-x {
+  padding-top: 10px;
+}
+
+.pt-2x {
+  padding-top: 20px;
+}
+
+.pt-3x {
+  padding-top: 30px;
+}
+
+.pt-4x {
+  padding-top: 40px;
+}
+
+.pt-5x {
+  padding-top: 50px;
+}
+
+.pt-6x {
+  padding-top: 60px;
+}
+
+.pt-7x {
+  padding-top: 70px;
+}
+
+.pt-8x {
+  padding-top: 80px;
+}
+
+.pt-9x {
+  padding-top: 90px;
+}
+
+.pt-10x {
+  padding-top: 100px;
+}
+
+.pv-x {
+  padding: 10px 0px;
+}
+
+.pv-2x {
+  padding: 20px 0px;
+}
+
+.pv-3x {
+  padding: 30px 0px;
+}
+
+.pv-4x {
+  padding: 40px 0px;
+}
+
+.pv-5x {
+  padding: 50px 0px;
+}
+
+.pv-6x {
+  padding: 60px 0px;
+}
+
+.pv-7x {
+  padding: 70px 0px;
+}
+
+.pv-8x {
+  padding: 80px 0px;
+}
+
+.pv-9x {
+  padding: 90px 0px;
+}
+
+.pv-10x {
+  padding: 100px 0px;
+}
+
+.pb-x {
+  padding-bottom: 10px;
+}
+
+.pb-2x {
+  padding-bottom: 20px;
+}
+
+.pb-3x {
+  padding-bottom: 30px;
+}
+
+.pb-4x {
+  padding-bottom: 40px;
+}
+
+.pb-5x {
+  padding-bottom: 50px;
+}
+
+.pb-6x {
+  padding-bottom: 60px;
+}
+
+.pb-7x {
+  padding-bottom: 70px;
+}
+
+.pb-8x {
+  padding-bottom: 80px;
+}
+
+.pb-9x {
+  padding-bottom: 90px;
+}
+
+.pb-10x {
+  padding-bottom: 100px;
+}
+
+.pr-x {
+  padding-right: 10px;
+}
+
+.pr-2x {
+  padding-right: 20px;
+}
+
+.pr-3x {
+  padding-right: 30px;
+}
+
+.pr-4x {
+  padding-right: 40px;
+}
+
+.pr-5x {
+  padding-right: 50px;
+}
+
+.pr-6x {
+  padding-right: 60px;
+}
+
+.pr-7x {
+  padding-right: 70px;
+}
+
+.pr-8x {
+  padding-right: 80px;
+}
+
+.pr-9x {
+  padding-right: 90px;
+}
+
+.pr-10x {
+  padding-right: 100px;
+}
+
+.pl-x {
+  padding-left: 10px;
+}
+
+.pl-2x {
+  padding-left: 20px;
+}
+
+.pl-3x {
+  padding-left: 30px;
+}
+
+.pl-4x {
+  padding-left: 40px;
+}
+
+.pl-5x {
+  padding-left: 50px;
+}
+
+.pl-6x {
+  padding-left: 60px;
+}
+
+.pl-7x {
+  padding-left: 70px;
+}
+
+.pl-8x {
+  padding-left: 80px;
+}
+
+.pl-9x {
+  padding-left: 90px;
+}
+
+.pl-10x {
+  padding-left: 100px;
+}
+
+.flex-spacebetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-full-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-spacebetween-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-spacearound-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-horizontal-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-columun-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
   width: 83%;
   margin: 0 auto;
 }
@@ -74,106 +626,11 @@
   width: 91.66667%;
 }
 
-.col-12, #servies h2, #servies p, #servies .container .row .col-4 p, #servies #freelancer div .row .col-4 p, #freelancer #servies div .row .col-4 p, #freelancer div .divfree, #freelancer div .divhire {
+.col-12 {
   width: 100%;
 }
 
-.justify-content-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.justify-content-start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.justify-content-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.justify-content-around {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.flex-spacebetween, #about div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.flex-full-center, #header .nav, #about, #freelancer div .divhire {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-spacebetween-center, #header .nav .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-spacearound-center, #header .nav .nav-bar .nav-bar-right ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-horizontal-start, #about div #about-metn ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-columun-center, #header .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.btn, #header .content button, #freelancer div .divhire button {
+.btn {
   border: none;
   background: none;
   padding: 15px 32px;
@@ -183,7 +640,7 @@
   outline: none;
 }
 
-.btn-border-radius-x, #freelancer div .divhire button {
+.btn-border-radius-x {
   border-radius: 5px;
 }
 
@@ -203,22 +660,22 @@
   border-radius: 25px;
 }
 
-.btn-border-radius-6x, #header .content button {
+.btn-border-radius-6x {
   border-radius: 30px;
 }
 
-.btn-border-white, #header .content button {
+.btn-border-white {
   border: 2px solid #cf5b70;
   color: white;
 }
 
-.btn-border-white:hover, #header .content button:hover {
+.btn-border-white:hover {
   background: #cf5b70;
   border: none;
   color: black;
 }
 
-.btn-border-red, #freelancer div .divhire button {
+.btn-border-red {
   background: #cf5b70;
   color: white;
 }
@@ -269,7 +726,6 @@
 }
 
 #header .content h4 {
-  margin-bottom: 30px;
   font-size: 30px;
   font-weight: 400;
   text-align: none;
@@ -282,7 +738,6 @@
   font-weight: 600;
   text-align: none;
   line-height: none;
-  margin-bottom: 30px;
 }
 
 #header .content p {
@@ -291,7 +746,6 @@
   font-weight: none;
   text-align: center;
   line-height: 1.8;
-  margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.69);
 }
 
@@ -449,10 +903,6 @@
   line-height: 1.8;
 }
 
-#about div #about-logo {
-  margin-right: 30px;
-}
-
 #about div #about-logo img {
   -webkit-box-shadow: 0px 0px 10px #cf5b70;
           box-shadow: 0px 0px 10px #cf5b70;
@@ -472,7 +922,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0px 10px;
 }
 
 #about div #about-metn h2 {
@@ -515,7 +964,6 @@
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   text-align: center;
-  margin-left: 10px;
 }
 
 #about div #about-metn ul a:hover {
@@ -531,7 +979,6 @@
   background-color: rgba(230, 224, 224, 0.69);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 100px 0px;
 }
 
 #servies h2 {
@@ -543,7 +990,6 @@
 }
 
 #servies p {
-  margin: 20px auto;
   font-size: none;
   font-weight: none;
   text-align: center;
@@ -551,15 +997,14 @@
   color: rgba(0, 0, 0, 0.69);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 70px;
 }
 
-#servies .container .row .col-4, #servies #freelancer div .row .col-4, #freelancer #servies div .row .col-4 {
+#servies .container .row .col-4 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-#servies .container .row .col-4 h4, #servies #freelancer div .row .col-4 h4, #freelancer #servies div .row .col-4 h4 {
+#servies .container .row .col-4 h4 {
   letter-spacing: 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -570,7 +1015,7 @@
   color: black;
 }
 
-#servies .container .row .col-4 p, #servies #freelancer div .row .col-4 p, #freelancer #servies div .row .col-4 p {
+#servies .container .row .col-4 p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -584,7 +1029,6 @@
   height: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 100px 0px;
 }
 
 #freelancer div .divfree h2 {
@@ -593,10 +1037,6 @@
   font-weight: 600;
   text-align: center;
   line-height: 1.8;
-}
-
-#freelancer div .divhire {
-  margin-top: 24px;
 }
 
 #freelancer div .divhire button {

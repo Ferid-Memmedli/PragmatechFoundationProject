@@ -20,28 +20,21 @@
     color: white;
     @include position-top-left-index(absolute, 0px, 0px, 2);
     text-align: center;
-    @extend .flex-columun-center;
     h4 {
-      margin-bottom: $mp-3;
       @include font-size-weig-align-liheig(30px, 400, none, none);
     }
     h1 {
       text-transform: uppercase;
       @include font-size-weig-align-liheig(50px, 600, none, none);
-      margin-bottom: $mp-3;
     }
     p {
       width: $full-faiz/2;
       @include font-size-weig-align-liheig(none, none, center, 1.8);
-      margin-bottom: $mp-3;
       color: $main-p;
     }
     button {
       @include font-size-weig-align-liheig(15px, 600, none, none);
       @include position-top-left-index(absolute, 440px, none, none);
-      @extend .btn;
-      @extend .btn-border-white;
-      @extend .btn-border-radius-6x;
     }
     .dubl-down {
       @include position-top-left-index(relative, none, none, 7);
@@ -85,13 +78,11 @@
     }
   }
   .nav {
-    @extend .flex-full-center;
     @include position-top-left-index(relative, none, none, 999);
     width: $full-faiz;
     height: 70px;
     .nav-bar {
       width: $width;
-      @extend .flex-spacebetween-center;
       .nav-bar-left a img {
         width: 80px;
       }
@@ -99,7 +90,6 @@
         display: flex;
         ul {
           width: 609px;
-          @extend .flex-spacearound-center;
           li {
             display: flex;
             padding: 3px 0px 3px 3px;
