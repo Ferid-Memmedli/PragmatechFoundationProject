@@ -694,7 +694,7 @@
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 637px;
   background: url("../img/header-bg.jpg") no-repeat center;
   background-size: cover;
   border-bottom-left-radius: 400px;
@@ -704,7 +704,7 @@
 
 #header .ovarlay {
   width: 100%;
-  height: 100%;
+  height: 637px;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
   position: absolute;
@@ -716,7 +716,7 @@
 
 #header .content {
   width: 100%;
-  height: 100%;
+  height: 637px;
   color: white;
   position: absolute;
   top: 0px;
@@ -893,7 +893,7 @@
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 637px;
 }
 
 #about div {

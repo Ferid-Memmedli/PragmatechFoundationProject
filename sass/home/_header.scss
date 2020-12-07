@@ -8,7 +8,7 @@
   z-index: 0;
   .ovarlay {
     width: $full-faiz;
-    height: $full-faiz;
+    height: $main-height;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     @include position-top-left-index(absolute, 0px, 0px, 1);
@@ -16,7 +16,7 @@
   }
   .content {
     width: $full-faiz;
-    height: $full-faiz;
+    height: $main-height;
     color: $color-white;
     @include position-top-left-index(absolute, 0px, 0px, 2);
     text-align: center;
