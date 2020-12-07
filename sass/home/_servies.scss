@@ -11,6 +11,9 @@
     .container {
         .row {
             .col-4 {
+                img {
+                    height: 40px;
+                }
                 h4 {
                     letter-spacing: 1px;
                     @include font-size-weig-align-liheig(180%, none, center, none);

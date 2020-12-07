@@ -1018,6 +1018,10 @@
   line-height: 1.8;
 }
 
+#servies .container .row .col-4 img {
+  height: 40px;
+}
+
 #servies .container .row .col-4 h4 {
   letter-spacing: 1px;
   font-size: 180%;
