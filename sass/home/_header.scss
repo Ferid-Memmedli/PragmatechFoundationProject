@@ -6,14 +6,12 @@
   border-bottom-right-radius: $border-radius;
   z-index: 0;
   .ovarlay {
-    width: $full-faiz;
     height: $main-height;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     @include position-top-left-index(absolute, 0px, 0px, 1);
   }
   .content {
-    width: $full-faiz;
     height: $main-height;
     @include position-top-left-index(absolute, 0px, 0px, 2);
     text-align: center;
@@ -35,7 +33,6 @@
     .dubl-down {
       @include position-top-left-index(relative, none, none, 7);
       bottom: 5vh;
-      width: $full-faiz;
       @include font-size-weig-align-liheig(30px, none, center, none);
       animation: mymove 2s infinite;
       .down {
@@ -74,7 +71,6 @@
   }
   .nav {
     @include position-top-left-index(relative, none, none, 999);
-    width: $full-faiz;
     height: 70px;
     .nav-bar {
       width: $width;

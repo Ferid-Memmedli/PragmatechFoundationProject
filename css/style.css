@@ -478,6 +478,10 @@
   padding-left: 100px;
 }
 
+.width-full {
+  width: 100%;
+}
+
 .border-box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -740,7 +744,6 @@
 }
 
 #header .ovarlay {
-  width: 100%;
   height: 637px;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
@@ -751,7 +754,6 @@
 }
 
 #header .content {
-  width: 100%;
   height: 637px;
   position: absolute;
   top: 0px;
@@ -800,7 +802,6 @@
   left: none;
   z-index: 7;
   bottom: 5vh;
-  width: 100%;
   font-size: 30px;
   font-weight: none;
   text-align: center;
@@ -878,7 +879,6 @@
   top: none;
   left: none;
   z-index: 999;
-  width: 100%;
   height: 70px;
 }
 
@@ -937,13 +937,11 @@
 #about div #about-logo img {
   -webkit-box-shadow: 0px 0px 10px #cf5b70;
           box-shadow: 0px 0px 10px #cf5b70;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #about div #about-metn {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

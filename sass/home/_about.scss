@@ -6,12 +6,10 @@
     #about-logo {
       img {
         box-shadow: 0px 0px 10px $main-red;
-        width: $full-faiz;
         object-fit: cover;
       }
     }
     #about-metn {
-      width: $full-faiz;
       display: flex;
       flex-direction: column;
       h2 {
