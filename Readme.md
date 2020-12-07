@@ -52,6 +52,7 @@
 - Bezi duzelisler edilerek kod setri azaldildi
 
 # Day 11
-- margin padding claslarindan isdifade olundu
+- margin padding claslari yazildi
 - setting bolmesine common general spacing elave olundu
 - index.html de claslar elave olundu
+- colors claslari yazildi
