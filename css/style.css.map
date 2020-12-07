@@ -5,7 +5,7 @@
         "../sass/style.scss",
         "../sass/settings/_settings.scss",
         "../sass/settings/_veriables.scss",
-        "../sass/settings/_common.scss",
+        "../sass/settings/_mixin.scss",
         "../sass/settings/_marginpadding.scss",
         "../sass/settings/_general.scss",
         "../sass/settings/_grid.scss",
