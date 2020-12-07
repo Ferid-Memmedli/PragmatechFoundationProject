@@ -1,15 +1,10 @@
 $font-family: "Montserrat", sans-serif;
 
 // Olçülər px
-
-// $main-width: 1349px;
-// $width : 1100px;
 $width: 83%;
-$main-height: 637px;
+$main-height: 100vh;
 $border-radius: 400px;
 $full-faiz: 100%;
-
-//  margin padding deyerleri
 
 $spacing-x: 10px;
 $spacing-2x: $spacing-x * 2;
@@ -21,9 +16,3 @@ $spacing-7x: $spacing-x * 7;
 $spacing-8x: $spacing-x * 8;
 $spacing-9x: $spacing-x * 9;
 $spacing-10x: $spacing-x * 10;
-
-$mp-1: 10px;
-$mp-2: 2 * $mp-1;
-$mp-3: 3 * $mp-1;
-$mp-4: 4 * $mp-1;
-$mp-5: 5 * $mp-1;

@@ -12,12 +12,12 @@
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     @include position-top-left-index(absolute, 0px, 0px, 1);
-    background-color: rgba(0, 0, 0, 0.69);
+    background-color: $main-pp;
   }
   .content {
     width: $full-faiz;
     height: $full-faiz;
-    color: white;
+    color: $color-white;
     @include position-top-left-index(absolute, 0px, 0px, 2);
     text-align: center;
     h4 {
@@ -95,7 +95,7 @@
             padding: 3px 0px 3px 3px;
             font-size: 16px;
             a {
-              color: white;
+              color: $color-white;
               &:link {
                 text-decoration: none;
               }

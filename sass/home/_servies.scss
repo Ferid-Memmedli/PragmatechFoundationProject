@@ -1,7 +1,7 @@
 // section servies
 #servies {
     @include defaultmain($full-faiz, none);
-    background-color: rgba(230, 224, 224, 0.69);
+    background-color: $main-backcolor;
     box-sizing: border-box;
     h2 {
         letter-spacing: 1px;
@@ -20,7 +20,7 @@
                     letter-spacing: 1px;
                     box-sizing: border-box;
                     @include font-size-weig-align-liheig(180%, none, center, none);
-                    color: black;
+                    color: $color-black;
                 }
                 p {
                     box-sizing: border-box;
