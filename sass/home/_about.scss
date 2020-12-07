@@ -1,5 +1,3 @@
-// section about
-
 #about {
   @include defaultmain($full-faiz, $main-height);
   div {
@@ -26,13 +24,11 @@
       h4 {
         @include font-size-weig-align-liheig(25px, 500, none, none);
         span {
-          color: $main-red;
           font-weight: 500;
         }
       }
       p {
         font-family: $font-family;
-        color: $main-pp;
       }
       ul {
         a {

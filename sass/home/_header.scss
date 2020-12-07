@@ -1,4 +1,3 @@
-//  header home
 #header {
   @include defaultmain($full-faiz, $main-height);
   background: url("../img/header-bg.jpg") no-repeat center;
@@ -12,12 +11,10 @@
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     @include position-top-left-index(absolute, 0px, 0px, 1);
-    background-color: $main-pp;
   }
   .content {
     width: $full-faiz;
     height: $main-height;
-    color: $color-white;
     @include position-top-left-index(absolute, 0px, 0px, 2);
     text-align: center;
     h4 {
@@ -30,7 +27,6 @@
     p {
       width: $full-faiz/2;
       @include font-size-weig-align-liheig(none, none, center, 1.8);
-      color: $main-p;
     }
     button {
       @include font-size-weig-align-liheig(15px, 600, none, none);
@@ -43,7 +39,6 @@
       @include font-size-weig-align-liheig(30px, none, center, none);
       animation: mymove 2s infinite;
       .down {
-        color: $main-red;
         cursor: pointer;
       }
     }

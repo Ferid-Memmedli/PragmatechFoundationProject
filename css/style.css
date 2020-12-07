@@ -635,6 +635,38 @@
   width: 100%;
 }
 
+.color-white {
+  color: white;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-red {
+  color: #cf5b70;
+}
+
+.color-light-black {
+  color: rgba(0, 0, 0, 0.69);
+}
+
+.color-light-white {
+  color: rgba(255, 255, 255, 0.69);
+}
+
+.color-bg-white {
+  background-color: rgba(230, 224, 224, 0.69);
+}
+
+.color-bg-red {
+  background-color: #cf5b70;
+}
+
+.color-bg-black {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
 .btn {
   border: none;
   background: none;
@@ -716,13 +748,11 @@
   top: 0px;
   left: 0px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.69);
 }
 
 #header .content {
   width: 100%;
   height: 637px;
-  color: white;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -751,7 +781,6 @@
   font-weight: none;
   text-align: center;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.69);
 }
 
 #header .content button {
@@ -781,7 +810,6 @@
 }
 
 #header .content .dubl-down .down {
-  color: #cf5b70;
   cursor: pointer;
 }
 
@@ -945,13 +973,11 @@
 }
 
 #about div #about-metn h4 span {
-  color: #cf5b70;
   font-weight: 500;
 }
 
 #about div #about-metn p {
   font-family: "Montserrat", sans-serif;
-  color: rgba(0, 0, 0, 0.69);
 }
 
 #about div #about-metn ul a {
@@ -977,7 +1003,6 @@
   position: relative;
   width: 100%;
   height: none;
-  background-color: rgba(230, 224, 224, 0.69);
 }
 
 #servies h2 {
@@ -993,7 +1018,6 @@
   font-weight: none;
   text-align: center;
   line-height: 1.8;
-  color: rgba(0, 0, 0, 0.69);
 }
 
 #servies .container .row .col-4 h4 {

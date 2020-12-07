@@ -1,14 +1,12 @@
 // section servies
 #servies {
     @include defaultmain($full-faiz, none);
-    background-color: $main-backcolor;
     h2 {
         letter-spacing: 1px;
         @include font-size-weig-align-liheig(2rem, none, center, none);
     }
     p {
         @include font-size-weig-align-liheig(none, none, center, 1.8);
-        color: $main-pp;
     }
     .container {
         .row {
