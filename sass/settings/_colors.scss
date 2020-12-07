@@ -1,38 +1,31 @@
-$main-red: #cf5b70;
-$main-p: rgba(255, 255, 255, 0.69);
-$main-pp: rgba(0, 0, 0, 0.69);
-$main-backcolor: rgba(230, 224, 224, 0.69);
-$color-black: black;
-$color-white: white;
-
 .color-white {
-    color: white;
+    color: $color-white;
 }
 
 .color-black {
-    color: black;
+    color: $color-black;
 }
 
 .color-red {
-    color: #cf5b70;
+    color: $main-red;
 }
 
 .color-light-black {
-    color: rgba(0, 0, 0, 0.69);
+    color: $main-pp;
 }
 
 .color-light-white {
-    color: rgba(255, 255, 255, 0.69);
+    color: $main-p;
 }
 
 .color-bg-white {
-    background-color: rgba(230, 224, 224, 0.69);
+    background-color: $main-backcolor;
 }
 
 .color-bg-red {
-    background-color: #cf5b70;
+    background-color: $main-red;
 }
 
 .color-bg-black {
-    background-color: rgba(0, 0, 0, 0.69);
+    background-color: $main-pp;
 }
