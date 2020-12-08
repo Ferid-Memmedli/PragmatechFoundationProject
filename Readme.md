@@ -56,3 +56,6 @@
 - setting bolmesine common general spacing elave olundu
 - index.html de claslar elave olundu
 - colors claslari yazildi
+
+# Day 12
+- Marginpadding bolmesinde yazdixim uzun kodlari @each vasitesi ile sadelesdirdim
