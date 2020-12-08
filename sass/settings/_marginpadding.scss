@@ -1,482 +1,87 @@
 // --------------------General Margins--------------------------------
-.m-x {
-    margin: $spacing-x;
+$sayi: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
+
+@each $i in $sayi {
+    .m-#{$i}x {
+        margin: $i * 10px;
+    }
 }
 
-.m-2x {
-    margin: $spacing-2x;
-}
-
-.m-3x {
-    margin: $spacing-3x;
-}
-
-.m-4x {
-    margin: $spacing-4x;
-}
-
-.m-5x {
-    margin: $spacing-5x;
-}
-
-.m-6x {
-    margin: $spacing-6x;
-}
-
-.m-7x {
-    margin: $spacing-7x;
-}
-
-.m-8x {
-    margin: $spacing-8x;
-}
-.m-9x {
-    margin: $spacing-9x;
-}
-
-.m-10x {
-    margin: $spacing-10x;
-}
 // ----------------------top and bottom margin----------------------------------------
-.mv-x {
-    margin: $spacing-x 0px;
+@each $i in $sayi {
+    .mv-#{$i}x {
+        margin-top: $i * 10px;
+        margin-bottom: $i * 10px;
+    }
 }
 
-.mv-2x {
-    margin: $spacing-2x 0px;
-}
-
-.mv-3x {
-    margin: $spacing-3x 0px;
-}
-
-.mv-4x {
-    margin: $spacing-4x 0px;
-}
-
-.mv-5x {
-    margin: $spacing-5x 0px;
-}
-
-.mv-6x {
-    margin: $spacing-6x 0px;
-}
-
-.mv-7x {
-    margin: $spacing-7x 0px;
-}
-
-.mv-8x {
-    margin: $spacing-8x 0px;
-}
-.mv-9x {
-    margin: $spacing-9x 0px;
-}
-
-.mv-10x {
-    margin: $spacing-10x 0px;
-}
 //  ---------------------Margin top--------------------------------
-.mt-x {
-    margin-top: $spacing-x;
-}
-
-.mt-2x {
-    margin-top: $spacing-2x;
-}
-
-.mt-3x {
-    margin-top: $spacing-3x;
-}
-
-.mt-4x {
-    margin-top: $spacing-4x;
-}
-
-.mt-5x {
-    margin-top: $spacing-5x;
-}
-
-.mt-6x {
-    margin-top: $spacing-6x;
-}
-
-.mt-7x {
-    margin-top: $spacing-7x;
-}
-
-.mt-8x {
-    margin-top: $spacing-8x;
-}
-
-.mt-9x {
-    margin-top: $spacing-9x;
-}
-
-.mt-10x {
-    margin-top: $spacing-10x;
+@each $i in $sayi {
+    .mt-#{$i}x {
+        margin-top: $i * 10px;
+    }
 }
 
 //  ---------------------Margin bottom--------------------------------
-.mb-x {
-    margin-bottom: $spacing-x;
-}
-
-.mb-2x {
-    margin-bottom: $spacing-2x;
-}
-
-.mb-3x {
-    margin-bottom: $spacing-3x;
-}
-
-.mb-4x {
-    margin-bottom: $spacing-4x;
-}
-
-.mb-5x {
-    margin-bottom: $spacing-5x;
-}
-
-.mb-6x {
-    margin-bottom: $spacing-6x;
-}
-
-.mb-7x {
-    margin-bottom: $spacing-7x;
-}
-
-.mb-8x {
-    margin-bottom: $spacing-8x;
-}
-
-.mb-9x {
-    margin-bottom: $spacing-9x;
-}
-
-.mb-10x {
-    margin-bottom: $spacing-10x;
+@each $i in $sayi {
+    .mb-#{$i}x {
+        margin-bottom: $i * 10px;
+    }
 }
 
 //  ---------------------Margin right--------------------------------
-.mr-x {
-    margin-right: $spacing-x;
-}
-
-.mr-2x {
-    margin-right: $spacing-2x;
-}
-
-.mr-3x {
-    margin-right: $spacing-3x;
-}
-
-.mr-4x {
-    margin-right: $spacing-4x;
-}
-
-.mr-5x {
-    margin-right: $spacing-5x;
-}
-
-.mr-6x {
-    margin-right: $spacing-6x;
-}
-
-.mr-7x {
-    margin-right: $spacing-7x;
-}
-
-.mr-8x {
-    margin-right: $spacing-8x;
-}
-
-.mr-9x {
-    margin-right: $spacing-9x;
-}
-
-.mr-10x {
-    margin-right: $spacing-10x;
+@each $i in $sayi {
+    .mr-#{$i}x {
+        margin-right: $i * 10px;
+    }
 }
 
 //  ---------------------Margin left--------------------------------
-.ml-x {
-    margin-left: $spacing-x;
+@each $i in $sayi {
+    .ml-#{$i}x {
+        margin-left: $i * 10px;
+    }
 }
 
-.ml-2x {
-    margin-left: $spacing-2x;
-}
-
-.ml-3x {
-    margin-left: $spacing-3x;
-}
-
-.ml-4x {
-    margin-left: $spacing-4x;
-}
-.ml-5x {
-    margin-left: $spacing-5x;
-}
-
-.ml-6x {
-    margin-left: $spacing-6x;
-}
-
-.ml-7x {
-    margin-left: $spacing-7x;
-}
-
-.ml-8x {
-    margin-left: $spacing-8x;
-}
-
-.ml-9x {
-    margin-left: $spacing-9x;
-}
-
-.ml-10x {
-    margin-left: $spacing-10x;
-}
 //  ----------------------General Paddings------------------------------------------
-.p-x {
-    padding: $spacing-x;
-}
-
-.p-2x {
-    padding: $spacing-2x;
-}
-
-.p-3x {
-    padding: $spacing-3x;
-}
-
-.p-4x {
-    padding: $spacing-4x;
-}
-
-.p-5x {
-    padding: $spacing-5x;
-}
-
-.p-6x {
-    padding: $spacing-6x;
-}
-
-.p-7x {
-    padding: $spacing-7x;
-}
-
-.p-8x {
-    padding: $spacing-8x;
-}
-.p-9x {
-    padding: $spacing-9x;
-}
-
-.p-10x {
-    padding: $spacing-10x;
+@each $i in $sayi {
+    .p-#{$i}x {
+        padding: $i * 10px;
+    }
 }
 
 // ------------------------ padding top--------------------------------------
-.pt-x {
-    padding-top: $spacing-x;
-}
-
-.pt-2x {
-    padding-top: $spacing-2x;
-}
-
-.pt-3x {
-    padding-top: $spacing-3x;
-}
-
-.pt-4x {
-    padding-top: $spacing-4x;
-}
-
-.pt-5x {
-    padding-top: $spacing-5x;
-}
-
-.pt-6x {
-    padding-top: $spacing-6x;
-}
-
-.pt-7x {
-    padding-top: $spacing-7x;
-}
-
-.pt-8x {
-    padding-top: $spacing-8x;
-}
-
-.pt-9x {
-    padding-top: $spacing-9x;
-}
-
-.pt-10x {
-    padding-top: $spacing-10x;
+@each $i in $sayi {
+    .pt-#{$i}x {
+        padding-top: $i * 10px;
+    }
 }
 
 // ----------------------top and bottom padding----------------------------------------
-.pv-x {
-    padding: $spacing-x 0px;
-}
-
-.pv-2x {
-    padding: $spacing-2x 0px;
-}
-
-.pv-3x {
-    padding: $spacing-3x 0px;
-}
-
-.pv-4x {
-    padding: $spacing-4x 0px;
-}
-
-.pv-5x {
-    padding: $spacing-5x 0px;
-}
-
-.pv-6x {
-    padding: $spacing-6x 0px;
-}
-
-.pv-7x {
-    padding: $spacing-7x 0px;
-}
-
-.pv-8x {
-    padding: $spacing-8x 0px;
-}
-.pv-9x {
-    padding: $spacing-9x 0px;
-}
-
-.pv-10x {
-    padding: $spacing-10x 0px;
+@each $i in $sayi {
+    .pv-#{$i}x {
+        padding:($i * 10px) 0px;
+        // padding-bottom: $i * 10px;
+    }
 }
 
 //  ---------------------Padding bottom--------------------------------
-.pb-x {
-    padding-bottom: $spacing-x;
-}
-
-.pb-2x {
-    padding-bottom: $spacing-2x;
-}
-
-.pb-3x {
-    padding-bottom: $spacing-3x;
-}
-
-.pb-4x {
-    padding-bottom: $spacing-4x;
-}
-
-.pb-5x {
-    padding-bottom: $spacing-5x;
-}
-
-.pb-6x {
-    padding-bottom: $spacing-6x;
-}
-
-.pb-7x {
-    padding-bottom: $spacing-7x;
-}
-
-.pb-8x {
-    padding-bottom: $spacing-8x;
-}
-
-.pb-9x {
-    padding-bottom: $spacing-9x;
-}
-
-.pb-10x {
-    padding-bottom: $spacing-10x;
+@each $i in $sayi {
+    .pb-#{$i}x {
+        padding-bottom: $i * 10px;
+    }
 }
 
 //  ---------------------Pading right--------------------------------
-.pr-x {
-    padding-right: $spacing-x;
-}
-
-.pr-2x {
-    padding-right: $spacing-2x;
-}
-
-.pr-3x {
-    padding-right: $spacing-3x;
-}
-
-.pr-4x {
-    padding-right: $spacing-4x;
-}
-
-.pr-5x {
-    padding-right: $spacing-5x;
-}
-
-.pr-6x {
-    padding-right: $spacing-6x;
-}
-
-.pr-7x {
-    padding-right: $spacing-7x;
-}
-
-.pr-8x {
-    padding-right: $spacing-8x;
-}
-
-.pr-9x {
-    padding-right: $spacing-9x;
-}
-
-.pr-10x {
-    padding-right: $spacing-10x;
+@each $i in $sayi {
+    .pr-#{$i}x {
+        padding-right: $i * 10px;
+    }
 }
 
 //  ---------------------Padding left--------------------------------
-.pl-x {
-    padding-left: $spacing-x;
-}
-
-.pl-2x {
-    padding-left: $spacing-2x;
-}
-
-.pl-3x {
-    padding-left: $spacing-3x;
-}
-
-.pl-4x {
-    padding-left: $spacing-4x;
-}
-.pl-5x {
-    padding-left: $spacing-5x;
-}
-
-.pl-6x {
-    padding-left: $spacing-6x;
-}
-
-.pl-7x {
-    padding-left: $spacing-7x;
-}
-
-.pl-8x {
-    padding-left: $spacing-8x;
-}
-
-.pl-9x {
-    padding-left: $spacing-9x;
-}
-
-.pl-10x {
-    padding-left: $spacing-10x;
+@each $i in $sayi {
+    .pl-#{$i}x {
+        padding-left: $i * 10px;
+    }
 }

@@ -1,5 +1,5 @@
 #freelancer {
-    @include defaultmain(none, none);
+    @include defaultmain($full-faiz, none);
     div {
         .divfree {
             h2 {
