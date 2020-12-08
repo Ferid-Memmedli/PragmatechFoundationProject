@@ -5,6 +5,7 @@
     cursor: pointer;
     transition: all 0.5s ease;
     outline: none;
+    box-shadow: none;
 }
 
 .btn-border-radius-x {
@@ -31,18 +32,17 @@
 }
 
 .btn-border-white {
-    border: 2px solid $main-red;
-    color: white;
+    border: 2px solid $color-white;
+    color: $color-white;
     &:hover {
-        background: $main-red;
-        border: none;
-        color: rgb(0, 0, 0);
+        background: $color-white;
+        color: $color-black;
     }
 }
 
 .btn-border-red {
     background: $main-red;
-    color: white;
+    color: $color-white;
 }
 
 .btn-red {
@@ -50,6 +50,6 @@
     &:hover {
         padding: 10px;
         background: $main-red;
-        color: rgb(255, 255, 255);
+        color: $color-white;
     }
 }

@@ -679,6 +679,8 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-border-radius-x {
@@ -706,13 +708,12 @@
 }
 
 .btn-border-white {
-  border: 2px solid #cf5b70;
+  border: 2px solid white;
   color: white;
 }
 
 .btn-border-white:hover {
-  background: #cf5b70;
-  border: none;
+  background: white;
   color: black;
 }
 
@@ -735,7 +736,7 @@
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 637px;
+  height: 640px;
   background: url("../img/header-bg.jpg") no-repeat center;
   background-size: cover;
   border-bottom-left-radius: 400px;
@@ -744,7 +745,7 @@
 }
 
 #header .ovarlay {
-  height: 637px;
+  height: 640px;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
   position: absolute;
@@ -754,7 +755,7 @@
 }
 
 #header .content {
-  height: 637px;
+  height: 640px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -926,7 +927,7 @@
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 637px;
+  height: 640px;
 }
 
 #about div {
@@ -1018,7 +1019,7 @@
   line-height: 1.8;
 }
 
-#servies .container .row .col-4 img {
+#servies .container .row .col-4 div img {
   height: 40px;
 }
 
