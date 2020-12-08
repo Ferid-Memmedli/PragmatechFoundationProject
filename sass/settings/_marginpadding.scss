@@ -1,6 +1,4 @@
 // --------------------General Margins--------------------------------
-$sayi: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
-
 @each $i in $sayi {
     .m-#{$i}x {
         margin: $i * 10px;
@@ -10,8 +8,7 @@ $sayi: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
 // ----------------------top and bottom margin----------------------------------------
 @each $i in $sayi {
     .mv-#{$i}x {
-        margin-top: $i * 10px;
-        margin-bottom: $i * 10px;
+        margin: ($i * 10px) 0px;
     }
 }
 
