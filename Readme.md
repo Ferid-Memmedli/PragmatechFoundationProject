@@ -59,3 +59,4 @@
 
 # Day 12
 - Marginpadding bolmesinde yazdixim uzun kodlari @each vasitesi ile sadelesdirdim
+- Grid sisteminde ki uzun kodlar @each ile kisaldilaraq yazildi
