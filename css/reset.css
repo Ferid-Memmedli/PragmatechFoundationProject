@@ -106,10 +106,20 @@ section {
 	display: block;
 }
 body {
-	font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+	font-family: 'Nunito', sans-serif, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans",
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	line-height: 1;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 ol,
 ul {
 	list-style: none;

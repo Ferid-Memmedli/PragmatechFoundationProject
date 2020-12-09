@@ -82,3 +82,52 @@
         padding-left: $i * 10px;
     }
 }
+
+
+// @for $i from 1 through 13 {
+//     .m-#{$i} {
+//         margin: $spacing-1x*$i
+//     }
+//     .mt-#{$i} {
+//         margin-top: $spacing-1x*$i
+//     }
+//     .mb-#{$i} {
+//         margin-bottom: $spacing-1x*$i
+//     }
+//     .ml-#{$i} {
+//         margin-left: $spacing-1x*$i
+//     }
+//     .mr-#{$i} {
+//         margin-right: $spacing-1x*$i
+//     }
+//     .mx-#{$i} {
+//         margin: 0px $spacing-1x*$i
+//     }
+//     .my-#{$i} {
+//         margin: $spacing-1x*$i 0px;
+//     }
+// }
+//
+// @for $i from 1 through 4 {
+//     .p-#{$i} {
+//         padding: $spacing-1x*$i
+//     }
+//     .pt-#{$i} {
+//         padding-top: $spacing-1x*$i
+//     }
+//     .pb-#{$i} {
+//         padding-bottom: $spacing-1x*$i
+//     }
+//     .pl-#{$i} {
+//         padding-left: $spacing-1x*$i
+//     }
+//     .pr-#{$i} {
+//         padding-right: $spacing-1x*$i
+//     }
+//     .px-#{$i} {
+//         padding: 0px $spacing-1x*$i
+//     }
+//     .py-#{$i} {
+//         padding: $spacing-1x*$i 0px;
+//     }
+// }
