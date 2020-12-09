@@ -1158,4 +1158,67 @@
   text-align: center;
   line-height: none;
 }
+
+#client {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: none;
+}
+
+#client div h2 {
+  text-align: center;
+}
+
+#client div p {
+  text-align: center;
+}
+
+#client div .slayt {
+  height: 360px;
+  background-color: lightgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#client div .slayt .svg-dirnaq {
+  text-align: center;
+}
+
+#client div .slayt .lg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#client div .slayt p {
+  text-align: center;
+}
+
+#client div .slayt .alt {
+  text-align: center;
+}
+
+#client div .aktiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#client div .aktiv .aktiv1 {
+  color: #cf5b70;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+#client {
+    @include defaultmain($full-faiz, none);
+    div {
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .slayt {
+            height: 360px;
+            background-color: lightgreen;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            .svg-dirnaq {
+                text-align: center;
+            }
+            .lg {
+                display: flex;
+            }
+            p {
+                text-align: center;
+            }
+            .alt {
+                text-align: center;
+            }
+        }
+        .aktiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .aktiv1 {
+                color: $main-red;
+            }
+        }
+    }
+}
