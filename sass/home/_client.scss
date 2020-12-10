@@ -11,15 +11,13 @@
         }
         #baba {
             position: relative;
-            // over flow scrol ozelliyi muveqqetidir
-            overflow: scroll;
-            width: 100%;
+            overflow: hidden;
+            width: 1100px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             #ata {
                 display: flex;
-                flex-direction: row;
                 align-items: center;
                 .slayt {
                     height: 360px;
@@ -47,6 +45,9 @@
             }
         }
         .aktiv {
+            a {
+                display: flex;
+            }
             .aktiv1 {
                 background-color: $light-red;
                 cursor: pointer;
