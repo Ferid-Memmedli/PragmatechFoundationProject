@@ -42,7 +42,7 @@ div.style.top=randY+'px'
 document.body.appendChild(div)
 },100)*/
 
-
+// ------------------------------- Our client bolmesi ucun yazilmis JS kodlari
 var dots = document.querySelectorAll('.aktiv1')
 dots.forEach(i => {
     i.addEventListener('click', e => {
