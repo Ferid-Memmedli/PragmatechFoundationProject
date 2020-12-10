@@ -1,29 +1,59 @@
 #client {
     @include defaultmain($full-faiz, none);
-    div {
+    background-color: $main-backcolor;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         h2 {
             text-align: center;
+            font-size: 30px;
         }
         p {
             text-align: center;
+            width: 50%;
+            line-height: 1.5;
         }
-        .slayt {
-            height: 360px;
-            background-color: lightgreen;
+        #baba {
+            position: relative;
+            overflow: scroll;
+            width: 100%;
             display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            .svg-dirnaq {
-                text-align: center;
-            }
-            .lg {
+            align-items: center;
+            justify-content: flex-start;
+            #ata {
                 display: flex;
-            }
-            p {
-                text-align: center;
-            }
-            .alt {
-                text-align: center;
+                flex-direction: row;
+                align-items: center;
+                .slayt {
+                    height: 360px;
+                    width: 1100px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: center;
+                    .svg-dirnaq {
+                        text-align: center;
+                        img {
+                            height: 50px;
+                        }
+                    }
+                    .lg {
+                        display: flex;
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+                    p {
+                        width: 50%;
+                        text-align: center;
+                        line-height: 1.5;
+                    }
+                    .alt {
+                        text-align: center;
+                    }
+                }
             }
         }
         .aktiv {
@@ -31,7 +61,20 @@
             justify-content: center;
             align-items: center;
             .aktiv1 {
-                color: $main-red;
+                background-color: $light-red;
+                cursor: pointer;
+                width: 14px;
+                height: 7px;
+                transition: all 0.5s ease;
+                outline: none !important;
+                box-shadow: none !important;
+                &:hover {
+                    background-color: $main-red;
+                }
+                // &:active {
+                //     background-color: $main-red;
+                //     width: 21px;
+                //}
             }
         }
     }

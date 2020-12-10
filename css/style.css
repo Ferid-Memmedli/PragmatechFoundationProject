@@ -1164,19 +1164,10 @@
   position: relative;
   width: 100%;
   height: none;
+  background-color: rgba(230, 224, 224, 0.69);
 }
 
-#client div h2 {
-  text-align: center;
-}
-
-#client div p {
-  text-align: center;
-}
-
-#client div .slayt {
-  height: 360px;
-  background-color: lightgreen;
+#client .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1186,27 +1177,96 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#client div .slayt .svg-dirnaq {
+#client .container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#client .container p {
+  text-align: center;
+  width: 50%;
+  line-height: 1.5;
+}
+
+#client .container #baba {
+  position: relative;
+  overflow: scroll;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#client .container #baba #ata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#client .container #baba #ata .slayt {
+  height: 360px;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#client .container #baba #ata .slayt .svg-dirnaq {
   text-align: center;
 }
 
-#client div .slayt .lg {
+#client .container #baba #ata .slayt .svg-dirnaq img {
+  height: 50px;
+}
+
+#client .container #baba #ata .slayt .lg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#client div .slayt p {
+#client .container #baba #ata .slayt .lg img {
+  border-radius: 50%;
+}
+
+#client .container #baba #ata .slayt p {
+  width: 50%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#client .container #baba #ata .slayt .alt {
   text-align: center;
 }
 
-#client div .slayt .alt {
-  text-align: center;
-}
-
-#client div .aktiv {
+#client .container .aktiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1218,7 +1278,19 @@
           align-items: center;
 }
 
-#client div .aktiv .aktiv1 {
-  color: #cf5b70;
+#client .container .aktiv .aktiv1 {
+  background-color: #cf5b7073;
+  cursor: pointer;
+  width: 14px;
+  height: 7px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#client .container .aktiv .aktiv1:hover {
+  background-color: #cf5b70;
 }
 /*# sourceMappingURL=style.css.map */
