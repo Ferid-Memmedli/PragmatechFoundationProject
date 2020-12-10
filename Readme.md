@@ -65,3 +65,7 @@
 - Our client bolmenin strukturu  yazildi
 - Our client bolmenin scss strukturu  yazildi
 - Our client bolmesinin bezi  JS kodlari yazildi
+
+# Day 14
+- Our client bolmesinin JS isleri tamamen yazildi
+- Our client bolmesi tamamen bitdi
