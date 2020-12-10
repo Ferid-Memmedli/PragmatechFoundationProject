@@ -61,6 +61,6 @@
 - Marginpadding bolmesinde yazdixim uzun kodlari @each vasitesi ile sadelesdirdim
 - Grid sisteminde ki uzun kodlar @each ile kisaldilaraq yazildi
 
-# Day 12
+# Day 13
 - Our client bolmenin strukturu  yazildi
 - Our client bolmenin scss strukturu  yazildi

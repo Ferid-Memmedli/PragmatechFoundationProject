@@ -1193,10 +1193,8 @@
   font-size: none;
   font-weight: none;
   text-align: center;
-  line-height: none;
-  text-align: center;
-  width: 50%;
   line-height: 1.5;
+  width: 50%;
 }
 
 #client .container #baba {
@@ -1252,6 +1250,8 @@
 
 #client .container #baba #ata .slayt p {
   width: 50%;
+  font-size: none;
+  font-weight: none;
   text-align: center;
   line-height: 1.5;
 }
@@ -1274,5 +1274,10 @@
 
 #client .container .aktiv .aktiv1:hover {
   background-color: #cf5b70;
+}
+
+#client .container .aktiv .aktiv1.active {
+  background-color: #cf5b70;
+  width: 21px;
 }
 /*# sourceMappingURL=style.css.map */

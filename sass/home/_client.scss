@@ -3,10 +3,10 @@
     background-color: $main-backcolor;
     .container {
         h2 {
-            @include font-size-weig-align-liheig(30px,none,center,none);
+            @include font-size-weig-align-liheig(30px, none, center, none);
         }
         p {
-            @include font-size-weig-align-liheig(none,none,center,1,5);
+            @include font-size-weig-align-liheig(none, none, center, 1.5);
             width: 50%;
         }
         #baba {
@@ -38,7 +38,7 @@
                     }
                     p {
                         width: 50%;
-                        @include font-size-weig-align-liheig(none,none,center,1,5);
+                        @include font-size-weig-align-liheig(none, none, center, 1.5);
                     }
                     .alt {
                         text-align: center;
@@ -58,11 +58,11 @@
                 &:hover {
                     background-color: $main-red;
                 }
-                // &:active {
-                //     background-color: $main-red;
-                //     width: 21px;
-                //}
             }
+            .aktiv1.active{
+                background-color:$main-red;
+                width:21px;
+              }
         }
     }
 }
