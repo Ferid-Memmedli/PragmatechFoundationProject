@@ -43,25 +43,6 @@ document.body.appendChild(div)
 },100)*/
 
 
-// clk1.addEventListener('click', function(){
-//     clk1.style.width = "21px";
-//     clk1.style.background ='#cf5b70';
-// });
-
-
-
-// clk2.addEventListener('click', function(){
-//     clk2.style.width = "21px";
-//     clk2.style.background ='#cf5b70';
-// });
-
-
-
-// clk3.addEventListener('click', function(){
-//     clk3.style.width = "21px";
-//     clk3.style.background ='#cf5b70';
-// });
-
 var dots = document.querySelectorAll('.aktiv1')
 dots.forEach(i=>{
   i.addEventListener('click',e=>{
