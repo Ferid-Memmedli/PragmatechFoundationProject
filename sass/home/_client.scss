@@ -17,6 +17,9 @@
             align-items: center;
             justify-content: flex-start;
             #ata {
+                position: relative;
+                left: 0px;
+                transition: all 0.5s ease;
                 display: flex;
                 align-items: center;
                 .slayt {
@@ -45,9 +48,6 @@
             }
         }
         .aktiv {
-            a {
-                display: flex;
-            }
             .aktiv1 {
                 background-color: $light-red;
                 cursor: pointer;
