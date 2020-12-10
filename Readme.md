@@ -64,3 +64,4 @@
 # Day 13
 - Our client bolmenin strukturu  yazildi
 - Our client bolmenin scss strukturu  yazildi
+- Our client bolmesinin bezi  JS kodlari yazildi
