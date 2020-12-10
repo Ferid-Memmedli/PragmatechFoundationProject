@@ -1215,8 +1215,8 @@
 #client .container #baba #ata {
   position: relative;
   left: 0px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1265,8 +1265,8 @@
   cursor: pointer;
   width: 14px;
   height: 7px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
