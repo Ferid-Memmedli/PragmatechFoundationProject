@@ -1,0 +1,59 @@
+#portfolio {
+    @include defaultmain($full-faiz, none);
+    .port {
+        margin: 0 auto;
+        width: $width;
+        text-align: center;
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            padding: 10px 250px;
+            color: $main-pp;
+        }
+        button {
+            padding: 10px 20px !important;
+            margin: 10px;
+        }
+    }
+    .anbar {
+        width: 83%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(6, 250px);
+        grid-template-columns: 1fr;
+        gap: 20px;
+        grid-template-areas:
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+    }
+    @media screen and (min-width: 750px) {
+        .anbar {
+            width: 83%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: repeat(2, 250px);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            grid-template-areas: "b c d" "e f g";
+        }
+        .qutu {
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+}

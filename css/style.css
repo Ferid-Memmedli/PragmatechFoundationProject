@@ -840,7 +840,6 @@
 }
 
 .btn-red:hover {
-  padding: 10px;
   background: #cf5b70;
   color: white;
 }
@@ -1279,5 +1278,75 @@
 #client .container .aktiv .aktiv1.active {
   background-color: #cf5b70;
   width: 21px;
+}
+
+#portfolio {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: none;
+}
+
+#portfolio .port {
+  margin: 0 auto;
+  width: 83%;
+  text-align: center;
+}
+
+#portfolio .port h2 {
+  font-size: 30px;
+}
+
+#portfolio .port p {
+  padding: 10px 250px;
+  color: rgba(0, 0, 0, 0.69);
+}
+
+#portfolio .port button {
+  padding: 10px 20px !important;
+  margin: 10px;
+}
+
+#portfolio .anbar {
+  width: 83%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (250px)[6];
+      grid-template-rows: repeat(6, 250px);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 20px;
+      grid-template-areas: "b" "c" "d" "e" "f" "g";
+}
+
+#portfolio .anbar img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  #portfolio .anbar {
+    width: 83%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (250px)[2];
+        grid-template-rows: repeat(2, 250px);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+        grid-template-areas: "b c d" "e f g";
+  }
+  #portfolio .qutu img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
