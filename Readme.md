@@ -69,3 +69,7 @@
 # Day 14
 - Our client bolmesinin JS isleri tamamen yazildi
 - Our client bolmesi tamamen bitdi
+
+# Day 15
+- Our work bolmesi elave olundu
+- Strukturu quruldu ve scss kodlari yazildi
