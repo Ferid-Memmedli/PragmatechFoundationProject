@@ -54,16 +54,16 @@ dots.forEach(i => {
 var akt1 = document.querySelector('#active1');
 var akt2 = document.querySelector('#active2');
 var akt3 = document.querySelector('#active3');
-var ata = document.querySelector('#ata')
+var ata = document.querySelector('#ata');
 
-akt1.addEventListener('click',function(){
-    ata.style.left = '0px'
+akt1.addEventListener('click', function () {
+    ata.style.left = '0px';
 });
 
 akt2.addEventListener('click', function () {
-    ata.style.left = '-1100px'
+    ata.style.left = '-1100px';
 });
 
-akt3.addEventListener('click',function(){
-    ata.style.left = '-2200px'
+akt3.addEventListener('click', function () {
+    ata.style.left = '-2200px';
 });
