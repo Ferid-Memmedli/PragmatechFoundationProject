@@ -1049,10 +1049,15 @@
 }
 
 #about div #about-logo img {
-  -webkit-box-shadow: 0px 0px 10px #cf5b70;
-          box-shadow: 0px 0px 10px #cf5b70;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px #cf5b70;
+          box-shadow: 0px 0px 10px #cf5b70;
+  object-fit: cover;
+  position: relative;
 }
 
 #about div #about-metn {
@@ -1298,7 +1303,6 @@
 }
 
 #portfolio .port p {
-  padding: 10px 250px;
   color: rgba(0, 0, 0, 0.69);
 }
 
@@ -1342,11 +1346,69 @@
         grid-template-areas: "b c d" "e f g";
   }
   #portfolio .qutu img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 5px;
   }
+}
+
+#blog {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: none;
+  background-color: rgba(230, 224, 224, 0.69);
+}
+
+#blog .an {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 83%;
+  text-align: center;
+}
+
+#blog .an .qutu1 h2 {
+  font-size: 30px;
+}
+
+#blog .an .qutu1 p {
+  color: rgba(0, 0, 0, 0.69);
+}
+
+#blog .an .qutu2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+#blog .an .qutu2 .oxu {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#blog .an .qutu2 .oxu img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

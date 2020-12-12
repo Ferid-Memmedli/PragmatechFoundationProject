@@ -8,7 +8,6 @@
             font-size: 30px;
         }
         p {
-            padding: 10px 250px;
             color: $main-pp;
         }
         button {
@@ -49,7 +48,7 @@
         }
         .qutu {
             img {
-                max-width: 100%;
+                width: 100%;
                 height: auto;
                 object-fit: cover;
                 border-radius: 5px;
