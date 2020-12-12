@@ -73,3 +73,8 @@
 # Day 15
 - Our work bolmesi elave olundu
 - Strukturu quruldu ve scss kodlari yazildi
+
+# Day 16
+- Our blog bolmesi elave olundu
+- Strukturu quruldu
+= Scss kodlari yazildi
