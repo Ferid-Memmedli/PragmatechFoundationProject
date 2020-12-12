@@ -19,7 +19,7 @@
             #ata {
                 position: relative;
                 left: 0px;
-                transition: all .8s ease;
+                transition: all 0.8s ease;
                 display: flex;
                 align-items: center;
                 .slayt {
@@ -53,17 +53,17 @@
                 cursor: pointer;
                 width: 14px;
                 height: 7px;
-                transition: all .8s ease;
+                transition: all 0.8s ease;
                 outline: none !important;
                 box-shadow: none !important;
                 &:hover {
                     background-color: $main-red;
                 }
             }
-            .aktiv1.active{
-                background-color:$main-red;
-                width:21px;
-              }
+            .aktiv1.active {
+                background-color: $main-red;
+                width: 21px;
+            }
         }
     }
 }

@@ -1214,8 +1214,8 @@
 #client .container #baba #ata {
   position: relative;
   left: 0px;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1264,8 +1264,8 @@
   cursor: pointer;
   width: 14px;
   height: 7px;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -1312,8 +1312,8 @@
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (250px)[6];
-      grid-template-rows: repeat(6, 250px);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 20px;
@@ -1334,11 +1334,11 @@
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (250px)[2];
-        grid-template-rows: repeat(2, 250px);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
         grid-template-areas: "b c d" "e f g";
   }
   #portfolio .qutu img {
