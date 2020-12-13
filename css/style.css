@@ -1023,11 +1023,17 @@
 }
 
 .nav .nav-bar .nav-bar-right ul li a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   color: white;
 }
 
 .nav .nav-bar .nav-bar-right ul li a:link {
   text-decoration: none;
+}
+
+.nav .nav-bar .nav-bar-right ul li a:hover {
+  color: #e65f78;
 }
 
 #myBtn {

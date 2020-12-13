@@ -1,55 +1,53 @@
 // -----------------------------------------Header nav----------------------------------------
 let nav = document.querySelector(".nav");
 let a = document.querySelectorAll(".blank");
-var mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("myBtn");
 
 window.onscroll = function () {
-    scrollFunction()
+    scrollFunction();
 };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.background = "white";
-        nav.style.boxShadow = "0 2px 8px 3px rgba(0, 0, 0, 0.050980392156862744)";
+        nav.style.boxShadow = "0 2px 8px 3px rgba(0, 0, 0, 0.05)";
         mybutton.style.transition = 'all 0.5s ease';
         mybutton.style.display = "block";
+        // a.forEach(i => {
+        //     i.addEventListener('mouseover', function () {
+        //         i.style.transition = "all 0.5s";
+        //         i.style.color = "#e65f78";
+        //     });
+        //     i.addEventListener('mouseout', function () {
+        //         i.style.transition = "all 0.5s";
+        //         i.style.color = "black";
+        //     });
+        // });
         a.forEach(i => {
-            i.addEventListener('mouseover', function () {
-                i.style.transition = "all 0.5s";
-                i.style.color = "#e65f78";
-
-            });
-            i.addEventListener('mouseout', function () {
-                i.style.transition = "all 0.5s";
-                i.style.color = "black";
-
-            });
+            i.style.color = "black";
         });
-        for (i in a) {
-            a[i].style.color = "black";
-        }
     } else {
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.background = "none";
         nav.style.boxShadow = "none";
         mybutton.style.transition = 'all 0.5s ease';
         mybutton.style.display = "none";
+        // a.forEach(i => {
+        //     i.addEventListener('mouseover', function () {
+        //         i.style.transition = "all 0.5s";
+        //         i.style.color = "#e65f78";
+        //     });
+        //     i.addEventListener('mouseout', function () {
+        //         i.style.transition = "all 0.5s";
+        //         i.style.color = "white";
+        //     });
+        // });
         a.forEach(i => {
-            i.addEventListener('mouseover', function () {
-                i.style.transition = "all 0.5s";
-                i.style.color = "#e65f78";
-            });
-            i.addEventListener('mouseout', function () {
-                i.style.transition = "all 0.5s";
-                i.style.color = "white";
-            });
+            i.style.color = "white";
         });
-        for (i in a) {
-            a[i].style.color = "white"
-        }
-    }
-}
+    };
+};
 
 // ------------------------------- Our client bolmesi ucun yazilmis JS kodlari
 let dots = document.querySelectorAll('.aktiv1')
@@ -82,4 +80,4 @@ akt3.addEventListener('click', function () {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}
+};
