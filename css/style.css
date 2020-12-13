@@ -1033,7 +1033,7 @@
 }
 
 .nav .nav-bar .nav-bar-right ul li a:hover {
-  color: #e65f78;
+  color: #e65f78 !important;
 }
 
 #myBtn {
@@ -1050,6 +1050,30 @@
   cursor: pointer;
   padding: 5px 15px;
   border-radius: 5px;
+  -webkit-animation: backToTop 0.5s ease-in-out !important;
+          animation: backToTop 0.5s ease-in-out !important;
+}
+
+@-webkit-keyframes backToTop {
+  0% {
+    opacity: 0;
+    bottom: 100vh;
+  }
+  100% {
+    opacity: 1;
+    bottom: 20px;
+  }
+}
+
+@keyframes backToTop {
+  0% {
+    opacity: 0;
+    bottom: 100vh;
+  }
+  100% {
+    opacity: 1;
+    bottom: 20px;
+  }
 }
 
 #about {
