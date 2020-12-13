@@ -1050,29 +1050,25 @@
   cursor: pointer;
   padding: 5px 15px;
   border-radius: 5px;
-  -webkit-animation: backToTop 0.5s ease-in-out !important;
-          animation: backToTop 0.5s ease-in-out !important;
+  -webkit-animation: backToTop 0.5s ease !important;
+          animation: backToTop 0.5s ease !important;
 }
 
 @-webkit-keyframes backToTop {
   0% {
     opacity: 0;
-    bottom: 100vh;
   }
   100% {
     opacity: 1;
-    bottom: 20px;
   }
 }
 
 @keyframes backToTop {
   0% {
     opacity: 0;
-    bottom: 100vh;
   }
   100% {
     opacity: 1;
-    bottom: 20px;
   }
 }
 
