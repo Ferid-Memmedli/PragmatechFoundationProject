@@ -78,3 +78,6 @@
 - Our blog bolmesi elave olundu
 - Strukturu quruldu
 = Scss kodlari yazildi
+
+# Day 17
+- nav bolmesinde JS kodlari yazildi
