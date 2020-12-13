@@ -183,7 +183,7 @@
 }
 
 .color-red {
-  color: #cf5b70;
+  color: #e65f78;
 }
 
 .color-light-black {
@@ -199,7 +199,7 @@
 }
 
 .color-bg-red {
-  background-color: #cf5b70;
+  background-color: #e65f78;
 }
 
 .color-bg-black {
@@ -831,7 +831,7 @@
 }
 
 .btn-border-red {
-  background: #cf5b70;
+  background: #e65f78;
   color: white;
 }
 
@@ -840,7 +840,7 @@
 }
 
 .btn-red:hover {
-  background: #cf5b70;
+  background: #e65f78;
   color: white;
 }
 
@@ -988,33 +988,33 @@
   }
 }
 
-#header .nav {
-  position: relative;
+.nav {
+  position: fixed;
   top: none;
   left: none;
   z-index: 999;
-  height: 70px;
+  padding: 20px 0px;
 }
 
-#header .nav .nav-bar {
+.nav .nav-bar {
   width: 83%;
 }
 
-#header .nav .nav-bar .nav-bar-left a img {
+.nav .nav-bar .nav-bar-left a img {
   width: 80px;
 }
 
-#header .nav .nav-bar .nav-bar-right {
+.nav .nav-bar .nav-bar-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#header .nav .nav-bar .nav-bar-right ul {
+.nav .nav-bar .nav-bar-right ul {
   width: 609px;
 }
 
-#header .nav .nav-bar .nav-bar-right ul li {
+.nav .nav-bar .nav-bar-right ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,18 +1022,12 @@
   font-size: 16px;
 }
 
-#header .nav .nav-bar .nav-bar-right ul li a {
+.nav .nav-bar .nav-bar-right ul li a {
   color: white;
 }
 
-#header .nav .nav-bar .nav-bar-right ul li a:link {
+.nav .nav-bar .nav-bar-right ul li a:link {
   text-decoration: none;
-}
-
-#header .nav .nav-bar .nav-bar-right ul li a:hover {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: #cf5b70;
 }
 
 #about {
@@ -1054,8 +1048,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px #cf5b70;
-          box-shadow: 0px 0px 10px #cf5b70;
+  -webkit-box-shadow: 0px 0px 10px #e65f78;
+          box-shadow: 0px 0px 10px #e65f78;
   object-fit: cover;
   position: relative;
 }
@@ -1111,8 +1105,8 @@
 }
 
 #about div #about-metn ul a:hover {
-  color: #cf5b70;
-  border: 2px solid #cf5b70;
+  color: #e65f78;
+  border: 2px solid #e65f78;
 }
 
 #servies {
@@ -1277,11 +1271,11 @@
 }
 
 #client .container .aktiv .aktiv1:hover {
-  background-color: #cf5b70;
+  background-color: #e65f78;
 }
 
 #client .container .aktiv .aktiv1.active {
-  background-color: #cf5b70;
+  background-color: #e65f78;
   width: 21px;
 }
 

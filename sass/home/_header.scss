@@ -70,31 +70,29 @@
       }
     }
   }
-  .nav {
-    @include position-top-left-index(relative, none, none, 999);
-    height: 70px;
-    .nav-bar {
-      width: $width;
-      .nav-bar-left a img {
-        width: 80px;
-      }
-      .nav-bar-right {
-        display: flex;
-        ul {
-          width: 609px;
-          li {
-            display: flex;
-            padding: 3px 0px 3px 3px;
-            font-size: 16px;
-            a {
-              color: $color-white;
-              &:link {
-                text-decoration: none;
-              }
-              &:hover {
-                transition: all 0.3s ease;
-                color: $main-red;
-              }
+  
+}
+
+.nav {
+  @include position-top-left-index(fixed, none, none, 999);
+  padding: 20px 0px;
+  .nav-bar {
+    width: $width;
+    .nav-bar-left a img {
+      width: 80px;
+    }
+    .nav-bar-right {
+      display: flex;
+      ul {
+        width: 609px;
+        li {
+          display: flex;
+          padding: 3px 0px 3px 3px;
+          font-size: 16px;
+          a {
+            color: $color-white;
+            &:link {
+              text-decoration: none;
             }
           }
         }
@@ -102,3 +100,7 @@
     }
   }
 }
+// .blank:hover {
+//   transition: all 0.5s;
+//   color: $main-red;
+// }
