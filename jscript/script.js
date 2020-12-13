@@ -1,7 +1,7 @@
 // -----------------------------------------Header nav----------------------------------------
 let nav = document.querySelector(".nav");
 let a = document.querySelectorAll(".blank");
-
+var mybutton = document.getElementById("myBtn");
 
 window.onscroll = function () {
     scrollFunction()
@@ -12,12 +12,18 @@ function scrollFunction() {
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.background = "white";
         nav.style.boxShadow = "0 2px 8px 3px rgba(0, 0, 0, 0.050980392156862744)";
+        mybutton.style.transition = 'all 0.5s ease';
+        mybutton.style.display = "block";
         a.forEach(i => {
-            i.addEventListener('mouseover', function() {
+            i.addEventListener('mouseover', function () {
+                i.style.transition = "all 0.5s";
                 i.style.color = "#e65f78";
+
             });
-            i.addEventListener('mouseout', function() {
+            i.addEventListener('mouseout', function () {
+                i.style.transition = "all 0.5s";
                 i.style.color = "black";
+
             });
         });
         for (i in a) {
@@ -27,14 +33,18 @@ function scrollFunction() {
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.background = "none";
         nav.style.boxShadow = "none";
+        mybutton.style.transition = 'all 0.5s ease';
+        mybutton.style.display = "none";
         a.forEach(i => {
-            i.addEventListener('mouseover', function() {
+            i.addEventListener('mouseover', function () {
+                i.style.transition = "all 0.5s";
                 i.style.color = "#e65f78";
             });
-            i.addEventListener('mouseout', function() {
+            i.addEventListener('mouseout', function () {
+                i.style.transition = "all 0.5s";
                 i.style.color = "white";
             });
-        }); 
+        });
         for (i in a) {
             a[i].style.color = "white"
         }
@@ -66,3 +76,10 @@ akt2.addEventListener('click', function () {
 akt3.addEventListener('click', function () {
     ata.style.left = '-2200px';
 });
+
+// -------------------------------button top---------------------------------
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

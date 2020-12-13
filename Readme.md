@@ -81,3 +81,4 @@
 
 # Day 17
 - nav bolmesinde JS kodlari yazildi
+- scroll button elave olundu ve JS kodalri yazildi
