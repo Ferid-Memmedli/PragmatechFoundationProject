@@ -44,7 +44,8 @@
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
-            grid-template-areas: "b c d" "e f g";
+            grid-template-areas: "b c d"
+                                 "e f g";
         }
         .qutu {
             img {

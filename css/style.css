@@ -1359,7 +1359,7 @@
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-        grid-template-areas: "b c d" "e f g";
+        grid-template-areas: "b c d" "e f g";
   }
   #portfolio .qutu img {
     width: 100%;
