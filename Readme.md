@@ -3,20 +3,20 @@
  - Məqsədim bu saytı yıxmaqdır : http://theme.srbthemes.com/kerri/light/index_6.html#
 
 # Lahiyənin xəritə hissəsi 4 bölmədən ibarətdir:
- - Ana səhifə
- - Haqqımızda
- - Xidmətlərimiz
- - Müştərilərimiz
- - Blog
- - Əlagə
+- Ana səhifə
+- Haqqımızda
+- Xidmətlərimiz
+- Müştərilərimiz
+- Blog
+- Əlagə
 
 # Day 01
- - Lahiyənin folder strukturunun yığılması
- - Ana səhifə hissəsinin html strukturunun yigilması
+- Lahiyənin folder strukturunun yığılması
+- Ana səhifə hissəsinin html strukturunun yigilması
 
 # Day 02
- - Ana səhifənin header və about bölməsinin tamamlanması
- - HTML və CSS strukturun tamamlanması
+- Ana səhifənin header və about bölməsinin tamamlanması
+- HTML və CSS strukturun tamamlanması
 
 # Day 03
 - Lahiye Sass struktoruna keçildi
@@ -82,3 +82,7 @@
 # Day 17
 - nav bolmesinde JS kodlari yazildi
 - scroll button elave olundu ve JS kodalri yazildi
+
+# Day 18
+- Css ozellikleri fix edildi
+- Our work hissesindeki sekillere hover ozelliyi verildi
