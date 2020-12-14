@@ -1050,8 +1050,11 @@
   cursor: pointer;
   padding: 5px 15px;
   border-radius: 5px;
-  -webkit-animation: backToTop 0.5s ease !important;
-          animation: backToTop 0.5s ease !important;
+}
+
+.fm {
+  -webkit-animation: backToTop 0.5s ease-in-out !important;
+          animation: backToTop 0.5s ease-in-out !important;
 }
 
 @-webkit-keyframes backToTop {
@@ -1446,5 +1449,9 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */

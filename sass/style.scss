@@ -1,3 +1,7 @@
 @import "settings/settings";
 @import "components/components";
 @import "home/home";
+
+html {
+    scroll-behavior: smooth;
+}

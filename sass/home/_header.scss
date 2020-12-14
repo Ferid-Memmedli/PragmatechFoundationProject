@@ -118,7 +118,10 @@
   cursor: pointer;
   padding: 5px 15px;
   border-radius: 5px;
-  animation: backToTop 0.5s ease !important;
+}
+
+.fm {
+  animation: backToTop 0.5s ease-in-out !important;
   @keyframes backToTop {
     0% {
       opacity: 0;

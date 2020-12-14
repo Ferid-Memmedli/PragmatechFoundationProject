@@ -28,6 +28,11 @@ function scrollFunction() {
         });
     };
 };
+// -------------------------------button top---------------------------------
+mybutton.onclick = function() {
+    var a = document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
 
 // ------------------------------- Our client bolmesi ucun yazilmis JS kodlari
 let dots = document.querySelectorAll('.aktiv1')
@@ -51,9 +56,4 @@ akt2.onclick = function() {
 };
 akt3.onclick = function() {
     ata.style.left = '-2200px';
-};
-// -------------------------------button top---------------------------------
-mybutton.onclick = function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 };
