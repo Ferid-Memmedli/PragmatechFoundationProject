@@ -19,9 +19,21 @@
                     @include font-size-weig-align-liheig(180%, none, center, none);
                     color: $color-black;
                 }
+                .services {
+                    height: 2px;
+                    width: 40px;
+                    margin: 15px auto;
+                    transition: all 0.5s ease;
+                    background-color: $main-red;
+                }
                 p {
                     text-align: center;
                     color: $main-pp;
+                }
+                &:hover {
+                    .services {
+                        width: 60px;
+                    }
                 }
             }
         }

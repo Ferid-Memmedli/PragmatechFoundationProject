@@ -938,7 +938,7 @@
   10% {
     top: 150px;
   }
-  30% {
+  28% {
     top: 130px;
   }
   40% {
@@ -968,7 +968,7 @@
   10% {
     top: 150px;
   }
-  30% {
+  28% {
     top: 130px;
   }
   40% {
@@ -1189,9 +1189,22 @@
   color: black;
 }
 
+#servies .container .row .col-4 .services {
+  height: 2px;
+  width: 40px;
+  margin: 15px auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #e65f78;
+}
+
 #servies .container .row .col-4 p {
   text-align: center;
   color: rgba(0, 0, 0, 0.69);
+}
+
+#servies .container .row .col-4:hover .services {
+  width: 60px;
 }
 
 #freelancer {
@@ -1355,42 +1368,36 @@
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 20px;
-      grid-template-areas: "b" "c" "d" "e" "f" "g";
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+      grid-template-areas: "b c d" "e f g";
 }
 
-#portfolio .anbar img {
-  max-width: 100%;
+#portfolio .qutu {
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#portfolio .qutu img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 750px) {
-  #portfolio .anbar {
-    width: 83%;
-    margin: 0 auto;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-        grid-template-areas: "b c d" "e f g";
-  }
-  #portfolio .qutu img {
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 5px;
-  }
+#portfolio .qutu:hover img {
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #blog {

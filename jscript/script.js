@@ -57,3 +57,5 @@ akt2.onclick = function() {
 akt3.onclick = function() {
     ata.style.left = '-2200px';
 };
+ // ----------------------------------------------------------
+ 
