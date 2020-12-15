@@ -6,7 +6,9 @@
         @include font-size-weig-align-liheig(2rem, none, center, none);
     }
     p {
-        @include font-size-weig-align-liheig(none, none, center, 1.8);
+        max-width: 500px;
+        margin: 10px auto;
+        @include font-size-weig-align-liheig(1rem, 400, center, 1.8);
     }
     .container {
         .row {
