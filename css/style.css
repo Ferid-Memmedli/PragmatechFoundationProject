@@ -1705,6 +1705,7 @@ h2 {
   color: #495057;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+  resize: vertical;
 }
 
 input {
