@@ -3,6 +3,7 @@ let nav = document.querySelector(".nav");
 let mybutton = document.getElementById("myBtn");
 let blanks = document.querySelectorAll(".blank");
 let logo = document.getElementById("darklogo");
+let sections = document.querySelectorAll("section");
 window.onscroll = function () {
     scrollFunction();
 };
@@ -16,6 +17,13 @@ function scrollFunction() {
         mybutton.style.display = "block";
         blanks.forEach(i => {
             i.style.color = "black";
+//------------------------------problem------------------------------
+            for (let a = 0; a < sections.length; a++) {
+                if (scrollY > sections[a].offsettop) {
+                    i.classList.add("isik");
+                }
+            }
+//-------------------------------------------------------------
         });
     } else {
         logo.setAttribute("src", "img/logo.png");
@@ -61,7 +69,7 @@ akt3.onclick = function () {
 
 //---------------------------------------
 // let sections = document.querySelectorAll("section");
-// let blanks = document.querySelectorAll("blank");
+// let blanks = document.querySelectorAll(".blank");
 // for (let i = 0; i < sections.length; i++) {
 //     for (let b = 0; b < blanks.length; b++) {
 //         if (scrollY > sections[i].offsettop) {
