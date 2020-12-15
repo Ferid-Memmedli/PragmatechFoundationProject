@@ -1,7 +1,7 @@
 // -----------------------------------------Header nav----------------------------------------
 let nav = document.querySelector(".nav");
 let mybutton = document.getElementById("myBtn");
-let a = document.querySelectorAll(".blank");
+let blanks = document.querySelectorAll(".blank");
 let logo = document.getElementById("darklogo");
 window.onscroll = function () {
     scrollFunction();
@@ -14,7 +14,7 @@ function scrollFunction() {
         nav.style.background = "white";
         nav.style.boxShadow = "0 2px 8px 3px rgba(0, 0, 0, 0.05)";
         mybutton.style.display = "block";
-        a.forEach(i => {
+        blanks.forEach(i => {
             i.style.color = "black";
         });
     } else {
@@ -23,7 +23,7 @@ function scrollFunction() {
         nav.style.background = "none";
         nav.style.boxShadow = "none";
         mybutton.style.display = "none";
-        a.forEach(i => {
+        blanks.forEach(i => {
             i.style.color = "white";
         });
     };
