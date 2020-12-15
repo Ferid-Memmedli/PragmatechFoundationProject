@@ -1488,6 +1488,7 @@
 }
 
 #blog .an .qutu2 .oxu {
+  text-align: left;
   background-color: white;
   padding: 5px;
   border-radius: 5px;
@@ -1499,6 +1500,51 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+}
+
+#blog .an .qutu2 .oxu h2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+#blog .an .qutu2 .oxu .izahat {
+  line-height: 1.5;
+}
+
+#blog .an .qutu2 .oxu .izahat span {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#blog .an .qutu2 .oxu .izahat .tarix {
+  display: inline-block;
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#blog .an .qutu2 .oxu .izahat .meqale {
+  color: #6c757d;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+#blog .an .qutu2 .oxu .izahat .ardi {
+  color: #6c757d;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 html {

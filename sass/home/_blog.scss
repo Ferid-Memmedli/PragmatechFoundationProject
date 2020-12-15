@@ -23,6 +23,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             .oxu {
+                text-align: left;
                 background-color: white;
                 padding: 5px;
                 border-radius: 5px;
@@ -31,6 +32,41 @@
                     height: auto;
                     object-fit: cover;
                     border-radius: 5px;
+                }
+                h2 {
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    line-height: 1.2;
+                }
+                .izahat {
+                    line-height: 1.5;
+                    span {
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                    .tarix {
+                        display: inline-block;
+                        color: #6c757d;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                    }
+                    .meqale {
+                        color: #6c757d;
+                        display: block;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                    }
+                    .ardi {
+                        color: #6c757d;
+                        font-weight: 700;
+                        cursor: pointer;
+                        
+                    }
                 }
             }
         }

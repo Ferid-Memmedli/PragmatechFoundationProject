@@ -86,3 +86,7 @@
 # Day 18
 - Css ozellikleri fix edildi
 - Our work hissesindeki sekillere hover ozelliyi verildi
+
+# Day 19
+- Our blog hissesi tamamlandi
+- Our work hissesi tamamlandi
