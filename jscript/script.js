@@ -18,11 +18,11 @@ function scrollFunction() {
         blanks.forEach(i => {
             i.style.color = "black";
 //------------------------------problem------------------------------
-            for (let a = 0; a < sections.length; a++) {
-                if (scrollY > sections[a].offsettop) {
-                    i.classList.add("isik");
-                }
-            }
+            // for (let a = 0; a < sections.length; a++) {
+            //     if (scrollY > sections[a].offsettop) {
+            //         i.classList.add("isik");
+            //     }
+            // }
 //-------------------------------------------------------------
         });
     } else {
@@ -67,7 +67,7 @@ akt3.onclick = function () {
     ata.style.left = '-2200px';
 };
 
-//---------------------------------------
+//----------------------Problem-----------------
 // let sections = document.querySelectorAll("section");
 // let blanks = document.querySelectorAll(".blank");
 // for (let i = 0; i < sections.length; i++) {
