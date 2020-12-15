@@ -1075,6 +1075,10 @@
   }
 }
 
+.isik {
+  color: #e65f78;
+}
+
 #about {
   margin: 0 auto;
   position: relative;
@@ -1321,8 +1325,8 @@
   cursor: pointer;
   width: 14px;
   height: 7px;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -1377,6 +1381,7 @@
 }
 
 #portfolio .qutu {
+  position: relative;
   cursor: pointer;
   border-radius: 5px;
   overflow: hidden;
@@ -1386,7 +1391,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: all 0.3s ease;
@@ -1398,6 +1403,44 @@
           filter: brightness(0.2);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.overtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.qutu:hover .overtitle {
+  height: 100%;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 15px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #blog {

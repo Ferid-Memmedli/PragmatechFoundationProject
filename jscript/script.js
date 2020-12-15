@@ -1,7 +1,7 @@
 // -----------------------------------------Header nav----------------------------------------
 let nav = document.querySelector(".nav");
-let a = document.querySelectorAll(".blank");
 let mybutton = document.getElementById("myBtn");
+let a = document.querySelectorAll(".blank");
 let logo = document.getElementById("darklogo");
 window.onscroll = function () {
     scrollFunction();
@@ -9,7 +9,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        logo.setAttribute("src","img/logo-dark.png");
+        logo.setAttribute("src", "img/logo-dark.png");
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.background = "white";
         nav.style.boxShadow = "0 2px 8px 3px rgba(0, 0, 0, 0.05)";
@@ -18,7 +18,7 @@ function scrollFunction() {
             i.style.color = "black";
         });
     } else {
-        logo.setAttribute("src","img/logo.png");
+        logo.setAttribute("src", "img/logo.png");
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.background = "none";
         nav.style.boxShadow = "none";
@@ -29,13 +29,13 @@ function scrollFunction() {
     };
 };
 // -------------------------------button top---------------------------------
-mybutton.onclick = function() {
+mybutton.onclick = function () {
     var a = document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 };
 
 // ------------------------------- Our client bolmesi ucun yazilmis JS kodlari
-let dots = document.querySelectorAll('.aktiv1')
+let dots = document.querySelectorAll('.aktiv1');
 dots.forEach(i => {
     i.addEventListener('click', e => {
         dots.forEach(i => i.classList.remove('active'))
@@ -43,19 +43,52 @@ dots.forEach(i => {
     })
 })
 
+
 let akt1 = document.querySelector('#active1');
 let akt2 = document.querySelector('#active2');
 let akt3 = document.querySelector('#active3');
 let ata = document.querySelector('#ata');
 
-akt1.onclick = function() {
+akt1.onclick = function () {
     ata.style.left = '0px';
 };
-akt2.onclick = function() {
+akt2.onclick = function () {
     ata.style.left = '-1100px';
 };
-akt3.onclick = function() {
+akt3.onclick = function () {
     ata.style.left = '-2200px';
 };
- // ----------------------------------------------------------
- 
+// ----------------------------------------------------------
+// let sections = document.querySelectorAll("section");
+// let blanks = document.querySelectorAll("blank");
+
+// window.onscroll = function () {
+//     sections.forEach(t => {
+//         var top = t.scrollTop;
+//         if (top == 0 + 'px') {
+//             // blanks[1].setAttribute('class','isik');
+//             blanks[1].classList.add('isik');
+//         }else {
+//             // blanks[1].setAttribute('class','');
+//             blanks[1].classList.remove('isik');
+//         }
+//     });
+
+
+// };
+
+
+// window.onscroll = function () {
+//     sections.forEach(i => {
+//         let sc = i.getBoundingClientRect().y;
+
+//         blanks.forEach(b => {
+//             if (sc == 0 + 'px') {
+//                 b.classList.add("isik");
+//             }else {
+//                 e.cllassList.remove("");
+//             }
+                
+//         })
+//     })
+// }
