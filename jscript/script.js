@@ -58,37 +58,14 @@ akt2.onclick = function () {
 akt3.onclick = function () {
     ata.style.left = '-2200px';
 };
-// ----------------------------------------------------------
+
+//---------------------------------------
 // let sections = document.querySelectorAll("section");
 // let blanks = document.querySelectorAll("blank");
-
-// window.onscroll = function () {
-//     sections.forEach(t => {
-//         var top = t.scrollTop;
-//         if (top == 0 + 'px') {
-//             // blanks[1].setAttribute('class','isik');
-//             blanks[1].classList.add('isik');
-//         }else {
-//             // blanks[1].setAttribute('class','');
-//             blanks[1].classList.remove('isik');
+// for (let i = 0; i < sections.length; i++) {
+//     for (let b = 0; b < blanks.length; b++) {
+//         if (scrollY > sections[i].offsettop) {
+//             blanks[b].classList("isik");
 //         }
-//     });
-
-
-// };
-
-
-// window.onscroll = function () {
-//     sections.forEach(i => {
-//         let sc = i.getBoundingClientRect().y;
-
-//         blanks.forEach(b => {
-//             if (sc == 0 + 'px') {
-//                 b.classList.add("isik");
-//             }else {
-//                 e.cllassList.remove("");
-//             }
-                
-//         })
-//     })
+//     }
 // }
