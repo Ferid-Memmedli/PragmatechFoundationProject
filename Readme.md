@@ -90,3 +90,5 @@
 # Day 19
 - Our blog hissesi tamamlandi
 - Our work hissesi tamamlandi
+- Contact bolmu strukturu quruldu
+- Contact bolmu scss kodlari yazilaraq bitdi
