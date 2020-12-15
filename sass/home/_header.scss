@@ -89,7 +89,7 @@
           padding: 3px 0px 3px 3px;
           font-size: 16px;
           a {
-            transition: all 0.5s ease;
+            transition: all 0.3s ease;
             color: $color-white;
             &:link {
               text-decoration: none;
@@ -133,5 +133,5 @@
 }
 
 .isik {
-  color: $main-red;
+  color: $main-red!important;
 }
