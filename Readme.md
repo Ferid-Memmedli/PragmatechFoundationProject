@@ -92,3 +92,6 @@
 - Our work hissesi tamamlandi
 - Contact bolmu strukturu quruldu
 - Contact bolmu scss kodlari yazilaraq bitdi
+
+# Day 20
+- Java Scriptde navbar menunun scroll funksiyalari yazildi
