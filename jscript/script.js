@@ -68,36 +68,31 @@ akt3.onclick = function () {
 //----------------------Scroll menu--------------------
 function scrl() {
     if  (scrollY > header.offsetTop) {
+        blanks.forEach(i => i.classList.remove('isik'));
         blanks[0].classList.add("isik");
-        blanks[1].classList.remove("isik");
     }
     if (scrollY > sections[0].offsetTop - 40) {
-        blanks[0].classList.remove("isik");
+        blanks.forEach(i => i.classList.remove('isik'));
         blanks[1].classList.add("isik");
-        blanks[2].classList.remove("isik");
     }
     if (scrollY > sections[1].offsetTop - 40) {
-        blanks[1].classList.remove("isik");
+        blanks.forEach(i => i.classList.remove('isik'));
         blanks[2].classList.add("isik");
-        blanks[3].classList.remove("isik");
     }
     if (scrollY > sections[2].offsetTop - 40) {
-        blanks[2].classList.remove("isik");
+        blanks.forEach(i => i.classList.remove('isik'));
         blanks[3].classList.add("isik");
-        blanks[4].classList.remove("isik");
     }
     if (scrollY > sections[3].offsetTop - 40) {
-        blanks[3].classList.remove("isik");
+        blanks.forEach(i => i.classList.remove('isik'));
         blanks[4].classList.add("isik");
-        blanks[5].classList.remove("isik");
     }
     if (scrollY > sections[4].offsetTop - 40) {
-        blanks[4].classList.remove("isik");
+        blanks.forEach(i => i.classList.remove('isik'));
         blanks[5].classList.add("isik");
-        blanks[6].classList.remove("isik");
     }
     if (scrollY > sections[5].offsetTop - 40) {
-        blanks[5].classList.remove("isik");
+        blanks.forEach(i => i.classList.remove('isik'));
         blanks[6].classList.add("isik");
     }
 };
