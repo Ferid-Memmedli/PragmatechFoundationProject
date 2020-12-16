@@ -1,9 +1,11 @@
-// -----------------------------------------Header nav----------------------------------------
 let nav = document.querySelector(".nav");
 let mybutton = document.getElementById("myBtn");
 let blanks = document.querySelectorAll(".blank");
 let logo = document.getElementById("darklogo");
 let sections = document.querySelectorAll("section");
+let header = document.getElementById("header");
+
+// -----------------------------------------Header nav----------------------------------------
 window.onscroll = function () {
     scrollFunction();
     scrl();
@@ -63,7 +65,6 @@ akt3.onclick = function () {
 
 //----------------------Problem-----------------
 function scrl() {
-    let header = document.getElementById("header");
     if  (scrollY > header.offsetTop) {
         blanks[0].classList.add("isik");
         blanks[1].classList.remove("isik");
