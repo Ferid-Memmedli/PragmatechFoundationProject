@@ -3,7 +3,7 @@ let nav = document.querySelector(".nav");
 let mybutton = document.getElementById("myBtn");
 let blanks = document.querySelectorAll(".blank");
 let logo = document.getElementById("darklogo");
-let sections = document.querySelectorAll(".section");
+let sections = document.querySelectorAll("section");
 window.onscroll = function () {
     scrollFunction();
     scrl();
@@ -66,42 +66,43 @@ akt3.onclick = function () {
 // let blanks = document.querySelectorAll(".blank");
 // for (let i = 0; i < sections.length; i++) {
 //     for (let b = 0; b < blanks.length; b++) {
-//         if (scrollY > sections[i].offsettop) {
+//         if (scrollY > sections[i].offsetTop) {
 //             blanks[b].classList("isik");
 //         }
 //     }
 // }
 function scrl() {
-    if (scrollY > 0) {
+    let header = document.getElementById("header");
+    if  (scrollY > header.offsetTop) {
         blanks[0].classList.add("isik");
         blanks[1].classList.remove("isik");
     }
-    if (scrollY > 610) {
+    if (scrollY > sections[0].offsetTop) {
         blanks[0].classList.remove("isik");
         blanks[1].classList.add("isik");
         blanks[2].classList.remove("isik");
     }
-    if (scrollY > 1230) {
+    if (scrollY > sections[1].offsetTop) {
         blanks[1].classList.remove("isik");
         blanks[2].classList.add("isik");
         blanks[3].classList.remove("isik");
     }
-    if (scrollY > 2420) {
+    if (scrollY > sections[2].offsetTop) {
         blanks[2].classList.remove("isik");
         blanks[3].classList.add("isik");
         blanks[4].classList.remove("isik");
     }
-    if (scrollY > 3130) {
+    if (scrollY > sections[3].offsetTop) {
         blanks[3].classList.remove("isik");
         blanks[4].classList.add("isik");
         blanks[5].classList.remove("isik");
     }
-    if (scrollY > 4000) {
+    if (scrollY > sections[4].offsetTop) {
         blanks[4].classList.remove("isik");
         blanks[5].classList.add("isik");
         blanks[6].classList.remove("isik");
     }
-    if (scrollY > 4840) {
+    if (scrollY > sections[5].offsetTop) {
         blanks[5].classList.remove("isik");
         blanks[6].classList.add("isik");
     }
