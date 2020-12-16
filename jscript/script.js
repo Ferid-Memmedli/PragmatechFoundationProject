@@ -63,7 +63,7 @@ akt3.onclick = function () {
     ata.style.left = '-2200px';
 };
 
-//----------------------Problem-----------------
+//----------------------Scroll menu--------------------
 function scrl() {
     if  (scrollY > header.offsetTop) {
         blanks[0].classList.add("isik");
