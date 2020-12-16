@@ -40,7 +40,7 @@ mybutton.onclick = function () {
     document.documentElement.scrollTop = 0;
 };
 
-// ------------------------------- Our client bolmesi ucun yazilmis JS kodlari
+// ----------------- Our client bolmesi ucun yazilmis JS kodlari--------------
 let dots = document.querySelectorAll('.aktiv1');
 dots.forEach(i => {
     i.addEventListener('click', e => {
