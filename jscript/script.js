@@ -85,16 +85,23 @@ function scrl() {
     }
 };
 //---------------------------Portfolio Galery-------------------------------------
+let images = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg",];
+
 function galery() {
     let qaralti = document.createElement('div');
     qaralti.className = 'qaralti';
     document.body.appendChild(qaralti);
+    //------------------------galery imgs ekrana verilmesi----------------------------
+    let albom = document.querySelector(".albom");
+    let sol = document.getElementById('sol');
+    let sag = document.getElementById('sag');
+    albom.style.display = "inline-block";
+    sol.style.display = 'inline-block';
+    sag.style.display = 'inline-block';
     qaralti.addEventListener('click', function () {
         qaralti.remove();
+        albom.style.display = 'none';
+        sol.style.display = 'none';
+        sag.style.display = 'none';
     })
 }
-
-// let albom = document.createElement('div');
-// let sekil = document.createElement('img');
-// albom.className = 'albom';
-// sekil.className = 'sekil';

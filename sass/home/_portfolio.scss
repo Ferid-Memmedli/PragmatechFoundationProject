@@ -96,21 +96,45 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
     cursor: zoom-out;
-    z-index: 9999;
+    z-index: 999;
 }
-// .albom {
-//     margin: 0 auto;
-//     cursor: pointer;
-//     max-width: 60%;
-//     height: auto;
-//     padding: 40px 0;
-//     z-index: 10000;
-//     .sekil {
-//         width: auto;
-//         max-width: 100%;
-//         height: auto;
-//         margin: 0 auto;
-//         box-sizing: border-box;
-//         line-height: 0;
-//     }
-// }
+.albom {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1000;
+    .sekil {
+        display: inline-block;
+    }
+}
+#sol {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 42%;
+    left: 1%;
+    color: $light-red;
+    font-size: 60px;
+    margin: 10px;
+    z-index: 1000;
+    &:hover {
+        color: $main-red;
+    }
+}
+#sag {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 42%;
+    right: 1%;
+    color: $light-red;
+    font-size: 60px;
+    margin: 10px;
+    z-index: 1000;
+    &:hover {
+        color: $main-red;
+    }
+}

@@ -1516,7 +1516,54 @@
   background-color: rgba(0, 0, 0, 0.7);
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
-  z-index: 9999;
+  z-index: 999;
+}
+
+.albom {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.albom .sekil {
+  display: inline-block;
+}
+
+#sol {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 42%;
+  left: 1%;
+  color: #cf5b7073;
+  font-size: 60px;
+  margin: 10px;
+  z-index: 1000;
+}
+
+#sol:hover {
+  color: #e65f78;
+}
+
+#sag {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 42%;
+  right: 1%;
+  color: #cf5b7073;
+  font-size: 60px;
+  margin: 10px;
+  z-index: 1000;
+}
+
+#sag:hover {
+  color: #e65f78;
 }
 
 #blog {
