@@ -100,14 +100,14 @@ function galery() {
     //-------------------------Galery saga sola cevirmeq------------------------------
     let sekil = document.querySelector('.sekil');
     sol.onclick = function () {
-        // images.forEach(i=> {
-        sekil.setAttribute('src','img/work/3.jpg');
-        // })
+        images.forEach(i=> {
+            sekil.setAttribute('src',i);
+        })
     };
     sag.onclick = function () {
-        // images.forEach(i=> {
-        sekil.setAttribute('src','img/work/4.jpg');
-        // })
+        images.forEach(i=> {
+        sekil.setAttribute('src',i);
+        })
     };
     //-------------------------Galery baglamaq------------------------------
     qaralti.addEventListener('click', function () {
