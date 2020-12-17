@@ -95,3 +95,6 @@
 
 # Day 20
 - Java Scriptde navbar menunun scroll funksiyalari yazildi
+
+# Day 21
+- Portfoliyo bolmesind galry() funksiyasi yazildi
