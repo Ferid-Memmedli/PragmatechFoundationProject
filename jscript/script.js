@@ -68,19 +68,33 @@ akt3.onclick = function () {
 //----------------------Scroll menu--------------------
 function scrl() {
     blanks.forEach(i => i.classList.remove('isik'));
-    if  (scrollY > sections[5].offsetTop - 45) {
+    if (scrollY > sections[5].offsetTop - 45) {
         blanks[6].classList.add("isik");
-    }else if (scrollY > sections[4].offsetTop - 45) {
+    } else if (scrollY > sections[4].offsetTop - 45) {
         blanks[5].classList.add("isik");
-    }else if (scrollY > sections[3].offsetTop - 45) {
+    } else if (scrollY > sections[3].offsetTop - 45) {
         blanks[4].classList.add("isik");
-    }else if (scrollY > sections[2].offsetTop - 45) {
+    } else if (scrollY > sections[2].offsetTop - 45) {
         blanks[3].classList.add("isik");
-    }else if (scrollY > sections[1].offsetTop - 45) {
+    } else if (scrollY > sections[1].offsetTop - 45) {
         blanks[2].classList.add("isik");
-    }else if (scrollY > sections[0].offsetTop - 45) {
+    } else if (scrollY > sections[0].offsetTop - 45) {
         blanks[1].classList.add("isik");
-    }else {
+    } else {
         blanks[0].classList.add("isik");
     }
 };
+//---------------------------Portfolio Galery-------------------------------------
+function galery() {
+    let qaralti = document.createElement('div');
+    qaralti.className = 'qaralti';
+    document.body.appendChild(qaralti);
+    qaralti.addEventListener('click', function () {
+        qaralti.remove();
+    })
+}
+
+// let albom = document.createElement('div');
+// let sekil = document.createElement('img');
+// albom.className = 'albom';
+// sekil.className = 'sekil';

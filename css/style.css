@@ -1507,6 +1507,18 @@
   text-align: center;
 }
 
+.qaralti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+  z-index: 9999;
+}
+
 #blog {
   margin: 0 auto;
   position: relative;

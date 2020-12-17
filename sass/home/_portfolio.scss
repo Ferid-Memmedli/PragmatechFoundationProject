@@ -75,8 +75,8 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  .text1 {
+}
+.text1 {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -86,4 +86,31 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
+
+.qaralti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: zoom-out;
+    z-index: 9999;
+}
+// .albom {
+//     margin: 0 auto;
+//     cursor: pointer;
+//     max-width: 60%;
+//     height: auto;
+//     padding: 40px 0;
+//     z-index: 10000;
+//     .sekil {
+//         width: auto;
+//         max-width: 100%;
+//         height: auto;
+//         margin: 0 auto;
+//         box-sizing: border-box;
+//         line-height: 0;
+//     }
+// }
