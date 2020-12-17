@@ -94,10 +94,22 @@ function galery() {
     let albom = document.querySelector(".albom");
     let sol = document.getElementById('sol');
     let sag = document.getElementById('sag');
-    albom.setAttribute('src','img/work/2.jpg');
     albom.style.display = "inline-block";
     sol.style.display = 'inline-block';
     sag.style.display = 'inline-block';
+    //-------------------------Galery saga sola cevirmeq------------------------------
+    let sekil = document.querySelector('.sekil');
+    sol.onclick = function () {
+        // images.forEach(i=> {
+        sekil.setAttribute('src','img/work/3.jpg');
+        // })
+    };
+    sag.onclick = function () {
+        // images.forEach(i=> {
+        sekil.setAttribute('src','img/work/4.jpg');
+        // })
+    };
+    //-------------------------Galery baglamaq------------------------------
     qaralti.addEventListener('click', function () {
         qaralti.remove();
         albom.style.display = 'none';
