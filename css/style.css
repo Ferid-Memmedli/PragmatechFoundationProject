@@ -1566,6 +1566,26 @@
   color: #e65f78;
 }
 
+.close {
+  color: #cf5b7073;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #e65f78;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
 #blog {
   margin: 0 auto;
   position: relative;
