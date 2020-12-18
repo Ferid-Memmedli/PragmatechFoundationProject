@@ -127,12 +127,10 @@ function galery(bu) {
     sag.style.display = 'inline-block';
     //-------------------------Galery saga sola cevirmeq------------------------------
     // sol.onclick = function () {
-    //     for (let i = 0; i > images.length; i++) {
-    //         sekil.setAttribute('src',images[i]);
+    //     let sira = [1,2,3,4,5,6];
+    //     for (let i = 0; i < sira.length; i++) {
+    //     sekil.setAttribute('src',"img/work/" + sira[i] + ".jpg");
     //     };
-    //     // images.forEach(i=> {
-    //     //     sekil.setAttribute('src',i);
-    //     // })
     // };
     // sag.onclick = function () {
     //     images.forEach(i => {
