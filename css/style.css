@@ -1459,20 +1459,27 @@
 #portfolio .anbar {
   width: 83%;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #portfolio .qutu {
+  margin-top: 20px;
   position: relative;
   cursor: pointer;
   border-radius: 5px;
   overflow: hidden;
+  width: calc(100% / 3 - 2%);
 }
 
 #portfolio .qutu img {
