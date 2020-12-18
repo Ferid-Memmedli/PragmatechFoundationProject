@@ -85,12 +85,15 @@ function scrl() {
     }
 };
 //---------------------------Portfolio Galery-------------------------------------
-function galery() {
+function galery(bu) {
     let images = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg",];
     let qaralti = document.createElement('div');
     qaralti.className = 'qaralti';
     document.body.appendChild(qaralti);
     //------------------------galery imgs ekrana verilmesi----------------------------
+    let sekil = document.querySelector('.sekil');
+    let src = bu.querySelector('img').getAttribute('src');
+    sekil.setAttribute('src',src);
     let albom = document.querySelector(".albom");
     let sol = document.getElementById('sol');
     let sag = document.getElementById('sag');
@@ -98,18 +101,20 @@ function galery() {
     sol.style.display = 'inline-block';
     sag.style.display = 'inline-block';
     //-------------------------Galery saga sola cevirmeq------------------------------
-    let sekil = document.querySelector('.sekil');
-    sol.onclick = function () {
-        images.forEach(i=> {
-            sekil.setAttribute('src',i);
-        })
-    };
-    sag.onclick = function () {
-        images.forEach(i=> {
-        sekil.setAttribute('src',i);
-        })
-    };
-    //-------------------------Galery baglamaq------------------------------
+    // sol.onclick = function () {
+    //     for (let i = 0; i > images.length; i++) {
+    //         sekil.setAttribute('src',images[i]);
+    //     };
+    //     // images.forEach(i=> {
+    //     //     sekil.setAttribute('src',i);
+    //     // })
+    // };
+    // sag.onclick = function () {
+    //     images.forEach(i => {
+    //         sekil.setAttribute('src', i);
+    //     })
+    // };
+    // //-------------------------Galery baglamaq------------------------------
     qaralti.addEventListener('click', function () {
         qaralti.remove();
         albom.style.display = 'none';
