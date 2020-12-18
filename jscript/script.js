@@ -160,3 +160,16 @@ function galery(bu) {
         sag.style.display = 'none';
     });
 }
+//-----------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function () {
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 200,
+        backSpeed: 100,
+        startDelay: 1000,
+        cursorChar: '|',
+        loop: true,
+        fadeOut: false,
+        loopCount: Infinity,
+    });
+});

@@ -34,8 +34,7 @@
       @include font-size-weig-align-liheig(30px, 400, none, none);
     }
     h1 {
-      text-transform: uppercase;
-      @include font-size-weig-align-liheig(50px, 600, none, none);
+      @include font-size-weig-align-liheig(50px, 500, none, none);
     }
     p {
       width: $full-faiz/2;
