@@ -20,6 +20,10 @@
             padding: 10px 20px !important;
             margin: 10px;
         }
+        .active {
+            background-color: $main-red;
+            color: white;
+        }
     }
     .anbar {
         width: 83%;

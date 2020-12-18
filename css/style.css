@@ -1431,6 +1431,11 @@
   margin: 10px;
 }
 
+#portfolio .port .active {
+  background-color: #e65f78;
+  color: white;
+}
+
 #portfolio .anbar {
   width: 83%;
   margin: 0 auto;

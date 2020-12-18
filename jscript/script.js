@@ -85,6 +85,14 @@ function scrl() {
     }
 };
 //---------------------------Portfolio Galery-------------------------------------
+let job = document.querySelectorAll('.job');
+job.forEach(i => {
+    i.addEventListener('click', e => {
+        job.forEach(i => i.classList.remove('active'));
+        e.target.classList.add('active');
+    });
+});
+//----------------------------------------------------------------------------------
 function galery(bu) {
     let sldrs = [
         {
