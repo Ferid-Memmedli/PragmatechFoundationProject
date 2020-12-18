@@ -97,4 +97,4 @@
 - Java Scriptde navbar menunun scroll funksiyalari yazildi
 
 # Day 21
-- Portfoliyo bolmesind galry() funksiyasi yazildi
+- Portfolio bolmesinde galry() funksiyasi yazildi
