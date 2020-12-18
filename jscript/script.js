@@ -160,7 +160,67 @@ function galery(bu) {
         sag.style.display = 'none';
     });
 }
-//-----------------------------------------------------------------
+//-----------------------------Filter galery------------------------------------
+let all = document.querySelector('#all');
+let seo = document.querySelector('#seo');
+let webdesign = document.querySelector('#webdesign');
+let work = document.querySelector('#work');
+let worpres = document.querySelector('#worpres');
+let qutu = document.querySelectorAll('.qutu');
+
+all.addEventListener('click', function () {
+    for (let i = 0; i < qutu.length; i++) {
+        qutu[i].style.display = 'block';
+    };
+});
+
+seo.addEventListener('click', function () {
+    for (let i = 0; i < qutu.length; i++) {
+        let id = qutu[i].getAttribute('id');
+        if (id != 2) {
+            qutu[i].style.display = 'none';
+        }else {
+            qutu[i].style = 'block';
+        }
+    };
+});
+
+webdesign.addEventListener('click', function () {
+    for (let i = 0; i < qutu.length; i++) {
+        let id = qutu[i].getAttribute('id');
+        if (id != 3) {
+            qutu[i].style.display = 'none';
+        }else {
+            qutu[i].style = 'block';
+        }
+    };
+});
+
+work.addEventListener('click', function () {
+    for (let i = 0; i < qutu.length; i++) {
+        let id = qutu[i].getAttribute('id');
+        if (id != 1) {
+            qutu[i].style.display = 'none';
+        }else {
+            qutu[i].style = 'block';
+        }
+    };
+});
+
+worpres.addEventListener('click', function () {
+    for (let i = 0; i < qutu.length; i++) {
+        let id = qutu[i].getAttribute('id');
+        if (id != 4) {
+            qutu[i].style.display = 'none';
+        }else {
+            qutu[i].style = 'block';
+        }
+    };
+});
+
+
+
+//---------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',

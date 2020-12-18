@@ -102,3 +102,4 @@
 # Day 22
 - Portfolio bolmunde active clasi yazildi
 - Animasiya elave edildi
+- Portfolio bolmunde filter galery funksiyasi tam yazilaraq bitdi
