@@ -900,6 +900,18 @@
   color: white;
 }
 
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 400px;
+}
+
 #header {
   margin: 0 auto;
   position: relative;
@@ -911,6 +923,15 @@
   border-bottom-right-radius: 400px;
   background-position: center center;
   z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header .ovarlay {
@@ -924,10 +945,10 @@
 }
 
 #header .content {
-  height: 640px;
+  width: 65%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: none;
+  left: none;
   z-index: 2;
   text-align: center;
 }
@@ -961,7 +982,7 @@
   text-align: none;
   line-height: none;
   position: absolute;
-  top: 440px;
+  top: 240px;
   left: none;
   z-index: none;
 }

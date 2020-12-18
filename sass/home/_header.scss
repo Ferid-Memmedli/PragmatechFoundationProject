@@ -1,3 +1,14 @@
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
 #header {
   @include defaultmain($full-faiz, $main-height);
   background: url("../img/header-bg.jpg") no-repeat center;
@@ -6,6 +17,9 @@
   border-bottom-right-radius: $border-radius;
   background-position: center center;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .ovarlay {
     height: $main-height;
     border-bottom-left-radius: $border-radius;
@@ -13,8 +27,8 @@
     @include position-top-left-index(absolute, 0px, 0px, 1);
   }
   .content {
-    height: $main-height;
-    @include position-top-left-index(absolute, 0px, 0px, 2);
+    width: 65%;
+    @include position-top-left-index(absolute, none, none, 2);
     text-align: center;
     h4 {
       @include font-size-weig-align-liheig(30px, 400, none, none);
@@ -29,7 +43,7 @@
     }
     button {
       @include font-size-weig-align-liheig(15px, 600, none, none);
-      @include position-top-left-index(absolute, 440px, none, none);
+      @include position-top-left-index(absolute, 240px, none, none);
     }
     .dubl-down {
       @include position-top-left-index(relative, none, none, 7);
@@ -133,5 +147,5 @@
 }
 
 .isik {
-  color: $main-red!important;
+  color: $main-red !important;
 }

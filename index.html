@@ -34,6 +34,7 @@
         </nav>
     </div>
     <header id="header">
+        <div id="particles-js"></div>
         <div class="ovarlay color-bg-black width-full"></div>
         <div class="content color-white flex-columun-center width-full">
             <h4 class="mb-3x">Welcome</h4>
@@ -42,8 +43,8 @@
                 laudantium ipsam consequuntur
                 nobis sed aliquam </p>
             <button class="btn btn-border-white btn-border-radius-6x">DOWNLOAD CV</button>
-            <div class="dubl-down width-full"><a href="#about" class="down color-white"><i
-                        class="fas fa-angle-double-down"></i></a></div>
+            <div class="dubl-down width-full"><a href="#about" class="down color-white">
+                    <i class="fas fa-angle-double-down"></i></a></div>
         </div>
     </header>
     <!-- section about -->
@@ -200,7 +201,7 @@
             <button class="job work btn btn-red btn-border-radius-6x">WORK</button>
             <button class="job wordpres btn btn-red btn-border-radius-6x">WORDPRES</button>
         </div>
-        <div class="anbar">
+        <div class="anbar row">
             <div class="5 3 1 qutu" onclick="galery(this)" style="grid-area: b;"><img src="img/work/1.jpg">
                 <div class="overtitle">
                     <span class="text">Categoriya</span>
@@ -238,12 +239,14 @@
                 </div>
             </div>
         </div>
+        <!-----------------------------Temp div-------------------------------------->
         <i id="sol" class="fas fa-caret-left"></i>
         <div class="albom">
             <span id="bagla" class="close cursor">&times;</span>
             <img class="sekil">
         </div>
         <i id="sag" class="fas fa-caret-right"></i>
+        <!---------------------------------------------------------------------------->
     </section>
     <!-- section blog -->
     <section id="blog" class="pv-10x">
@@ -285,7 +288,7 @@
             </div>
         </div>
     </section>
-        <!-- section contact-->
+    <!-- section contact-->
     <section id="contact" class="pv-10x">
         <div class="container">
             <div class="row width-full">
@@ -325,7 +328,7 @@
                     </div>
                     <div class="row width-full">
                         <div class="col-12">
-                            <textarea  style="height: 140px;"  name="comments" id="comments" rows="4" class="form-control"
+                            <textarea style="height: 140px;" name="comments" id="comments" rows="4" class="form-control"
                                 placeholder="Your message..."></textarea>
                         </div>
                     </div>
@@ -338,5 +341,8 @@
     </section>
 
 </body>
+<script src="jscript/particles.js"></script>
+<script src="jscript/app.js"></script>
 <script src="jscript/script.js"></script>
+
 </html>
