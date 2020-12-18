@@ -101,4 +101,4 @@
 
 # Day 22
 - Portfolio bolmunde active clasi yazildi
-- Portfolio Gallery Filter
+- Animasiya elave edildi
