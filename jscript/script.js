@@ -86,14 +86,39 @@ function scrl() {
 };
 //---------------------------Portfolio Galery-------------------------------------
 function galery(bu) {
-    let images = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg",];
+    let sldrs = [
+        {
+            imgsrc: "img/work/1.jpg",
+            id: 1
+        },
+        {
+            imgsrc: "img/work/2.jpg",
+            id: 2
+        },
+        {
+            imgsrc: "img/work/3.jpg",
+            id: 3
+        },
+        {
+            imgsrc: "img/work/4.jpg",
+            id: 4
+        },
+        {
+            imgsrc: "img/work/5.jpg",
+            id: 5
+        },
+        {
+            imgsrc: "img/work/6.jpg",
+            id: 6
+        },
+    ];
     let qaralti = document.createElement('div');
     qaralti.className = 'qaralti';
     document.body.appendChild(qaralti);
     //------------------------galery imgs ekrana verilmesi----------------------------
     let sekil = document.querySelector('.sekil');
     let src = bu.querySelector('img').getAttribute('src');
-    sekil.setAttribute('src',src);
+    sekil.setAttribute('src', src);
     let albom = document.querySelector(".albom");
     let sol = document.getElementById('sol');
     let sag = document.getElementById('sag');
