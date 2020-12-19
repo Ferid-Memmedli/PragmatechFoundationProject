@@ -19,7 +19,7 @@
       flex-direction: column;
       h2 {
         letter-spacing: 1px;
-        @include font-size-weig-align-liheig(32px, 700, none, 1);
+        @include font-size-weig-align-liheig(32px, 700, left, 1);
         span {
           font-weight: 500;
         }
