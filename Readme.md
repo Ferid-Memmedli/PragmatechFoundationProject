@@ -1,5 +1,4 @@
 # Lahiyə haqqında ümumi məlumat:
- - Photographer üçün əl işlərini paylaşaca biləcəq və blog yaza biləcəq web səyifə yığılacaq
  - Məqsədim bu saytı yıxmaqdır : http://theme.srbthemes.com/kerri/light/index_6.html#
 
 # Lahiyənin xəritə hissəsi 4 bölmədən ibarətdir:

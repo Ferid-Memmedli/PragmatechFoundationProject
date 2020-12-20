@@ -1725,6 +1725,7 @@
 }
 
 #blog .an .qutu2 .oxu h2 {
+  text-align: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
