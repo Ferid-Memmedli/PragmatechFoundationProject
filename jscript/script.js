@@ -133,18 +133,21 @@ function galery(bu) {
     albom.style.display = "inline-block";
     sol.style.display = 'inline-block';
     sag.style.display = 'inline-block';
-    //-------------------------Galery saga sola cevirmeq------------------------------
-    // sol.onclick = function () {
-    //     let sira = [1,2,3,4,5,6];
-    //     for (let i = 0; i < sira.length; i++) {
-    //     sekil.setAttribute('src',"img/work/" + sira[i] + ".jpg");
-    //     };
-    // };
-    // sag.onclick = function () {
-    //     images.forEach(i => {
-    //         sekil.setAttribute('src', i);
-    //     })
-    // };
+    //-------------------------Galery saga sola cevirmeq------Help Me :))------------------------
+    sol.onclick = function () {
+        for (let i = 0; i < sldrs.length; i++) {
+            if (src == sldrs[i].imgsrc) {
+                sekil.setAttribute('src', sldrs[i - 1].imgsrc);
+            }
+        };
+    };
+    sag.onclick = function () {
+        for (let i = 0; i < sldrs.length; i++) {
+            if (src == sldrs[i].imgsrc) {
+                sekil.setAttribute('src', sldrs[i + 1].imgsrc);
+            }
+        };
+    };
     // //-------------------------Galery baglamaq------------------------------
     qaralti.addEventListener('click', function () {
         qaralti.remove();
@@ -179,7 +182,7 @@ seo.addEventListener('click', function () {
         let id = qutu[i].getAttribute('id');
         if (id != 2) {
             qutu[i].style.display = 'none';
-        }else {
+        } else {
             qutu[i].style = 'block';
         }
     };
@@ -190,7 +193,7 @@ webdesign.addEventListener('click', function () {
         let id = qutu[i].getAttribute('id');
         if (id != 3) {
             qutu[i].style.display = 'none';
-        }else {
+        } else {
             qutu[i].style = 'block';
         }
     };
@@ -201,7 +204,7 @@ work.addEventListener('click', function () {
         let id = qutu[i].getAttribute('id');
         if (id != 1) {
             qutu[i].style.display = 'none';
-        }else {
+        } else {
             qutu[i].style = 'block';
         }
     };
@@ -212,7 +215,7 @@ worpres.addEventListener('click', function () {
         let id = qutu[i].getAttribute('id');
         if (id != 4) {
             qutu[i].style.display = 'none';
-        }else {
+        } else {
             qutu[i].style = 'block';
         }
     };
@@ -233,3 +236,4 @@ document.addEventListener('DOMContentLoaded', function () {
         loopCount: Infinity,
     });
 });
+
