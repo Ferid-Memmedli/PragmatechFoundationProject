@@ -94,32 +94,7 @@ job.forEach(i => {
 });
 //----------------------------------------------------------------------------------
 function galery(bu) {
-    let sldrs = [
-        {
-            imgsrc: "img/work/1.jpg",
-            id: 1
-        },
-        {
-            imgsrc: "img/work/2.jpg",
-            id: 2
-        },
-        {
-            imgsrc: "img/work/3.jpg",
-            id: 3
-        },
-        {
-            imgsrc: "img/work/4.jpg",
-            id: 4
-        },
-        {
-            imgsrc: "img/work/5.jpg",
-            id: 5
-        },
-        {
-            imgsrc: "img/work/6.jpg",
-            id: 6
-        },
-    ];
+    let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
     let qaralti = document.createElement('div');
     qaralti.className = 'qaralti';
     document.body.appendChild(qaralti);
@@ -135,16 +110,16 @@ function galery(bu) {
     sag.style.display = 'inline-block';
     //-------------------------Galery saga sola cevirmeq------Help Me :))------------------------
     sol.onclick = function () {
-        for (let i = 0; i < sldrs.length; i++) {
-            if (src == sldrs[i].imgsrc) {
-                sekil.setAttribute('src', sldrs[i - 1].imgsrc);
+        for (let i = 0; i < sldrs.length + 1; i++) {
+            if (src == sldrs[i]) {
+                sekil.setAttribute('src', sldrs[i - 1]);
             }
         };
     };
     sag.onclick = function () {
-        for (let i = 0; i < sldrs.length; i++) {
-            if (src == sldrs[i].imgsrc) {
-                sekil.setAttribute('src', sldrs[i + 1].imgsrc);
+        for (let i = 0; i < sldrs.length + 1; i++) {
+            if (src == sldrs[i]) {
+                sekil.setAttribute('src', sldrs[i + 1]);
             }
         };
     };
