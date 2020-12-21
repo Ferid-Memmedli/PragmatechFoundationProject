@@ -102,3 +102,6 @@
 - Portfolio bolmunde active clasi yazildi
 - Animasiya elave edildi
 - Portfolio bolmunde filter galery funksiyasi tam yazilaraq bitdi
+
+# Day 23
+- Portfolio bolmunde next prev buttonlar ucun funksiya yazilaraq islek veziyyete getirildi
