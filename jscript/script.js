@@ -128,7 +128,7 @@ function prev() {
     let src = sekil.getAttribute('src');
     let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
     if (src == sldrs[0]) {
-        sekil.setAttribute('src', sldrs[5]);
+        sekil.setAttribute('src', sldrs.slice(-1));
     }
     else {
         for (let i = 0; i < sldrs.length; i++) {
@@ -142,7 +142,7 @@ function next() {
     let sekil = document.querySelector('.sekil');
     let src = sekil.getAttribute('src');
     let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
-    if (src == sldrs[5]) {
+    if (src == sldrs.slice(-1)) {
         sekil.setAttribute('src', sldrs[0]);
     }
     else {
