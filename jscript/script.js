@@ -92,7 +92,7 @@ job.forEach(i => {
         e.target.classList.add('active');
     });
 });
-//----------------------------------------------------------------------------------
+//-----------------------------------Ovarlay-----------------------------------------------
 function galery(bu) {
     let qaralti = document.createElement('div');
     qaralti.className = 'qaralti';
