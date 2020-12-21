@@ -111,7 +111,7 @@ function galery(bu) {
     sol.onclick = function () {
         let src = bu.querySelector('img').getAttribute('src');
         let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
-        for (let i = 0; i < sldrs.length + 1; i++) {
+        for (let i = 0; i < sldrs.length; i++) {
             if (src == sldrs[i]) {
                 sekil.setAttribute('src', sldrs[i - 1]);
             }
@@ -120,7 +120,7 @@ function galery(bu) {
     sag.addEventListener('click', function () {
         let src = bu.querySelector('img').getAttribute('src');
         let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
-        for (let i = 0; i < sldrs.length + 1; i++) {
+        for (let i = 0; i < sldrs.length; i++) {
             if (src == sldrs[i]) {
                 sekil.setAttribute('src', sldrs[i + 1]);
             }
