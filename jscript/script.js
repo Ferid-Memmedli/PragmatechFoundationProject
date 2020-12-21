@@ -107,7 +107,7 @@ function galery(bu) {
     albom.style.display = "inline-block";
     sol.style.display = 'inline-block';
     sag.style.display = 'inline-block';
-    //-------------------------Galery saga sola cevirmeq------Help Me :))------------------------
+    //-------------------------Galery saga sola cevirmeq------Help Me :)------------------------
     sol.onclick = function () {
         let src = bu.querySelector('img').getAttribute('src');
         let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
