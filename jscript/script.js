@@ -127,21 +127,31 @@ function prev() {
     let sekil = document.querySelector('.sekil');
     let src = sekil.getAttribute('src');
     let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
-    for (let i = 0; i < sldrs.length; i++) {
-        if (src == sldrs[i]) {
-            sekil.setAttribute('src', sldrs[i - 1]);
+    if (src == sldrs[0]) {
+        sekil.setAttribute('src', sldrs[5]);
+    }
+    else {
+        for (let i = 0; i < sldrs.length; i++) {
+            if (src == sldrs[i]) {
+                sekil.setAttribute('src', sldrs[i - 1]);
+            }
         }
-    };
+    }
 };
 function next() {
     let sekil = document.querySelector('.sekil');
     let src = sekil.getAttribute('src');
     let sldrs = ["img/work/1.jpg", "img/work/2.jpg", "img/work/3.jpg", "img/work/4.jpg", "img/work/5.jpg", "img/work/6.jpg"];
-    for (let i = 0; i < sldrs.length; i++) {
-        if (src == sldrs[i]) {
-            sekil.setAttribute('src', sldrs[i + 1]);
+    if (src == sldrs[5]) {
+        sekil.setAttribute('src', sldrs[0]);
+    }
+    else {
+        for (let i = 0; i < sldrs.length; i++) {
+            if (src == sldrs[i]) {
+                sekil.setAttribute('src', sldrs[i + 1]);
+            }
         }
-    };
+    }
 };
 //-----------------------------Filter galery------------------------------------
 let all = document.querySelector('#all');
