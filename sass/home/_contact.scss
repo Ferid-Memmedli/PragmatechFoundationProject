@@ -25,9 +25,9 @@
                 }
                 h4 {
                     font-size: 18px;
-                    font-weight: 500!important;
+                    font-weight: 500 !important;
                     line-height: 1.2;
-                    text-align: center  ;
+                    text-align: center;
                 }
             }
         }
@@ -47,33 +47,24 @@ h2 {
 }
 .send {
     position: relative;
-    .col-12 {
-        button {
-            position: absolute;
-            right: 0px;
-            bottom: -25px;
-            font-weight: 700;
-            transition: all 0.5s;
-            letter-spacing: 0.6px;
-            color: #fff;
-            box-shadow: none !important;
-            text-transform: uppercase;
-            outline: none !important;
-        }
+    button {
+        position: absolute;
+        right: 10px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
     }
-    
 }
 
 .form-control {
     width: 100%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     resize: vertical;
 }
 
@@ -85,8 +76,14 @@ input {
     text-align: start;
     cursor: text;
     padding: 1px 2px;
+    &:focus {
+        outline-color: $main-red;
+    }
 }
 
 #comments {
     font-size: 18px;
+    &:focus {
+        outline-color: $main-red;
+    }
 }

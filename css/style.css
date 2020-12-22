@@ -1830,31 +1830,23 @@ h2 {
   position: relative;
 }
 
-.send .col-12 button {
+.send button {
   position: absolute;
-  right: 0px;
-  bottom: -25px;
+  right: 10px;
   font-weight: 700;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   letter-spacing: 0.6px;
-  color: #fff;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  text-transform: uppercase;
-  outline: none !important;
 }
 
 .form-control {
   width: 100%;
-  height: calc(1.5em + .75rem + 2px);
-  padding: .375rem .75rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
   border: 1px solid #ced4da;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   resize: vertical;
 }
 
@@ -1868,8 +1860,16 @@ input {
   padding: 1px 2px;
 }
 
+input:focus {
+  outline-color: #e65f78;
+}
+
 #comments {
   font-size: 18px;
+}
+
+#comments:focus {
+  outline-color: #e65f78;
 }
 
 html {
