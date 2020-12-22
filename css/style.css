@@ -1613,7 +1613,7 @@
   color: #cf5b7073;
   font-size: 60px;
   margin: 10px;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 #sol:hover {
@@ -1629,7 +1629,7 @@
   color: #cf5b7073;
   font-size: 60px;
   margin: 10px;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 #sag:hover {

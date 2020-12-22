@@ -126,7 +126,7 @@
     color: $light-red;
     font-size: 60px;
     margin: 10px;
-    z-index: 1000;
+    z-index: 9999;
     &:hover {
         color: $main-red;
     }
@@ -140,7 +140,7 @@
     color: $light-red;
     font-size: 60px;
     margin: 10px;
-    z-index: 1000;
+    z-index: 9999;
     &:hover {
         color: $main-red;
     }

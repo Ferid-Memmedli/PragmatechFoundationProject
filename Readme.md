@@ -105,3 +105,6 @@
 
 # Day 23
 - Portfolio bolmunde next prev buttonlar ucun funksiya yazilaraq islek veziyyete getirildi
+
+# Day 24
+- Formda duzelisler edildi
