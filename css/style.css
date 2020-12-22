@@ -1878,4 +1878,9 @@ input {
 html {
   scroll-behavior: smooth;
 }
+
+* {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
 /*# sourceMappingURL=style.css.map */
