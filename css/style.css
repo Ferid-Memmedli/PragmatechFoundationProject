@@ -1880,4 +1880,12 @@ html {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
 }
+
+::-moz-selection {
+  background: rgba(166, 175, 189, 0.3);
+}
+
+::selection {
+  background: rgba(166, 175, 189, 0.3);
+}
 /*# sourceMappingURL=style.css.map */
