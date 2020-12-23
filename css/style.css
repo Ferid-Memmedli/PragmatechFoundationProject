@@ -140,6 +140,12 @@
   color: #6c757d !important;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container {
   width: 83%;
   margin: 0 auto;

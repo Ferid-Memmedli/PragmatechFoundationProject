@@ -91,11 +91,11 @@
 }
 
 //-------------------------------------------
-// .flex {
-//         display: flex;
-// }
+.flex {
+        display: flex;
+}
 
-// //  justify content üçün lazım olan classların yaradılması
+//  justify content üçün lazım olan classların yaradılması
 // $justify-list: center, space-between, space-around, flex-start, flex-end;
 // @each $item in $justify-list {
 //         .justify-#{$item} {
@@ -103,7 +103,7 @@
 //         }
 // }
 
-// //  align items üçün lazım olan classların yaradılması
+// align items üçün lazım olan classların yaradılması
 // $align-list: flex-start, flex-end, center, baseline, stretch;
 // @each $item in $align-list {
 //         .align-#{$item} {
