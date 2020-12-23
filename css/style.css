@@ -1470,6 +1470,7 @@
 
 #portfolio .port {
   margin: 0 auto;
+  margin-bottom: 20px;
   width: 83%;
   text-align: center;
 }
@@ -1501,9 +1502,6 @@
 #portfolio .anbar {
   width: 83%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[2];
@@ -1514,7 +1512,6 @@
 }
 
 #portfolio .qutu {
-  margin-top: 20px;
   position: relative;
   cursor: pointer;
   border-radius: 5px;
