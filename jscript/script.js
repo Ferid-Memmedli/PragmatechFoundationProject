@@ -228,10 +228,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ---------------------------Formdan melumat goturmeq-------------------------------------
+// const form = document.forms[0];
+
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     const { name, email, subject, comments } = this.elements;
+//     console.log(name.value, email.value, subject.value, comments.value);
+// });
+
 const form = document.forms[0];
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-    const { name, email, subject, comments } = this.elements;
-    console.log(name.value, email.value, subject.value, comments.value);
+    const formData = new FormData(this);
+
+    for (const formElement of formData) {
+        console.log(formElement);
+    }
 });
