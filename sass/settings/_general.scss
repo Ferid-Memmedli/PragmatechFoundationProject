@@ -59,8 +59,7 @@
 }
 
 .text-white {
-        color: #6c757d!important;
-
+        color: #6c757d !important;
 }
 
 .relative {
@@ -88,5 +87,26 @@
         background-color: #242424 !important;
 }
 .reng {
-        color: #6c757d!important;
+        color: #6c757d !important;
 }
+
+//-------------------------------------------
+// .flex {
+//         display: flex;
+// }
+
+// //  justify content üçün lazım olan classların yaradılması
+// $justify-list: center, space-between, space-around, flex-start, flex-end;
+// @each $item in $justify-list {
+//         .justify-#{$item} {
+//                 justify-content: $item;
+//         }
+// }
+
+// //  align items üçün lazım olan classların yaradılması
+// $align-list: flex-start, flex-end, center, baseline, stretch;
+// @each $item in $align-list {
+//         .align-#{$item} {
+//                 align-items: $item;
+//         }
+// }

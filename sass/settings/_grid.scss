@@ -21,10 +21,13 @@ $colWidth: 100%/12;
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 [class^="col-"] {
     margin: 10px;
+    // padding: 10px;
+    box-sizing: border-box;
 }
 
 @each $i in $sayi {
