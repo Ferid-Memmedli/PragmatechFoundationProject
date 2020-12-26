@@ -108,3 +108,6 @@
 
 # Day 24
 - Formda duzelisler edildi
+
+# Day 25
+- Blog.html seyfesi elave olundu
