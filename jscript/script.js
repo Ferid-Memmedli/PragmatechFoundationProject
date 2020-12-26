@@ -169,7 +169,7 @@ all.addEventListener('click', function () {
 
 seo.addEventListener('click', function () {
     for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('id');
+        let id = qutu[i].getAttribute('data-id');
         if (id != 2) {
             qutu[i].style.display = 'none';
         } else {
@@ -180,7 +180,7 @@ seo.addEventListener('click', function () {
 
 webdesign.addEventListener('click', function () {
     for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('id');
+        let id = qutu[i].getAttribute('data-id');
         if (id != 3) {
             qutu[i].style.display = 'none';
         } else {
@@ -191,7 +191,7 @@ webdesign.addEventListener('click', function () {
 
 work.addEventListener('click', function () {
     for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('id');
+        let id = qutu[i].getAttribute('data-id');
         if (id != 1) {
             qutu[i].style.display = 'none';
         } else {
@@ -202,7 +202,7 @@ work.addEventListener('click', function () {
 
 worpres.addEventListener('click', function () {
     for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('id');
+        let id = qutu[i].getAttribute('data-id');
         if (id != 4) {
             qutu[i].style.display = 'none';
         } else {
