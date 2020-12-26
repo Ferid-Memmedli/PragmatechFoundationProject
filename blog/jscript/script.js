@@ -1,8 +1,6 @@
 let nav = document.querySelector(".nav");
 let blanks = document.querySelectorAll(".blank");
 let logo = document.getElementById("darklogo");
-let sections = document.querySelectorAll("section");
-let header = document.getElementById("header");
 
 // -----------------------------------------Header nav----------------------------------------
 window.onscroll = function () {
