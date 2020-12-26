@@ -1,0 +1,56 @@
+.btn {
+    border: none;
+    background: none;
+    padding: 15px 32px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-border-radius-x {
+    border-radius: 5px;
+}
+
+.btn-border-radius-2x {
+    border-radius: 10px;
+}
+.btn-border-radius-3x {
+    border-radius: 15px;
+}
+
+.btn-border-radius-4x {
+    border-radius: 20px;
+}
+
+.btn-border-radius-5x {
+    border-radius: 25px;
+}
+
+.btn-border-radius-6x {
+    border-radius: 30px;
+}
+
+.btn-border-white {
+    border: 2px solid $color-white;
+    color: $color-white;
+    &:hover {
+        background: $color-white;
+        color: $color-black;
+    }
+}
+
+.btn-border-red {
+    background: $main-red;
+    color: $color-white;
+}
+
+.btn-red {
+    color: rgb(0, 0, 0);
+    &:hover {
+        background: $main-red;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,29 @@
+$font-family: "Montserrat", sans-serif;
+// colors 
+$main-red: #e65f78;
+$light-red: #cf5b7073;
+$main-p: rgba(255, 255, 255, 0.69);
+$main-pp: rgba(0, 0, 0, 0.69);
+$main-backcolor: rgba(230, 224, 224, 0.69);
+$color-black: black;
+$color-white: white;
+
+
+// Olçülər px
+$width: 83%;
+$main-height: 640px;
+$border-radius: 400px;
+$full-faiz: 100%;
+      // Sayilar
+$sayi: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13;
+
+$spacing-x: 10px;
+$spacing-2x: $spacing-x * 2;
+$spacing-3x: $spacing-x * 3;
+$spacing-4x: $spacing-x * 4;
+$spacing-5x: $spacing-x * 5;
+$spacing-6x: $spacing-x * 6;
+$spacing-7x: $spacing-x * 7;
+$spacing-8x: $spacing-x * 8;
+$spacing-9x: $spacing-x * 9;
+$spacing-10x: $spacing-x * 10;

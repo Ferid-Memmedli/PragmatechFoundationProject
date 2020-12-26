@@ -1,0 +1,133 @@
+// --------------------General Margins--------------------------------
+@each $i in $sayi {
+    .m-#{$i}x {
+        margin: $i * 10px;
+    }
+}
+
+// ----------------------top and bottom margin----------------------------------------
+@each $i in $sayi {
+    .mv-#{$i}x {
+        margin: ($i * 10px) 0px;
+    }
+}
+
+//  ---------------------Margin top--------------------------------
+@each $i in $sayi {
+    .mt-#{$i}x {
+        margin-top: $i * 10px;
+    }
+}
+
+//  ---------------------Margin bottom--------------------------------
+@each $i in $sayi {
+    .mb-#{$i}x {
+        margin-bottom: $i * 10px;
+    }
+}
+
+//  ---------------------Margin right--------------------------------
+@each $i in $sayi {
+    .mr-#{$i}x {
+        margin-right: $i * 10px;
+    }
+}
+
+//  ---------------------Margin left--------------------------------
+@each $i in $sayi {
+    .ml-#{$i}x {
+        margin-left: $i * 10px;
+    }
+}
+
+//  ----------------------General Paddings------------------------------------------
+@each $i in $sayi {
+    .p-#{$i}x {
+        padding: $i * 10px;
+    }
+}
+
+// ------------------------ padding top--------------------------------------
+@each $i in $sayi {
+    .pt-#{$i}x {
+        padding-top: $i * 10px;
+    }
+}
+
+// ----------------------top and bottom padding----------------------------------------
+@each $i in $sayi {
+    .pv-#{$i}x {
+        padding:($i * 10px) 0px;
+        // padding-bottom: $i * 10px;
+    }
+}
+
+//  ---------------------Padding bottom--------------------------------
+@each $i in $sayi {
+    .pb-#{$i}x {
+        padding-bottom: $i * 10px;
+    }
+}
+
+//  ---------------------Pading right--------------------------------
+@each $i in $sayi {
+    .pr-#{$i}x {
+        padding-right: $i * 10px;
+    }
+}
+
+//  ---------------------Padding left--------------------------------
+@each $i in $sayi {
+    .pl-#{$i}x {
+        padding-left: $i * 10px;
+    }
+}
+
+
+// @for $i from 1 through 13 {
+//     .m-#{$i} {
+//         margin: $spacing-1x*$i
+//     }
+//     .mt-#{$i} {
+//         margin-top: $spacing-1x*$i
+//     }
+//     .mb-#{$i} {
+//         margin-bottom: $spacing-1x*$i
+//     }
+//     .ml-#{$i} {
+//         margin-left: $spacing-1x*$i
+//     }
+//     .mr-#{$i} {
+//         margin-right: $spacing-1x*$i
+//     }
+//     .mx-#{$i} {
+//         margin: 0px $spacing-1x*$i
+//     }
+//     .my-#{$i} {
+//         margin: $spacing-1x*$i 0px;
+//     }
+// }
+//
+// @for $i from 1 through 4 {
+//     .p-#{$i} {
+//         padding: $spacing-1x*$i
+//     }
+//     .pt-#{$i} {
+//         padding-top: $spacing-1x*$i
+//     }
+//     .pb-#{$i} {
+//         padding-bottom: $spacing-1x*$i
+//     }
+//     .pl-#{$i} {
+//         padding-left: $spacing-1x*$i
+//     }
+//     .pr-#{$i} {
+//         padding-right: $spacing-1x*$i
+//     }
+//     .px-#{$i} {
+//         padding: 0px $spacing-1x*$i
+//     }
+//     .py-#{$i} {
+//         padding: $spacing-1x*$i 0px;
+//     }
+// }

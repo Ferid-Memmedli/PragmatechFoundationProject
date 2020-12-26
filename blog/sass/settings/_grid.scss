@@ -1,0 +1,36 @@
+$colWidth: 100%/12;
+
+.container {
+    width: $width;
+    margin: 0 auto;
+}
+
+.container-full {
+    width: $full-faiz;
+    margin: 0 auto;
+}
+
+
+.box {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+[class^="col-"] {
+    margin: 10px;
+    // padding: 10px;
+    box-sizing: border-box;
+}
+
+@each $i in $sayi {
+    .col-#{$i} {
+        width: $colWidth * $i;
+    }
+}
