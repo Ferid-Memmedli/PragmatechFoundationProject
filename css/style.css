@@ -1766,10 +1766,10 @@
           margin-inline-end: 0px;
 }
 
-#blog .an .qutu2 .oxu .izahat .ardi {
+#blog .an .qutu2 .oxu .izahat .ardi a {
   color: #6c757d;
   font-weight: 700;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 #contact {
