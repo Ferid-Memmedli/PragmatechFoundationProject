@@ -1,0 +1,47 @@
+#blogPost {
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(230, 224, 224, 0.69);
+    .container {
+        justify-content: center;
+        align-items: center;
+        .row {
+            .col-12 {
+                text-align: center;
+                h1 {
+                    display: inline-block;
+                    color: #212529;
+                    font-size: 30px;
+                    margin-bottom: 0.5rem;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-weight: 700;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .row {
+            .col-12 {
+                text-align: center;
+                img {
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px #e65f78;
+                    text-align: center;
+                    object-fit: cover;
+                }
+            }
+        }
+        .row {
+            .col-12 {
+                text-align: left;
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    margin: 10px auto;
+                    color: rgba(0, 0, 0, 0.69);
+                }
+            }
+        }
+    }
+}

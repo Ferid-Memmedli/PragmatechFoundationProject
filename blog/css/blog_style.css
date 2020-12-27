@@ -988,7 +988,7 @@
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  color: white;
+  color: black;
 }
 
 .nav .nav-bar .nav-bar-right ul li a:link {
@@ -997,6 +997,61 @@
 
 .nav .nav-bar .nav-bar-right ul li a:hover {
   color: #e65f78 !important;
+}
+
+#blogPost {
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(230, 224, 224, 0.69);
+}
+
+#blogPost .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blogPost .container .row .col-12 {
+  text-align: center;
+}
+
+#blogPost .container .row .col-12 h1 {
+  display: inline-block;
+  color: #212529;
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+#blogPost .container .row .col-12 {
+  text-align: center;
+}
+
+#blogPost .container .row .col-12 img {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px #e65f78;
+          box-shadow: 0px 0px 10px #e65f78;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#blogPost .container .row .col-12 {
+  text-align: left;
+}
+
+#blogPost .container .row .col-12 p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 10px auto;
+  color: rgba(0, 0, 0, 0.69);
 }
 
 html {
