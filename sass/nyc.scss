@@ -1,0 +1,19 @@
+#main {
+    position: relative;
+    width: 100%;
+    #slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 1200px;
+        overflow: scroll;
+        .slider_item {
+            width: 500px;
+            img {
+                width: 500px;
+                object-fit: cover;
+            }
+        }
+    }
+}
