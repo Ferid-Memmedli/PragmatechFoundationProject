@@ -1016,6 +1016,15 @@
           align-items: center;
 }
 
+#blogPost .container .bloqbashliq #blogbashliq {
+  color: #212529 !important;
+  font-size: 30px !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+}
+
 #blogPost .container .row .col-12 {
   text-align: center;
 }

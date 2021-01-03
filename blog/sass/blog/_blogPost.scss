@@ -5,6 +5,19 @@
     .container {
         justify-content: center;
         align-items: center;
+        .bloqbashliq {
+            justify-content: center;
+            align-items: center;
+            #blogbashliq {
+                cursor: pointer;
+                color: #212529 !important;
+                font-size: 40px !important;
+                margin-bottom: 0.5rem !important;
+                line-height: 1.2 !important;
+                text-align: center !important;
+                font-weight: 800 !important;
+            }
+        }
         .row {
             .col-12 {
                 text-align: center;
