@@ -111,3 +111,7 @@
 
 # Day 25
 - Blog.html seyfesi elave olundu
+
+# Day 26
+- Blog.html header bolmu duzeldildi
+- DB designer table yazilmaxa baslandi
