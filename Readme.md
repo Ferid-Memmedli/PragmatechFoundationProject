@@ -114,4 +114,4 @@
 
 # Day 26
 - Blog.html header bolmu duzeldildi
-- DB designer table yazilmaxa baslandi
+- DB 3 table yazildi
