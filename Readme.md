@@ -115,3 +115,7 @@
 # Day 26
 - Blog.html header bolmu duzeldildi
 - DB 3 table yazildi
+
+# Back-End
+## Task
+- CRUD emeliyyatlarin tedbiqi
