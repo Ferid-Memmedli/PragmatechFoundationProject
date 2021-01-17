@@ -1877,6 +1877,10 @@ input:focus {
   outline-color: #e65f78;
 }
 
+.text-muted {
+  color: #6c757d !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
