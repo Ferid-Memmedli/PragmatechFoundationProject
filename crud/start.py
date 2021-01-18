@@ -1,16 +1,23 @@
 from flask import Flask,render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate,MigrateCommand
+from flask_script import Manager
 
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/crud.db'
 db = SQLAlchemy(app)
 
+migrate = Migrate(app, db)
+manager = Manager(app)
+manager.add_command('db', MigrateCommand)
+
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(110), unique=True, nullable=False)
+    code = db.Column(db.String(110))
 
 @app.route('/',methods=['GET','POST'])
 def index():
@@ -44,3 +51,4 @@ def update(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+    manager.run()
