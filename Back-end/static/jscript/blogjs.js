@@ -1,6 +1,6 @@
 //-------------------------------------------BLOG------------------------------------------------------------------
-let nav = document.querySelector(".nav");
-let blanks = document.querySelectorAll(".blank");
+let nav = document.querySelector(".blog-nav");
+let blanks = document.querySelectorAll(".blog-blank");
 let logo = document.getElementById("darklogo");
 
 // -----------------------------------------Header nav----------------------------------------
