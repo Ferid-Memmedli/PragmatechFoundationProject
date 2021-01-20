@@ -1,8 +1,10 @@
 //-------------------------------------------BLOG------------------------------------------------------------------
-let nav = document.querySelectorAll(".blog-nav");
-let blanks = document.querySelectorAll(".blog-blank");
-let logo = document.querySelectorAll(".js-logo");
-let header = document.querySelectorAll(".js-header");
+let nav = document.querySelector(".nav");
+let blanks = document.querySelectorAll(".blank");
+let logo = document.getElementById("darklogo");
+console.log(logo)
+console.log(blanks)
+console.log(nav)
 
 // -----------------------------------------Header nav----------------------------------------
 window.onscroll = function () {
