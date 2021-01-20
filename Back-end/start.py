@@ -1,8 +1,7 @@
-from flask import Flask,render_template,request,redirect,url_for
+from flask import Flask,render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate,MigrateCommand
 from flask_script import Manager
-from datetime import datetime
 
 app=Flask(__name__)
 
