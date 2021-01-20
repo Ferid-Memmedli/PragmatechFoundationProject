@@ -1308,6 +1308,18 @@
   line-height: 1.8;
 }
 
+#servies .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#servies .container .row .col-4 {
+  width: 350px;
+}
+
 #servies .container .row .col-4 div img {
   height: 40px;
 }

@@ -12,7 +12,10 @@
     }
     .container {
         .row {
+            display: flex;
+            flex-wrap: wrap;
             .col-4 {
+                width: 350px;
                 div img {
                     height: 40px;
                 }
