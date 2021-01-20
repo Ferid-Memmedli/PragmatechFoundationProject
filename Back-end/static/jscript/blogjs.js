@@ -2,9 +2,6 @@
 let nav = document.querySelector(".nav");
 let blanks = document.querySelectorAll(".blank");
 let logo = document.getElementById("darklogo");
-console.log(logo)
-console.log(blanks)
-console.log(nav)
 
 // -----------------------------------------Header nav----------------------------------------
 window.onscroll = function () {
