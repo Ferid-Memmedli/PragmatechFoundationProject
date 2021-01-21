@@ -223,15 +223,15 @@ worpres.addEventListener('click', function () {
 //     console.log(name.value, email.value, subject.value, comments.value);
 // });
 
-const form = document.forms[0];
+// const form = document.forms[0];
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    const formData = new FormData(this);
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     const formData = new FormData(this);
 
-    for (const formElement of formData) {
-        console.log(formElement);
-    }
-});
+//     for (const formElement of formData) {
+//         console.log(formElement);
+//     }
+// });
 //-----------------
 

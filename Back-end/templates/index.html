@@ -252,36 +252,17 @@
                     layout.</p>
             </div>
             <div class="qutu2 m-2x">
-                <div class="oxu"><img src="/static/img/blog/blog-1.jpg" alt="">
-                    <h2 class="mt-1x"><a href="{{ url_for('blog') }}"
-                            style="color: #212529;text-decoration: none;">There are many variations</a></h2>
+                {% for i in blogs %}
+                <div class="oxu"><img src="{{i.blogImage}}" alt="">
+                    <h2 class="mt-1x"><a href="blog/{{i.id}}"
+                            style="color: #212529;text-decoration: none;">{{i.blogTitle}}</a></h2>
                     <div class="izahat">
-                        <p class="tarix mv-1x">10.10.2020</p><span class="color-red">By Ferid</span>
-                        <p class="meqale">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus
-                            primis fames. Lobortis ultricies.</p>
-                        <p class="ardi mv-1x"><a href="{{ url_for('blog') }}">Read More...</a></p>
+                        <p class="tarix mv-1x">{{i.blogDate}}</p><span class="color-red">By Ferid</span>
+                        <p class="meqale">{{i.blogDetail}}</p>
+                        <p class="ardi mv-1x"><a href="blog/{{i.id}}">Read More...</a></p>
                     </div>
                 </div>
-                <div class="oxu"><img src="/static/img/blog/blog-2.jpg" alt="">
-                    <h2 class="mt-1x"><a href="{{ url_for('blog') }}"
-                            style="color: #212529;text-decoration: none;">There are many variations</a></h2>
-                    <div class="izahat">
-                        <p class="tarix mv-1x">10.10.2020</p><span class="color-red">By Ferid</span>
-                        <p class="meqale">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus
-                            primis fames. Lobortis ultricies.</p>
-                        <p class="ardi mv-1x"><a href="{{ url_for('blog') }}">Read More...</a></p>
-                    </div>
-                </div>
-                <div class="oxu"><img src="/static/img/blog/blog-3.jpg" alt="">
-                    <h2 class="mt-1x"><a href="{{ url_for('blog') }}"
-                            style="color: #212529;text-decoration: none;">There are many variations</a></h2>
-                    <div class="izahat">
-                        <p class="tarix mv-1x">10.10.2020</p><span class="color-red">By Ferid</span>
-                        <p class="meqale">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus
-                            primis fames. Lobortis ultricies.</p>
-                        <p class="ardi mv-1x"><a href="{{ url_for('blog') }}">Read More...</a></p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>

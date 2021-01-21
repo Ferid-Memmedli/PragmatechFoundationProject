@@ -8,28 +8,34 @@
 </head>
 
 <body>
-    <h1>DataBase Add</h1>
-    <form action="/admin" method="POST">
-        <p><input type="text" name="username" placeholder="Username..."></p>
-        <p><input type="email" name="email" placeholder="Email..."></p>
-        <p><input type="password" name="code" placeholder="Code..."></p>
-        <p><button type="submit" name="add">Add</button></p>
+    <h1>DataBase Blog Add</h1>
+    <form action="/blog/add" method="POST">
+        <p><input type="text" name="title" placeholder="Title..."></p>
+        <p><input type="text" name="detail" placeholder="Detail..."></p>
+        <p><input type="text" name="author" placeholder="Author..."></p>
+        <p><input type="text" name="image" placeholder="Image..."></p>
+        <p><button type="submit">Add</button></p>
     </form>
+    <h1>Forms</h1>
     <table border=1>
         <tr>
             <th>ID</th>
-            <th>Username</th>
+            <th>Name</th>
             <th>Email</th>
-            <th>Code</th>
+            <th>Subject</th>
+            <th>Message</th>
+            <th>Date</th>
             <th>Delete</th>
             <th>Update</th>
         </tr>
-        {% for user in userList %}
+        {% for user in form %}
         <tr>
             <td>{{user.id}}</td>
-            <td>{{user.username}}</td>
-            <td>{{user.email}}</td>
-            <td>{{user.code}}</td>
+            <td>{{user.userName}}</td>
+            <td>{{user.userEmail}}</td>
+            <td>{{user.userSubject}}</td>
+            <td>{{user.userMessage}}</td>
+            <td>{{user.userDate}}</td>
             <td><a href="/delete/{{user.id}}">Delete</a></td>
             <td><a href="/update/{{user.id}}">Update</a></td>
         </tr>

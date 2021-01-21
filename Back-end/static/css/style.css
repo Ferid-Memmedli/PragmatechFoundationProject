@@ -1722,6 +1722,7 @@
 }
 
 #blog .an .qutu2 .oxu {
+  overflow: hidden;
   text-align: left;
   background-color: white;
   padding: 5px;
@@ -1764,6 +1765,8 @@
 }
 
 #blog .an .qutu2 .oxu .izahat .meqale {
+  height: 45px;
+  overflow: hidden;
   color: #6c757d;
   display: block;
   -webkit-margin-before: 1em;
