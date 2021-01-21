@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset='utf-8'>
-    <title>Post Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/reset.css">
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
+{% extends "layout.html" %}
+{% block content_body %}
 
 <body>
     <!-- header -->
     <button id="myBtn" class="btn-border-red fm"><i class="fas fa-angle-up"></i></button>
     <div class="nav blog-nav width-full flex-full-center">
         <nav class="nav-bar flex-spacebetween-center">
-            <span class="nav-bar-left"><a href="{{ url_for('index') }}"><img id="darklogo" src="/static/img/logo.png"></a></span>
+            <span class="nav-bar-left"><a href="{{ url_for('index') }}"><img id="darklogo"
+                        src="/static/img/logo.png"></a></span>
             <div class="nav-bar-right">
                 <ul class="flex-spacearound-center">
                     <li><a class='blank blog-blank' href="{{ url_for('index') }}">Home</a></li>
@@ -99,48 +87,4 @@
             </div>
         </div>
     </section>
-    <!-- footer -->
-    <footer id="footer" class="relative p-10x">
-        <div class="container">
-            <div class="row flex-full-center text-center">
-                <div class="col-12">
-                    <div class="text-center text-white">
-                        <ul class="list-inline mb-3x">
-                            <li class="list-inline-item"><a class="link" href="#"><i
-                                        class="reng fab fa-pinterest-p"></i></a></li>
-                            <li class="list-inline-item"><a class="link" href="#"><i
-                                        class="reng fab fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a class="link" href="#"><i
-                                        class="reng fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a class="link" href="#"><i
-                                        class="reng fab fa-twitter"></i></a></li>
-                        </ul>
-                        <p> 2020 - 2021 &copy; Ferid. Design by SRBThemes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-<script src="/static/jscript/kutubhane/particles.js"></script>
-<script src="/static/jscript/kutubhane/app.js"></script>
-<script src="/static/jscript/kutubhane/typed.js"></script>
-<script src="/static/jscript/ijs.js"></script>
-<script>
-    
-document.addEventListener('DOMContentLoaded', function () {
-    var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        typeSpeed: 200,
-        backSpeed: 100,
-        startDelay: 1000,
-        cursorChar: '|',
-        loop: true,
-        fadeOut: false,
-        loopCount: Infinity,
-    });
-});
-</script>
-
-</html>
+    {% endblock %}
