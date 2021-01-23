@@ -2,14 +2,15 @@ from flask import Flask,render_template,request,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate,MigrateCommand
 from flask_script import Manager
-from datetime import datetime
-
+from datetime import datetime,date
+import random
+import os
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/database.db'
 db = SQLAlchemy(app)
 
-migrate = Migrate(app, db)
+migrate = Migrate(app, db, render_as_batch=True)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
@@ -26,7 +27,7 @@ class Blogs(db.Model):
     blogTitle = db.Column(db.String)
     blogDetail = db.Column(db.Text)
     blogAuthor = db.Column(db.String)
-    blogDate = db.Column(db.DateTime)
+    blogDate = db.Column(db.Date)
     blogImage = db.Column(db.String)
     blogStatus = db.Column(db.Boolean)
 
@@ -35,6 +36,7 @@ class Blogs(db.Model):
 def index():
     blog=Blogs.query.all()
     return render_template("index.html",blogs=blog)
+
 
 
 @app.route('/blog/<int:id>',methods=['GET','POST'])
@@ -48,7 +50,7 @@ def blog(id):
 def blogadd():
     if request.method == 'POST':
         blog = Blogs(blogTitle=request.form['title'],blogDetail=request.form['detail'],
-            blogAuthor=request.form['author'],blogDate=datetime.today(),blogImage=request.form['image'],blogStatus=True)
+            blogAuthor=request.form['author'],blogDate=date.today(),blogImage=request.form['image'],blogStatus=True)
         db.session.add(blog)
         db.session.commit()
         return redirect('/admin')
@@ -75,6 +77,7 @@ def delete(id):
     db.session.delete(form)
     db.session.commit()
     return redirect('/admin')
+
 
 # @app.route('/update/<int:id>',methods=['GET','POST'])
 # def update(id):
