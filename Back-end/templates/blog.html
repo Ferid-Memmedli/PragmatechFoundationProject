@@ -1,65 +1,38 @@
 {% extends "layout.html" %}
+
+{% block title %}
+<title>
+    Fotoqraf-Blog
+</title>
+{% endblock %}
+
+{% block content_menu %}
+<li><a class="blank" href="#blogPost">Blog</a></li>
+<li><a class="blank" href="#contact">Əlaqə</a></li>
+{% endblock %}
+
 {% block content_body %}
 
-<body>
-    <!-- header -->
-    <button id="myBtn" class="btn-border-red fm"><i class="fas fa-angle-up"></i></button>
-    <div class="nav blog-nav width-full flex-full-center">
-        <nav class="nav-bar flex-spacebetween-center">
-            <span class="nav-bar-left"><a href="{{ url_for('index') }}"><img id="darklogo"
-                        src="/static/img/logo.png"></a></span>
-            <div class="nav-bar-right">
-                <ul class="flex-spacearound-center">
-                    <li><a class='blank blog-blank' href="{{ url_for('index') }}">Home</a></li>
-                    <li><a class="blank blog-blank" href="{{ url_for('index') }}#about">About</a></li>
-                    <li><a class="blank blog-blank" href="{{ url_for('index') }}#servies">Services</a></li>
-                    <li><a class="blank blog-blank" href="{{ url_for('index') }}#client">Client</a></li>
-                    <li><a class="blank blog-blank" href="{{ url_for('index') }}#portfolio">Portfolio</a></li>
-                    <li><a class="blank blog-blank" href="#blogPost">Blog</a></li>
-                    <li><a class="blank blog-blank" href="{{ url_for('index') }}#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
 
-    <header id="header">
-        <div id="particles-js"></div>
-        <div class="ovarlay color-bg-black width-full"></div>
-        <div class="content color-white flex-columun-center width-full">
-            <h4 class="mb-3x">Blog</h4>
-            <div style="position: realtive;font-size: 50px;">
-                <div style="display: inline-block;">I'M
-                    <h1 id="typed-strings" style="letter-spacing: 5px;" class="mb-3x">
-                        <strong>Ferid Memmedli.</strong>
-                        <strong>A Programmer.</strong>
-                    </h1>
-                </div>
-                <span id="typed"></span>
-            </div>
-            <div class="dubl-down width-full"><a href="#blogPost" class="down color-white">
-                    <i class="fas fa-angle-double-down"></i></a></div>
-        </div>
-    </header>
-
-    <section id="blogPost" class="pv-10x">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>{{blogs.blogTitle}}</h1><span style="color: #e65f78;font-weight: 700;
+<section id="blogPost" class="pv-10x">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>{{blogs.blogTitle}}</h1><span style="color: #e65f78;font-weight: 700;
                     cursor: pointer;">BY Ferid</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <img src="{{blogs.blogImage}}">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <p>{{blogs.blogDetail}}.</p>
-
-                </div>
             </div>
         </div>
-    </section>
-    {% endblock %}
+        <div class="row">
+            <div class="col-12">
+                <img src="{{blogs.blogImage}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>{{blogs.blogDetail}}.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
