@@ -1,5 +1,6 @@
 from flask import Flask,render_template,request,redirect,url_for
 from flask_wtf import FlaskForm
+from werkzeug.utils import secure_filename
 from wtforms import StringField,SubmitField,IntegerField,SelectField,TextAreaField
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate,MigrateCommand
@@ -28,14 +29,14 @@ class Form(db.Model):
     userEmail = db.Column(db.String(50))
     userSubject = db.Column(db.String(100))
     userMessage = db.Column(db.Text)
-    userDate = db.Column(db.DateTime)
+    userDate = db.Column(db.DateTime,default=datetime.now())
 
 class Blogs(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     blogTitle = db.Column(db.String)
     blogDetail = db.Column(db.Text)
     blogAuthor = db.Column(db.String)
-    blogDate = db.Column(db.Date)
+    blogDate = db.Column(db.Date,default=date.today())
     blogImage = db.Column(db.String)
     blogStatus = db.Column(db.Boolean)
 
@@ -60,10 +61,10 @@ def blogadd():
         randNumber=random.randint(1, 9000);
         f = request.files['image']
         newName=f"blogfile{randNumber}.{f.filename.split('.')[-1]}"
-        f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
+        f.save(os.path.join(app.config['UPLOAD_PATH'] , secure_filename(newName)))   
         filePath=f"/{app.config['UPLOAD_PATH']}/{newName}"
         blog = Blogs(blogTitle=request.form['title'],blogDetail=request.form['detail'],
-            blogAuthor=request.form['author'],blogDate=date.today(),blogImage=filePath,blogStatus=True)
+            blogAuthor=request.form['author'],blogImage=filePath,blogStatus=True)
         db.session.add(blog)
         db.session.commit()
         return redirect('/admin')  
@@ -73,7 +74,7 @@ def blogadd():
 def add():
     if request.method == 'POST':
         form = Form(userName=request.form['name'],userEmail=request.form['email'],
-            userSubject=request.form['subject'],userMessage=request.form['comments'],userDate=datetime.today())
+            userSubject=request.form['subject'],userMessage=request.form['comments'])
         db.session.add(form)
         db.session.commit()
         return redirect('/')
