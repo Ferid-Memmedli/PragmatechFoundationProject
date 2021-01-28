@@ -12,8 +12,8 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/reset.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 
 </head>
 
@@ -22,14 +22,14 @@
     <button id="myBtn" class="btn-border-red fm"><i class="fas fa-angle-up"></i></button>
     <div class="nav width-full flex-full-center">
         <nav class="nav-bar flex-spacebetween-center">
-            <span class="nav-bar-left"><a href="{{ url_for('index') }}#header"><img id="darklogo" src="/static/img/logo.png"></a></span>
+            <span class="nav-bar-left"><a href="{{ url_for('homePage') }}#header"><img id="darklogo" src="./static/img/logo.png"></a></span>
             <div class="nav-bar-right">
                 <ul class="flex-spacearound-center">
-                    <li><a class="blank isik" href="{{ url_for('index') }}#header">Ana Səhifə</a></li>
-                    <li><a class="blank" href="{{ url_for('index') }}#about">Haqqımda</a></li>
-                    <li><a class="blank" href="{{ url_for('index') }}#servies">Xidmətlər</a></li>
-                    <li><a class="blank" href="{{ url_for('index') }}#client">Müştərilər</a></li>
-                    <li><a class="blank" href="{{ url_for('index') }}#portfolio">Portfel</a></li>
+                    <li><a class="blank isik" href="{{ url_for('homePage') }}#header">Ana Səhifə</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#about">Haqqımda</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#servies">Xidmətlər</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#client">Müştərilər</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#portfolio">Portfel</a></li>
                     {% block content_menu %}
                     {% endblock %}
                 </ul>
@@ -70,15 +70,15 @@
                     looking at its layout.</p>
             </div>
             <div class="row width-full icons width-full mv-3x">
-                <div class="col-4 mr-2x ml-2x width-full "><img src="/static/img/svg/mbri-mobile2.svg" alt="">
+                <div class="col-4 mr-2x ml-2x width-full "><img src="./static/img/svg/mbri-mobile2.svg" alt="">
                     <h4 class="mv-1x">Əlaqə</h4>
                     <p class="text-muted">+994 55 239 33 47</p>
                 </div>
-                <div class="col-4 mr-2x ml-2x width-full "><img src="/static/img/svg/mbri-pin.svg" alt="">
+                <div class="col-4 mr-2x ml-2x width-full "><img src="./static/img/svg/mbri-pin.svg" alt="">
                     <h4 class="mv-1x">Ünvan</h4>
                     <p class="text-muted">Bakı</p>
                 </div>
-                <div class="col-4 mr-2x ml-2x width-full "><img src="/static/img/svg/mbri-letter.svg" alt="">
+                <div class="col-4 mr-2x ml-2x width-full "><img src="./static/img/svg/mbri-letter.svg" alt="">
                     <h4 class="mv-1x">Email</h4>
                     <p class="text-muted">shahasist@gmail.com</p>
                 </div>
@@ -141,10 +141,10 @@
     </footer>
 
 </body>
-<script src="/static/jscript/kutubhane/particles.js"></script>
-<script src="/static/jscript/kutubhane/app.js"></script>
-<script src="/static/jscript/kutubhane/typed.js"></script>
-<script src="/static/jscript/ijs.js"></script>
+<script src="./static/jscript/kutubhane/particles.js"></script>
+<script src="./static/jscript/kutubhane/app.js"></script>
+<script src="./static/jscript/kutubhane/typed.js"></script>
+<script src="./static/jscript/ijs.js"></script>
 <script>
 
     document.addEventListener('DOMContentLoaded', function () {
