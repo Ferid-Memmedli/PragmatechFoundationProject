@@ -110,5 +110,5 @@
 - DB 3 table yazildi
 
 # Back-End
-## Week 1 1
+## Week 1
 - Flask folder struktor qurulmasi

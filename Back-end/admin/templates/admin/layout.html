@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Admin & Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="./static/assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="./static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./static/assets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="./static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="./static/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="./static/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- leftbar-tab-menu -->
+    <div class="leftbar-tab-menu">
+        <div class="main-icon-menu">
+            <a href="{{url_for('admin.adminPage')}}" class="logo logo-metrica d-block text-center">
+                <span>
+                    <img src="./static/assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                </span>
+            </a>
+            <nav class="nav">
+                <a href="#MetricaProject" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title=""
+                    data-original-title="Project" data-trigger="hover">
+                    <i data-feather="aperture" class="align-self-center menu-icon icon-dual"></i>
+                </a>
+                <!--end MetricaProject-->
+            </nav>
+            <!--end nav-->
+        </div>
+        <!--end main-icon-menu-->
+
+        <div class="main-menu-inner">
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="{{url_for('admin.adminPage')}}" class="logo">
+                    <span>
+                        <img src="./static/assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
+                        <img src="./static/assets/images/logo.png" alt="logo-large" class="logo-lg logo-light">
+                    </span>
+                </a>
+            </div>
+            <!--end logo-->
+            <div class="menu-body slimscroll">
+                <div id="MetricaProject" class="main-icon-menu-pane">
+                    <div class="title-box">
+                        <h6 class="menu-title">Dashboard</h6>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('admin.adminPage')}}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('admin.adminSeo')}}">Edit Seo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edit Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edit About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edit Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edit Client</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edit Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edit Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Edit Contact</a></li>
+                    </ul>
+                </div><!-- end Project -->
+            </div>
+            <!--end menu-body-->
+        </div><!-- end main-menu-inner-->
+    </div>
+    <!-- end leftbar-tab-menu-->
+
+    <!-- Top Bar Start -->
+    <div class="topbar">
+        <!-- Navbar -->
+        <nav class="navbar-custom">
+            <ul class="list-unstyled topbar-nav float-right mb-0">
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown"
+                        href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="ti-bell noti-icon"></i>
+                        <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-lg pt-0">
+
+                        <h6
+                            class="dropdown-item-text font-15 m-0 py-3 bg-primary text-white d-flex justify-content-between align-items-center">
+                            Notifications <span class="badge badge-light badge-pill">2</span>
+                        </h6>
+                        <div class="slimscroll notification-list">
+                            <!-- item-->
+                            <a href="#" class="dropdown-item py-3">
+                                <small class="float-right text-muted pl-2">2 min ago</small>
+                                <div class="media">
+                                    <div class="avatar-md bg-primary">
+                                        <i class="la la-cart-arrow-down text-white"></i>
+                                    </div>
+                                    <div class="media-body align-self-center ml-2 text-truncate">
+                                        <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                        <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                    </div>
+                                    <!--end media-body-->
+                                </div>
+                                <!--end media-->
+                            </a>
+                            <!--end-item-->
+                            <!-- item-->
+                            <a href="#" class="dropdown-item py-3">
+                                <small class="float-right text-muted pl-2">10 min ago</small>
+                                <div class="media">
+                                    <div class="avatar-md bg-success">
+                                        <i class="la la-group text-white"></i>
+                                    </div>
+                                    <div class="media-body align-self-center ml-2 text-truncate">
+                                        <h6 class="my-0 font-weight-normal text-dark">Meeting with designers</h6>
+                                        <small class="text-muted mb-0">It is a long established fact that a
+                                            reader.</small>
+                                    </div>
+                                    <!--end media-body-->
+                                </div>
+                                <!--end media-->
+                            </a>
+                            <!--end-item-->
+                            <!-- item-->
+                            <a href="#" class="dropdown-item py-3">
+                                <small class="float-right text-muted pl-2">40 min ago</small>
+                                <div class="media">
+                                    <div class="avatar-md bg-pink">
+                                        <i class="la la-list-alt text-white"></i>
+                                    </div>
+                                    <div class="media-body align-self-center ml-2 text-truncate">
+                                        <h6 class="my-0 font-weight-normal text-dark">UX 3 Task complete.</h6>
+                                        <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                    </div>
+                                    <!--end media-body-->
+                                </div>
+                                <!--end media-->
+                            </a>
+                            <!--end-item-->
+                            <!-- item-->
+                            <a href="#" class="dropdown-item py-3">
+                                <small class="float-right text-muted pl-2">1 hr ago</small>
+                                <div class="media">
+                                    <div class="avatar-md bg-warning">
+                                        <i class="la la-truck text-white"></i>
+                                    </div>
+                                    <div class="media-body align-self-center ml-2 text-truncate">
+                                        <h6 class="my-0 font-weight-normal text-dark">Your order is placed</h6>
+                                        <small class="text-muted mb-0">It is a long established fact that a
+                                            reader.</small>
+                                    </div>
+                                    <!--end media-body-->
+                                </div>
+                                <!--end media-->
+                            </a>
+                            <!--end-item-->
+                            <!-- item-->
+                            <a href="#" class="dropdown-item py-3">
+                                <small class="float-right text-muted pl-2">2 hrs ago</small>
+                                <div class="media">
+                                    <div class="avatar-md bg-info">
+                                        <i class="la la-check-circle text-white"></i>
+                                    </div>
+                                    <div class="media-body align-self-center ml-2 text-truncate">
+                                        <h6 class="my-0 font-weight-normal text-dark">Payment Successfull</h6>
+                                        <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                    </div>
+                                    <!--end media-body-->
+                                </div>
+                                <!--end media-->
+                            </a>
+                            <!--end-item-->
+                        </div>
+                        <!-- All-->
+                        <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                            View all <i class="fi-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown"
+                        href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="./static/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle" />
+                        <span class="ml-1 nav-user-name hidden-sm">Amelia <i class="mdi mdi-chevron-down"></i> </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                        <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!--end topbar-nav-->
+
+            <ul class="list-unstyled topbar-nav mb-0">
+                <li>
+                    <a href="../projects/projects-index.html">
+                        <span class="responsive-logo">
+                            <img src="./static/assets/images/logo-sm.png" alt="logo-small"
+                                class="logo-sm align-self-center" height="34">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <button class="button-menu-mobile nav-link">
+                        <i data-feather="menu" class="align-self-center"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <!-- end navbar-->
+    </div>
+    <!-- Top Bar End -->
+
+    <div class="page-wrapper">
+
+        <!-- Page Content-->
+        <div class="page-content-tab">
+
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                {% block contentAdmin %}
+                {% endblock %}
+                <!-- end page title end breadcrumb -->
+            </div><!-- container -->
+
+            <!--  Modal content for the above example -->
+
+            <footer class="footer text-center text-sm-left">
+                &copy; 2019 - 2020 Metrica <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i
+                        class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+            </footer>
+            <!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+
+
+
+
+    <!-- jQuery  -->
+    <script src="./static/assets/js/jquery.min.js"></script>
+    <script src="./static/assets/js/jquery-ui.min.js"></script>
+    <script src="./static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./static/assets/js/metismenu.min.js"></script>
+    <script src="./static/assets/js/waves.js"></script>
+    <script src="./static/assets/js/feather.min.js"></script>
+    <script src="./static/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="./static/plugins/apexcharts/apexcharts.min.js"></script>
+
+    <script src="./static/assets/pages/jquery.projects-index.init.js"></script>
+
+    <!-- App js -->
+    <script src="./static/assets/js/app.js"></script>
+</body>
+
+</html>

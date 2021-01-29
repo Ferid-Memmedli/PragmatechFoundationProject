@@ -19,4 +19,5 @@ manager.add_command('db', MigrateCommand)
 import models
 import forms
 from app.routes import *
+app.register_blueprint(blog)
 import admin

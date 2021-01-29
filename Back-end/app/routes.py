@@ -6,12 +6,17 @@ from werkzeug.utils import secure_filename
 import random
 import os
 
+blog = Blueprint('blog',
+__name__,
+url_prefix='/blog',
+static_folder='static',
+template_folder='templates')
 
 @app.route('/')
 def homePage():
     return render_template('app/index.html')
 
-@app.route('/blog')
+@blog.route('/')
 def blogPage():
     return render_template('app/blog.html')
 

@@ -11,3 +11,6 @@ template_folder='templates')
 def adminPage():
     return render_template('admin/index.html')
 
+@admin.route('/seo')
+def adminSeo():
+    return render_template('admin/editSeo.html')
