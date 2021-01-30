@@ -6,19 +6,30 @@ from werkzeug.utils import secure_filename
 import random
 import os
 
-blog = Blueprint('blog',
-__name__,
-url_prefix='/blog',
-static_folder='static',
-template_folder='templates')
+blog = Blueprint(
+    'blog',
+    __name__,
+    url_prefix='/blog',
+    static_folder='static',
+    template_folder='templates')
 
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def homePage():
-    return render_template('app/index.html')
+    blog=Blogs.query.all()
+    if request.method == 'POST':
+        form = Form(userName=request.form['name'],userEmail=request.form['email'],
+            userSubject=request.form['subject'],userMessage=request.form['comments'])
+        db.session.add(form)
+        db.session.commit()
+        return redirect ('/')
+    return render_template('app/index.html',blog=blog)
 
-@blog.route('/')
-def blogPage():
-    return render_template('app/blog.html')
+
+
+@blog.route('/<int:id>',methods=['GET','POST'])
+def blogPage(id):
+    a = Blogs.query.get(id)
+    return render_template('app/blog.html',blog=a)
 
 
 

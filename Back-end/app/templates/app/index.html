@@ -1,14 +1,8 @@
 {% extends "app/layout.html" %}
 
-{% block title %}
-<title>
-    Fotoqraf
-</title>
-{% endblock %}
-
 {% block content_menu %}
 <li><a class="blank" href="#blog">Blog</a></li>
-<li><a class="blank" href="#contact">Əlaqə</a></li>
+<li><a class="blank" href="#contact">Contact</a></li>
 {% endblock %}
 
 {% block content_body %}
@@ -18,8 +12,8 @@
     <div class="flex-spacebetween border-box pb-2x">
         <div class="mr-3x" id="about-logo"><img class="width-full" src="./static/img/about.jpg" alt=""></div>
         <div class="pr-1x flex-spacebetween pl-1x border-box width-full" id="about-metn">
-            <h2 class="mb-2x">Mənim <span>Haqqımda</span></h2>
-            <h4 class="mb-2x">Salam! Mən <span class="color-red">Fərid Məmmədli.</span></h4>
+            <h2 class="mb-2x">My <span>About</span></h2>
+            <h4 class="mb-2x">Hello! My <span class="color-red">Ferid Memmedli.</span></h4>
             <p class="mb-1x color-light-black">It is a long established fact that a reader will be distracted by the
                 readable content of a
                 page when
@@ -43,7 +37,7 @@
 </section>
 <!-- section servies -->
 <section id="servies" class="pv-10x color-bg-white">
-    <h2>Xidmətlər</h2>
+    <h2>Our Services</h2>
     <p class="mv-2x mb-7x border-box color-light-black">It is a long established fact that a reader will be of a
         page when established fact looking at its
         layout.</p>
@@ -105,24 +99,12 @@
 <!--  freelancer -->
 <main id="freelancer" class="pv-10x">
     <div class="container">
-        <div class="divfree">
-            <h2>
-                Mən Freelancer üçün hazıram.
-            </h2>
-        </div>
-        <a href="#" style="text-decoration: none;">
-            <div class="divhire flex-full-center mt-3x">
-                <button class="btn btn-border-radius-x btn-border-red">
-                    Məni İşə Götür!
-                </button>
-            </div>
-        </a>
     </div>
 </main>
 <!-- section client -->
 <section id="client" class="pv-10x">
     <div class="container flex-columun-around">
-        <h2>Müştərilər</h2>
+        <h2>Our Client</h2>
         <p class="flex-full-center m-2x color-light-black">It is a long established fact that a reader will be of a
             page when established fact looking at its layout.</p>
         <div id="baba">
@@ -160,7 +142,7 @@
 <!-- section portfolio -->
 <section id="portfolio" class="pv-10x">
     <div class="port">
-        <h2>İşlərim</h2>
+        <h2>Our Work</h2>
         <p class="mv-2x">It is a long established fact that a reader will be of a page when established fact looking
             at its layout.</p>
         <button id="all" class="job btn btn-red btn-border-radius-6x active">ALL</button>
@@ -226,16 +208,17 @@
                 layout.</p>
         </div>
         <div class="qutu2 m-2x">
-            <div class="oxu"><img src="#" alt="">
-                <h2 class="mt-1x"><a href="{{ url_for('blog.blogPage') }}"
-                        style="color: #212529;text-decoration: none;">#</a></h2>
+            {% for blog in blog %}
+            <div class="oxu"><img src="{{blog.blogImage}}">
+                <h2 class="mt-1x"><a href="/blog/{{blog.id}}"
+                        style="color: #212529;text-decoration: none;">{{blog.blogTitle}}</a></h2>
                 <div class="izahat">
-                    <p class="tarix mv-1x">#</p><span class="color-red">By Ferid</span>
-                    <p class="meqale">#</p>
-                    <p class="ardi mv-1x"><a href="{{ url_for('blog.blogPage') }}">Read More...</a></p>
+                    <p class="tarix mv-1x">{{blog.blogDate}}</p><span class="color-red">{{blog.blogAuthor}}</span>
+                    <p class="meqale">{{blog.blogDetail}}</p>
+                    <p class="ardi mv-1x"><a href="/blog/{{blog.id}}">Read More...</a></p>
                 </div>
             </div>
-
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -1,14 +1,8 @@
 {% extends "app/layout.html" %}
 
-{% block title %}
-<title>
-    Fotoqraf-Blog
-</title>
-{% endblock %}
-
 {% block content_menu %}
 <li><a class="blank" href="#blogPost">Blog</a></li>
-<li><a class="blank" href="#contact">Əlaqə</a></li>
+<li><a class="blank" href="#contact">Contact</a></li>
 {% endblock %}
 
 {% block content_body %}
@@ -18,19 +12,18 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>#</h1><span style="color: #e65f78;font-weight: 700;
-                    cursor: pointer;">BY Ferid</span>
+                <h1>{{blog.blogTitle}}</h1><span style="color: #e65f78;font-weight: 700;
+                    cursor: pointer;">{{blog.blogAuthor}}</span>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <img src="#">
+                <img src="{{blog.blogImage}}">
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p>#</p>
-
+                <p>{{blog.blogDetail}}</p>
             </div>
         </div>
     </div>

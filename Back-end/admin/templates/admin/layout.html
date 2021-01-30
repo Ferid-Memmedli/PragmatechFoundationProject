@@ -12,6 +12,8 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="./static/assets/images/favicon.ico">
 
+    <link href="./static/plugins/dropify.min.css" rel="stylesheet">
+
     <!-- App css -->
     <link href="./static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="./static/assets/css/jquery-ui.min.css" rel="stylesheet">
@@ -65,7 +67,8 @@
                         <li class="nav-item"><a class="nav-link" href="#">Edit Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Edit Client</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Edit Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Edit Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{url_for('admin.adminBlog')}}">Edit Blog</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#">Edit Contact</a></li>
                     </ul>
                 </div><!-- end Project -->
@@ -246,8 +249,6 @@
     <!-- end page-wrapper -->
 
 
-
-
     <!-- jQuery  -->
     <script src="./static/assets/js/jquery.min.js"></script>
     <script src="./static/assets/js/jquery-ui.min.js"></script>
@@ -257,11 +258,16 @@
     <script src="./static/assets/js/feather.min.js"></script>
     <script src="./static/assets/js/jquery.slimscroll.min.js"></script>
     <script src="./static/plugins/apexcharts/apexcharts.min.js"></script>
-
+    <script src="./static/plugins/dropify.min.js"></script>
+    <script src="./static/assets/pages/jquery.form-upload.init.js"></script>
     <script src="./static/assets/pages/jquery.projects-index.init.js"></script>
 
+    <script src="./static/plugins/tinymce/tinymce.min.js"></script>
+    <script src="./static/assets/pages/jquery.form-editor.init.js"></script>
+    
     <!-- App js -->
     <script src="./static/assets/js/app.js"></script>
+
 </body>
 
 </html>

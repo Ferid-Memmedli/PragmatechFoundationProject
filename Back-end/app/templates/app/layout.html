@@ -3,9 +3,9 @@
 
 <head>
     <meta charset='utf-8'>
-    {% block title %}
-
-    {% endblock %}
+    <title>
+        Fotoqraf
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -25,11 +25,11 @@
             <span class="nav-bar-left"><a href="{{ url_for('homePage') }}#header"><img id="darklogo" src="./static/img/logo.png"></a></span>
             <div class="nav-bar-right">
                 <ul class="flex-spacearound-center">
-                    <li><a class="blank isik" href="{{ url_for('homePage') }}#header">Ana Səhifə</a></li>
-                    <li><a class="blank" href="{{ url_for('homePage') }}#about">Haqqımda</a></li>
-                    <li><a class="blank" href="{{ url_for('homePage') }}#servies">Xidmətlər</a></li>
-                    <li><a class="blank" href="{{ url_for('homePage') }}#client">Müştərilər</a></li>
-                    <li><a class="blank" href="{{ url_for('homePage') }}#portfolio">Portfel</a></li>
+                    <li><a class="blank isik" href="{{ url_for('homePage') }}#header">Home</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#about">About</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#servies">Services</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#client">Client</a></li>
+                    <li><a class="blank" href="{{ url_for('homePage') }}#portfolio">Portfolio</a></li>
                     {% block content_menu %}
                     {% endblock %}
                 </ul>
@@ -40,18 +40,16 @@
         <div id="particles-js"></div>
         <div class="ovarlay color-bg-black width-full"></div>
         <div class="content color-white flex-columun-center width-full">
-            <h4 class="mb-3x">Xoş Gəlmisiniz</h4>
+            <h4 class="mb-3x">Welcome</h4>
             <div style="position: realtive;font-size: 50px;">
-                <div style="display: inline-block;">Mən
+                <div style="display: inline-block;">I'M
                     <h1 id="typed-strings" style="letter-spacing: 5px;" class="mb-3x">
-                        <strong>Fərid Məmmədli.</strong>
-                        <strong>Fotoqrafam.</strong>
+                        <strong>Ferid Memmedli.</strong>
+                        <strong>Photograph.</strong>
                     </h1>
                 </div>
                 <span id="typed"></span>
             </div>
-            <p class="mv-3x color-light-white">It is a long established fact that a reader will be of a page when
-                established fact looking at its layout. </p>
             <div class="dubl-down width-full"><a href="#about" class="down color-white">
                     <i class="fas fa-angle-double-down"></i></a></div>
         </div>
@@ -63,7 +61,7 @@
     <section id="contact" class="pv-10x">
         <div class="container">
             <div class="row width-full">
-                <h2 class="col-12">Əlaqə</h2>
+                <h2 class="col-12">Contact</h2>
             </div>
             <div class="row width-full metin">
                 <p class="col-12">It is a long established fact that a reader will be of a page when established fact
@@ -71,19 +69,19 @@
             </div>
             <div class="row width-full icons width-full mv-3x">
                 <div class="col-4 mr-2x ml-2x width-full "><img src="./static/img/svg/mbri-mobile2.svg" alt="">
-                    <h4 class="mv-1x">Əlaqə</h4>
+                    <h4 class="mv-1x">Call Us On</h4>
                     <p class="text-muted">+994 55 239 33 47</p>
                 </div>
                 <div class="col-4 mr-2x ml-2x width-full "><img src="./static/img/svg/mbri-pin.svg" alt="">
-                    <h4 class="mv-1x">Ünvan</h4>
-                    <p class="text-muted">Bakı</p>
+                    <h4 class="mv-1x">Visit Office</h4>
+                    <p class="text-muted">Baku</p>
                 </div>
                 <div class="col-4 mr-2x ml-2x width-full "><img src="./static/img/svg/mbri-letter.svg" alt="">
-                    <h4 class="mv-1x">Email</h4>
+                    <h4 class="mv-1x">Email Us At</h4>
                     <p class="text-muted">shahasist@gmail.com</p>
                 </div>
             </div>
-            <form method="POST" action="/add" class="row width-full form">
+            <form method="POST" action="/" class="row width-full form">
                 <div class="container-full">
                     <div class="row width-full">
                         <div class="col-6">
@@ -108,7 +106,7 @@
                         </div>
                     </div>
                     <div class="row width-full send">
-                        <button type="submit" class="btn btn-border-red btn-border-radius-x">Göndər</button>
+                        <button type="submit" class="btn btn-border-red btn-border-radius-x">SEND MESSANGE</button>
                     </div>
                 </div>
             </form>
