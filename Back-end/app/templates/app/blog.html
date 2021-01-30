@@ -1,5 +1,4 @@
 {% extends "app/layout.html" %}
-
 {% block content_menu %}
 <li><a class="blank" href="#blogPost">Blog</a></li>
 <li><a class="blank" href="#contact">Contact</a></li>
@@ -11,21 +10,26 @@
 <section id="blogPost" class="pv-10x">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1>{{blog.blogTitle}}</h1><span style="color: #e65f78;font-weight: 700;
-                    cursor: pointer;">{{blog.blogAuthor}}</span>
+            <div class="col-12" style="display: flex;justify-content: center;">
+                <h1>
+                    {{blog.blogTitle}}
+                </h1>
+                <span style="color: #e65f78;font-weight: 700;cursor: pointer;">
+                    {{blog.blogAuthor}}
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" style="display: flex;justify-content: center;">
+                <img src="{{blog.blogImage}}" style="padding: 0.25rem;background-color: #fff;border: 1px solid #dee2e6;border-radius: 0.25rem;max-width: 50%;height: auto;">
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <img src="{{blog.blogImage}}">
+                {{blog.blogDetail|safe}}
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <p>{{blog.blogDetail}}</p>
-            </div>
-        </div>
+
     </div>
 </section>
 {% endblock %}
