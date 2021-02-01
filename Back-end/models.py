@@ -17,4 +17,10 @@ class Blogs(db.Model):
     blogAuthor = db.Column(db.String,nullable=False)
     blogDate = db.Column(db.Date,default=date.today())
     blogImage = db.Column(db.String,nullable=False)
-    blogStatus = db.Column(db.Boolean,default=True)
+    blogStatus = db.Column(db.Boolean)
+    def __init__(self,blogTitle,blogDetail,blogAuthor,blogImage):
+        self.blogDetail=blogDetail
+        self.blogAuthor=blogAuthor
+        self.blogImage=blogImage
+        self.blogTitle=blogTitle
+        self.blogStatus = True

@@ -17,6 +17,10 @@ def adminPage():
 def adminSeo():
     return render_template('admin/editSeo.html')
 
+@admin.route('/about',methods=['GET','POST'])
+def adminAbout():
+    return render_template('admin/editAbout.html')
+
 @admin.route('/blog',methods=['GET','POST'])
 def adminBlog():
     blog=Blogs.query.all()

@@ -7,15 +7,47 @@
             <div class="float-right">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Home</li>
+                    <li class="breadcrumb-item active">Edit Contact</li>
                 </ol>
             </div>
-            <h4 class="page-title">Dashboard</h4>
+            <h4 class="page-title">Contact</h4>
         </div>
         <!--end page-title-box-->
     </div>
     <!--end col-->
 </div>
+
+<form method="POST" class="row">
+    <div class="col-4">
+        <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label text-right">Call Us On</label>
+            <div class="col-8">
+                <input class="form-control" name="elaqe" type="text" id="example-text-input">
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label text-right">Visit Office</label>
+            <div class="col-8">
+                <input class="form-control" name="unvan" type="text" id="example-text-input">
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label text-right">Email Us At</label>
+            <div class="col-8">
+                <input class="form-control" name="email" type="email" id="example-text-input">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 text-right">
+        <button type="submit" class="btn btn-gradient-primary px-5 py-2">Send Message</button>
+    </div>
+</form>
+
+
 <div class="row">
     <div class="col-lg-12">
         <div class="card">
@@ -45,7 +77,8 @@
                                 <td>{{form.userMessage}}</td>
                                 <td>{{form.userDate}}</td>
                                 <td>
-                                    <a href="/admin/deleteform/{{form.id}}"><i class="fas fa-trash-alt text-danger font-16"></i></a>
+                                    <a href="/admin/deleteform/{{form.id}}"><i
+                                            class="fas fa-trash-alt text-danger font-16"></i></a>
                                 </td>
                             </tr>
                             {% endfor %}
