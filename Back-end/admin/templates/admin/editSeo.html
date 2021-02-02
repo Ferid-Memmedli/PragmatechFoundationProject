@@ -17,12 +17,18 @@
     <!--end col-->
 </div>
 
-<form method="POST" class="row">
+<form action="{{url_for('admin.adminSeo')}}" method="POST" enctype="multipart/form-data" class="row">
     <div class="col-6">
         <div class="form-group row">
             <label for="example-text-input" class="col-4 col-form-label text-right">Website Title</label>
             <div class="col-8">
-                <input class="form-control" name="title" type="text" id="example-text-input">
+                {% if bos %}
+                {% for i in seo %}
+                    <input class="form-control" name="title" value="{{i.title}}" type="text" id="example-text-input" required>
+                {% endfor %}
+                {% else %}
+                    <input class="form-control" value="None" name="title" type="text" id="example-text-input" required>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -30,7 +36,13 @@
         <div class="form-group row">
             <label for="example-text-input" class="col-2 col-form-label text-right">Keywords</label>
             <div class="col-10">
-                <input class="form-control" name="title" type="text" id="example-text-input">
+                {% if bos %}
+                {% for i in seo %}
+                    <input class="form-control" value="{{i.keywords}}" name="keywords" type="text" id="example-text-input" required>
+                {% endfor %}
+                {% else %}
+                <input class="form-control" value="None" name="keywords" type="text" id="example-text-input" required>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -39,7 +51,17 @@
             <div class="card-body">
                 <h4 class="mt-0 header-title">Site Icon</h4>
                 <div class="dropify-wrapper">
-                    <input type="file" name="file" id="input-file-now" class="dropify">
+                    <input type="file" name="file" id="input-file-now" class="dropify" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="mt-0 header-title">Site Home Foto</h4>
+                <div class="dropify-wrapper">
+                    <input type="file" name="homefile" id="input-file-now" class="dropify" required>
                 </div>
             </div>
         </div>

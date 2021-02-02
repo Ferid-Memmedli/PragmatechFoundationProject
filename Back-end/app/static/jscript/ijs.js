@@ -1,7 +1,6 @@
 let nav = document.querySelector(".nav");
 let mybutton = document.getElementById("myBtn");
 let blanks = document.querySelectorAll(".blank");
-let logo = document.getElementById("darklogo");
 let sections = document.querySelectorAll("section");
 let header = document.getElementById("header");
 
@@ -13,7 +12,6 @@ window.onscroll = function () {
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        logo.setAttribute("src", "/static/img/logo-dark.png");
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.padding = ('15px 0px');
         nav.style.background = "white";
@@ -23,7 +21,6 @@ function scrollFunction() {
             i.style.color = "black";
         });
     } else {
-        logo.setAttribute("src", "/static/img/logo.png");
         nav.style.transition = 'all 0.5s ease-in-out';
         nav.style.padding = ('20px 0px');
         nav.style.background = "none";

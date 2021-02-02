@@ -967,8 +967,6 @@
   position: relative;
   width: 100%;
   height: 640px;
-  background: url("../img/header-bg.jpg") no-repeat center;
-  background-size: cover;
   border-bottom-left-radius: 400px;
   border-bottom-right-radius: 400px;
   background-position: center center;

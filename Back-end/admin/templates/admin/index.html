@@ -25,10 +25,10 @@
             <div class="col-8">
                 {% if bos %}
                 {% for i in contact %}
-                    <input class="form-control" name="elaqe" value="{{i.elaqe}}" type="text" id="example-text-input">
+                    <input class="form-control" name="elaqe" value="{{i.elaqe}}" type="text" id="example-text-input" required>
                 {% endfor %}
                 {% else %}
-                    <input class="form-control" name="elaqe" value="Contact" type="text" id="example-text-input">
+                    <input class="form-control" name="elaqe" value="Contact" type="text" id="example-text-input" required>
                 {% endif %}
             </div>
         </div>
@@ -39,10 +39,10 @@
             <div class="col-8">
                 {% if bos %}
                 {% for i in contact %}
-                    <input class="form-control" name="unvan" value='{{i.unvan}}' type="text" id="example-text-input">
+                    <input class="form-control" name="unvan" value='{{i.unvan}}' type="text" id="example-text-input" required>
                 {% endfor %}
                 {% else %}
-                    <input class="form-control" name="unvan" value='Adress' type="text" id="example-text-input">
+                    <input class="form-control" name="unvan" value='Adress' type="text" id="example-text-input" required>
                 {% endif %}
             </div>
         </div>
@@ -53,10 +53,10 @@
             <div class="col-8">
                 {% if bos %}
                 {% for i in contact %}
-                <input class="form-control" name="email" value="{{i.email}}" type="email" id="example-text-input">
+                <input class="form-control" name="email" value="{{i.email}}" type="email" id="example-text-input" required>
                 {% endfor %}
                 {% else %}
-                <input class="form-control" name="email" value="Email" type="email" id="example-text-input">
+                <input class="form-control" name="email" value="Email" type="email" id="example-text-input" required>
                 {% endif %}
             </div>
         </div>

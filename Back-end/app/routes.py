@@ -15,6 +15,7 @@ blog = Blueprint(
 
 @app.route('/',methods=['GET','POST'])
 def homePage():
+    seo=Seo.query.all()
     blog=Blogs.query.all()
     contact= Contact.query.all()
     about=About.query.all()
@@ -24,14 +25,15 @@ def homePage():
         db.session.add(form)
         db.session.commit()
         return redirect ('/')
-    return render_template('app/index.html',blog=blog,contact=contact,about=about)
+    return render_template('app/index.html',seo=seo,blog=blog,contact=contact,about=about)
 
 
 
 @blog.route('/<int:id>',methods=['GET','POST'])
 def blogPage(id):
-    a = Blogs.query.get(id)
-    return render_template('app/blog.html',blog=a)
+    seo=Seo.query.all()
+    blog = Blogs.query.get(id)
+    return render_template('app/blog.html',blog=blog,seo=seo)
 
 
 

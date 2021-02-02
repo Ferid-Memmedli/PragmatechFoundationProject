@@ -3,9 +3,11 @@
 
 <head>
     <meta charset='utf-8'>
+    {% for i in seo %}
     <title>
-        Fotoqraf
+        {{i.title}}
     </title>
+    {% endfor %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -22,7 +24,11 @@
     <button id="myBtn" class="btn-border-red fm"><i class="fas fa-angle-up"></i></button>
     <div class="nav width-full flex-full-center">
         <nav class="nav-bar flex-spacebetween-center">
-            <span class="nav-bar-left"><a href="{{ url_for('homePage') }}#header"><img id="darklogo" src="./static/img/logo.png"></a></span>
+            <span class="nav-bar-left"><a href="{{ url_for('homePage') }}#header">
+                {% for i in seo %}
+                <img id="darklogo" src="{{i.image}}">
+                {% endfor %}
+            </a></span>
             <div class="nav-bar-right">
                 <ul class="flex-spacearound-center">
                     <li><a class="blank isik" href="{{ url_for('homePage') }}#header">Home</a></li>
@@ -36,15 +42,16 @@
             </div>
         </nav>
     </div>
-    <header id="header">
+    {% for i in seo %}
+    <header id="header" style="background:url({{i.homeimage}}) fixed center padding-box;background-size: cover;">
         <div id="particles-js"></div>
         <div class="ovarlay color-bg-black width-full"></div>
         <div class="content color-white flex-columun-center width-full">
             <h4 class="mb-3x">Welcome</h4>
-            <div style="position: realtive;font-size: 50px;">
+            <div style="position: realtive;font-size:50px;">
                 <div style="display: inline-block;">I'M
                     <h1 id="typed-strings" style="letter-spacing: 5px;" class="mb-3x">
-                        <strong>Ferid Memmedli.</strong>
+                        <strong>{{i.keywords}}</strong>
                     </h1>
                 </div>
                 <span id="typed"></span>
@@ -53,6 +60,7 @@
                     <i class="fas fa-angle-double-down"></i></a></div>
         </div>
     </header>
+    {% endfor %}
     {% block content_body %}
 
     {% endblock %}

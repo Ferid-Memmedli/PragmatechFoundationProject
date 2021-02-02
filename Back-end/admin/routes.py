@@ -27,7 +27,29 @@ def adminPage():
 
 @admin.route('/seo',methods=['GET','POST'])
 def adminSeo():
-    return render_template('admin/editSeo.html')
+    seo=Seo.query.all()
+    if Seo.query.get(1):
+        bos=True
+    else:
+        bos=False
+    if request.method=='POST':
+        rand=random.randint(1, 90000)
+        rand1=random.randint(1, 90000)
+        f = request.files['file']
+        newName=f"blogfile{rand}.{f.filename.split('.')[-1]}"
+        f.save(os.path.join(app.config['UPLOAD_PATH'],newName))
+        filePath=f"/{app.config['UPLOAD_PATH']}/{newName}" 
+        h = request.files['homefile']
+        homenewName=f"blogfile{rand1}.{f.filename.split('.')[-1]}"
+        h.save(os.path.join(app.config['UPLOAD_PATH'],homenewName))
+        homefilePath=f"/{app.config['UPLOAD_PATH']}/{homenewName}" 
+        about = Seo.query.filter_by(id = 1)
+        about.delete()
+        seo=Seo(title=request.form['title'],keywords=request.form['keywords'],image=filePath,homeimage=homefilePath)
+        db.session.add(seo)
+        db.session.commit()
+        return redirect('/admin/seo')
+    return render_template('admin/editSeo.html',seo=seo,bos=bos)
 
 @admin.route('/client',methods=['GET','POST'])
 def adminClient():
