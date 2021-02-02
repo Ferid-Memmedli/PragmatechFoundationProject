@@ -10,22 +10,14 @@
 <!-- section about -->
 <section id="about" class="flex-full-center">
     <div class="flex-spacebetween border-box pb-2x">
-        <div class="mr-3x" id="about-logo"><img class="width-full" src="./static/img/about.jpg" alt=""></div>
+        {% for i in about %}
+        <div class="mr-3x" id="about-logo"><img class="width-full" src="{{i.image}}"></div>
         <div class="pr-1x flex-spacebetween pl-1x border-box width-full" id="about-metn">
             <h2 class="mb-2x">My <span>About</span></h2>
-            <h4 class="mb-2x">Hello! My <span class="color-red">Ferid Memmedli.</span></h4>
-            <p class="mb-1x color-light-black">It is a long established fact that a reader will be distracted by the
-                readable content of a
-                page when
-                looking at its layout.</p>
-            <p class="mb-1x color-light-black">It is a long established fact that a reader will be distracted by the
-                readable content of a
-                page when
-                looking at its layout.</p>
-            <p class="mb-1x color-light-black">It is a long established fact that a reader will be distracted by the
-                readable content of a
-                page when
-                looking at its layout.</p>
+            <h4 class="mb-2x"><span class="color-red">{{i.title}}</span></h4>
+            <p class="mb-1x color-light-black">{{i.detail|safe}}
+            </p>
+            {% endfor %}
             <ul class="flex-horizontal-start">
                 <li><a href="#header" class="ml-1x"><i class="fab fa-pinterest-p"></i></a></li>
                 <li><a href="#header" class="ml-1x"><i class="fab fa-facebook-f"></i></a></li>

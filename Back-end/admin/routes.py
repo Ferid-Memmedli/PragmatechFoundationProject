@@ -11,7 +11,10 @@ template_folder='templates')
 def adminPage():
     form=Form.query.all()
     contact=Contact.query.all()
-    bos = True
+    if Contact.query.get(1):
+        bos=True
+    else:
+        bos=False
     if request.method=='POST':
         contact = Contact.query.filter_by(id = 1)
         contact.delete()
@@ -32,13 +35,26 @@ def adminClient():
 
 @admin.route('/about',methods=['GET','POST'])
 def adminAbout():
+    if request.method=='POST':
+        rand=random.randint(1, 90000)
+        f = request.files['file']
+        newName=f"blogfile{rand}.{f.filename.split('.')[-1]}"
+        f.save(os.path.join(app.config['UPLOAD_PATH'],newName))
+        filePath=f"/{app.config['UPLOAD_PATH']}/{newName}" 
+        about = About.query.filter_by(id = 1)
+        about.delete()
+        abt=About(title=request.form['title'],detail=request.form['detail'],
+            image=filePath)
+        db.session.add(abt)
+        db.session.commit()
+        return redirect('/admin/about')
     return render_template('admin/editAbout.html')
 
 @admin.route('/blog',methods=['GET','POST'])
 def adminBlog():
     blog=Blogs.query.all()
     if request.method=='POST':
-        randNumber=random.randint(1, 9000);
+        randNumber=random.randint(1, 90000)
         f = request.files['file']
         newName=f"blogfile{randNumber}.{f.filename.split('.')[-1]}"
         f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
