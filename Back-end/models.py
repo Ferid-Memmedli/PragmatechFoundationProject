@@ -24,3 +24,10 @@ class Blogs(db.Model):
         self.blogImage=blogImage
         self.blogTitle=blogTitle
         self.blogStatus = True
+
+class Contact(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    elaqe = db.Column(db.String(100),nullable=False)
+    unvan = db.Column(db.String(100),nullable=False)
+    email = db.Column(db.String(100),nullable=False)
+

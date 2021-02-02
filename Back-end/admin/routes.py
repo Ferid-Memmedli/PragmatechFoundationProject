@@ -7,15 +7,28 @@ static_folder='static',
 template_folder='templates')
 
 
-
 @admin.route('/',methods=['GET','POST'])
 def adminPage():
     form=Form.query.all()
-    return render_template('admin/index.html',form=form)
+    contact=Contact.query.all()
+    bos = True
+    if request.method=='POST':
+        contact = Contact.query.filter_by(id = 1)
+        contact.delete()
+        ctc=Contact(elaqe=request.form['elaqe'],unvan=request.form['unvan'],
+            email=request.form['email'])
+        db.session.add(ctc)
+        db.session.commit()
+        return redirect('/admin')
+    return render_template('admin/index.html',form=form,contact=contact,bos=bos)
 
 @admin.route('/seo',methods=['GET','POST'])
 def adminSeo():
     return render_template('admin/editSeo.html')
+
+@admin.route('/client',methods=['GET','POST'])
+def adminClient():
+    return render_template('admin/editClient.html')
 
 @admin.route('/about',methods=['GET','POST'])
 def adminAbout():

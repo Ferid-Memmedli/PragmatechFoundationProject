@@ -1,0 +1,52 @@
+{% extends "admin/layout.html" %}
+
+{% block contentAdmin %}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="float-right">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Edit Client</li>
+                </ol>
+            </div>
+            <h4 class="page-title">Client</h4>
+        </div>
+        <!--end page-title-box-->
+    </div>
+    <!--end col-->
+</div>
+
+<form action="#" method="POST" class="row">
+    <div class="col-6">
+        <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label text-right">Title</label>
+            <div class="col-8">
+                <input class="form-control" name="title" type="text" id="example-text-input">
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-group row">
+            <label for="example-text-input" class="col-2 col-form-label text-right">Detail</label>
+            <div class="col-10">
+                <input class="form-control" name="detail" type="text" id="example-text-input">
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="mt-0 header-title">Client Foto</h4>
+                <div class="dropify-wrapper">
+                    <input type="file" name="file" id="input-file-now" class="dropify">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 text-right">
+        <button type="submit" class="btn btn-gradient-primary px-5 py-2">Send Message</button>
+    </div>
+</form>
+
+{% endblock %}

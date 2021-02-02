@@ -15,7 +15,6 @@ migrate = Migrate(app, db, render_as_batch=True)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
-
 import models
 import forms
 from app.routes import *

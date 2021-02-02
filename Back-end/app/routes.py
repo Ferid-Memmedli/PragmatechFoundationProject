@@ -16,13 +16,14 @@ blog = Blueprint(
 @app.route('/',methods=['GET','POST'])
 def homePage():
     blog=Blogs.query.all()
+    contact= Contact.query.all()
     if request.method == 'POST':
         form = Form(userName=request.form['name'],userEmail=request.form['email'],
             userSubject=request.form['subject'],userMessage=request.form['comments'])
         db.session.add(form)
         db.session.commit()
         return redirect ('/')
-    return render_template('app/index.html',blog=blog)
+    return render_template('app/index.html',blog=blog,contact=contact)
 
 
 
