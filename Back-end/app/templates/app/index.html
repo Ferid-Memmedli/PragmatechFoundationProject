@@ -100,27 +100,14 @@
             page when established fact looking at its layout.</p>
         <div id="baba">
             <div id="ata">
+                {% for i in client %}
                 <div class="slayt flex-columun-around">
-                    <div class="svg-dirnaq"><img src="./static/img/svg/mbri-quote-left.svg" alt=""></div>
-                    <div class="lg flex-full-center"><img src="./static/img/testi-1.jpg" alt=""></div>
-                    <p class="flex-full-center color-light-black">The point of using Lorem Ipsum is that it has a
-                        more-or-less normal distribution of letters, as opposed to using 'Content here.</p>
-                    <div class="alt flex-full-center">-Lorem poisn of</div>
+                    <div class="svg-dirnaq"><img src="./static/img/svg/mbri-quote-left.svg"></div>
+                    <div class="lg flex-full-center"><img src="{{i.image}}"></div>
+                    <p class="flex-full-center color-light-black">{{i.detail}}</p>
+                    <div class="alt flex-full-center">{{i.title}}</div>
                 </div>
-                <div class="slayt flex-columun-around">
-                    <div class="svg-dirnaq"><img src="./static/img/svg/mbri-quote-left.svg" alt=""></div>
-                    <div class="lg flex-full-center"><img src="./static/img/testi-2.jpg" alt=""></div>
-                    <p class="flex-full-center color-light-black">The point of using Lorem Ipsum is that it has a
-                        more-or-less normal distribution of letters, as opposed to using 'Content here.</p>
-                    <div class="alt flex-full-center">-Lorem poisn of</div>
-                </div>
-                <div class="slayt flex-columun-around">
-                    <div class="svg-dirnaq"><img src="./static/img/svg/mbri-quote-left.svg" alt=""></div>
-                    <div class="lg flex-full-center"><img src="./static/img/testi-3.jpg" alt=""></div>
-                    <p class="flex-full-center color-light-black">The point of using Lorem Ipsum is that it has a
-                        more-or-less normal distribution of letters, as opposed to using 'Content here.</p>
-                    <div class="alt flex-full-center">-Lorem poisn of</div>
-                </div>
+                {% endfor %}
             </div>
         </div>
         <div class="aktiv flex-full-center">

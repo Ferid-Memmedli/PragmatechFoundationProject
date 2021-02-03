@@ -43,3 +43,9 @@ class Seo(db.Model):
     keywords = db.Column(db.String(20),nullable=False)
     image = db.Column(db.String,nullable=False)
     homeimage = db.Column(db.String,nullable=False)
+
+class Client(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(20),nullable=False)
+    detail = db.Column(db.String,nullable=False)
+    image = db.Column(db.String,nullable=False)

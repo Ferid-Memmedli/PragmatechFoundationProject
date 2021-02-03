@@ -53,7 +53,25 @@ def adminSeo():
 
 @admin.route('/client',methods=['GET','POST'])
 def adminClient():
-    return render_template('admin/editClient.html')
+    clnt=Client.query.all()
+    if request.method=='POST':
+        randN=random.randint(1, 90000)
+        f = request.files['file']
+        newName=f"blogfile{randN}.{f.filename.split('.')[-1]}"
+        f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
+        filePath=f"/{app.config['UPLOAD_PATH']}/{newName}"
+        client=Client(title=request.form['title'],detail=request.form['detail'],image=filePath)
+        db.session.add(client)
+        db.session.commit()
+        return redirect('/admin/client')
+    return render_template('admin/editClient.html',clnt=clnt)
+
+@admin.route('/deleteclient/<int:id>')
+def adminclientDelete(id):
+    clnt=Client.query.get(id)
+    db.session.delete(clnt)
+    db.session.commit()
+    return redirect('/admin/client')
 
 @admin.route('/about',methods=['GET','POST'])
 def adminAbout():
@@ -101,3 +119,7 @@ def blogDelete(id):
     db.session.delete(blog)
     db.session.commit()
     return redirect('/admin/blog')
+
+@admin.route('/social',methods=['POST','GET'])
+def adminSocial():
+    return render_template('/admin/editSocial.html')
