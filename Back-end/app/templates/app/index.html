@@ -18,10 +18,12 @@
             <p class="mb-1x color-light-black">{{i.detail|safe}}</p>
             {% endfor %}
             <ul class="flex-horizontal-start">
-                <li><a href="#header" class="ml-1x"><i class="fab fa-pinterest-p"></i></a></li>
-                <li><a href="#header" class="ml-1x"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#header" class="ml-1x"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#header" class="ml-1x"><i class="fab fa-twitter"></i></a></li>
+                {% for i in social %}
+                <li><a href="{{i.pinterest}}" target="blank" class="ml-1x" ><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="{{i.facebook}}" target="blank" class="ml-1x"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="{{i.instagram}}" target="blank" class="ml-1x"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="{{i.twitter}}" target="blank" class="ml-1x"><i class="fab fa-twitter"></i></a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>

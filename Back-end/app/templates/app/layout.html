@@ -25,10 +25,10 @@
     <div class="nav width-full flex-full-center">
         <nav class="nav-bar flex-spacebetween-center">
             <span class="nav-bar-left"><a href="{{ url_for('homePage') }}#header">
-                {% for i in seo %}
-                <img id="darklogo" src="{{i.image}}">
-                {% endfor %}
-            </a></span>
+                    {% for i in seo %}
+                    <img id="darklogo" src="{{i.image}}">
+                    {% endfor %}
+                </a></span>
             <div class="nav-bar-right">
                 <ul class="flex-spacearound-center">
                     <li><a class="blank isik" href="{{ url_for('homePage') }}#header">Home</a></li>
@@ -93,7 +93,7 @@
                     {% for i in contact %}
                     <p class="text-muted">{{i.email}}</p>
                     {% endfor %}
-                </div>                
+                </div>
             </div>
             <form method="POST" action="/" class="row width-full form">
                 <div class="container-full">
@@ -133,19 +133,22 @@
                 <div class="col-12">
                     <div class="text-center text-white">
                         <ul class="list-inline mb-3x">
-                            <li class="list-inline-item"><a class="link" href="#"><i
-                                        class="reng fab fa-pinterest-p"></i></a></li>
-                            <li class="list-inline-item"><a class="link" href="#"><i
+                            {% for i in social %}
+                            <li class="list-inline-item"><a class="link" href="{{i.pinterest}}" target="blank"><i
+                                        class="reng fab fa-pinterest-p"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a class="link" href="{{i.facebook}}" target="blank"><i
                                         class="reng fab fa-facebook-f"></i></a>
                             </li>
-                            <li class="list-inline-item"><a class="link" href="#"><i
+                            <li class="list-inline-item"><a class="link" href="{{i.instagram}}" target="blank"><i
                                         class="reng fab fa-instagram"></i></a>
                             </li>
-                            <li class="list-inline-item"><a class="link" href="#"><i
+                            <li class="list-inline-item"><a class="link" href="{{i.twitter}}" target="blank"><i
                                         class="reng fab fa-twitter"></i></a>
                             </li>
+                            {% endfor %}
                         </ul>
-                        <p> 2020 - 2021 &copy; Ferid. Design by SRBThemes.</p>
+                        <p> 2020 - 2021 &copy; Ferid.</p>
                     </div>
                 </div>
             </div>

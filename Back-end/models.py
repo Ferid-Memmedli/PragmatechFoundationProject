@@ -49,3 +49,10 @@ class Client(db.Model):
     title = db.Column(db.String(20),nullable=False)
     detail = db.Column(db.String,nullable=False)
     image = db.Column(db.String,nullable=False)
+
+class Social(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    pinterest = db.Column(db.String)
+    facebook = db.Column(db.String)
+    instagram = db.Column(db.String)
+    twitter = db.Column(db.String)

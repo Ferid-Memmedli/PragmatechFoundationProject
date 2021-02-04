@@ -20,21 +20,23 @@ def homePage():
     contact= Contact.query.all()
     about=About.query.all()
     client=Client.query.all()
+    social=Social.query.all()
     if request.method == 'POST':
         form = Form(userName=request.form['name'],userEmail=request.form['email'],
             userSubject=request.form['subject'],userMessage=request.form['comments'])
         db.session.add(form)
         db.session.commit()
         return redirect ('/')
-    return render_template('app/index.html',seo=seo,blog=blog,contact=contact,about=about,client=client)
+    return render_template('app/index.html',seo=seo,blog=blog,contact=contact,about=about,client=client,social=social)
 
 
 
 @blog.route('/<int:id>',methods=['GET','POST'])
 def blogPage(id):
     seo=Seo.query.all()
+    social=Social.query.all()
     blog = Blogs.query.get(id)
-    return render_template('app/blog.html',blog=blog,seo=seo)
+    return render_template('app/blog.html',blog=blog,seo=seo,social=social)
 
 
 

@@ -122,4 +122,24 @@ def blogDelete(id):
 
 @admin.route('/social',methods=['POST','GET'])
 def adminSocial():
-    return render_template('/admin/editSocial.html')
+    sc=Social.query.all()
+    if Social.query.get(1):
+        bos=True
+    else:
+        bos=False
+    if request.method=='POST':
+        a = Social.query.filter_by(id = 1)
+        a.delete()
+        social=Social(pinterest=request.form['pinterest'],facebook=request.form['facebook'],
+            instagram=request.form['instagram'],twitter=request.form['twitter'])
+        db.session.add(social)
+        db.session.commit()
+        return redirect('/admin/social')
+    return render_template('/admin/editSocial.html',sc=sc,bos=bos)
+
+@admin.route('/deletesocial/<int:id>')
+def socialDelete(id):
+    sc=Social.query.get(id)
+    db.session.delete(sc)
+    db.session.commit()
+    return redirect('/admin/social')
