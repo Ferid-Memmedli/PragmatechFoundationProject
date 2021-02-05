@@ -7,7 +7,7 @@ class CategoryForm(FlaskForm):
     submit=SubmitField()
 
 class PortfolioForm(FlaskForm):
-    title = StringField('Title Name')
-    image = FileField('Photo')
+    title = StringField('Portfolio Name')
+    image = FileField('Portfolio Image')
     category = SelectField('Choose Categories',choices=Category.query.with_entities(Category.id,Category.name).all())
     submit=SubmitField()

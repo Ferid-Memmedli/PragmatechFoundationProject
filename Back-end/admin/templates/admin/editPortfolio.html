@@ -7,7 +7,7 @@
             <div class="float-right">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Edit Portfolio</li>
+                    <li class="breadcrumb-item active">Add Portfolio</li>
                 </ol>
             </div>
             <h4 class="page-title">Portfolio</h4>
@@ -21,30 +21,30 @@
 <form action="{{url_for('admin.adminPortfolio')}}" method="POST" class="row" enctype="multipart/form-data">
     <div class="col-12">
         <div class="form-group row">
-            {{form.title.label(class='col-4 col-form-label text-right', for='example-text-input')}}
-            <div class="col-8">
+            {{form.title.label(class='col-3 col-form-label text-left', for='example-text-input')}}
+            <div class="col-9">
                 {{form.title(class='form-control', id="example-text-input")}}
             </div>
         </div>
     </div>
     <div class="col-12">
         <div class="form-group row">
-            {{form.image.label(class='col-4 col-form-label text-right', for='example-text-input')}}
-            <div class="col-8">
-                {{form.image(class='form-control', id="example-text-input")}}
+            {{form.image.label(class='col-3 col-form-label text-left', for='example-text-input1')}}
+            <div class="col-9">
+                {{form.image(class='form-control', id="example-text-input1")}}
             </div>
         </div>
     </div>
     <div class="col-12">
         <div class="form-group row">
-            {{form.category.label(class='col-4 col-form-label text-right', for='example-text-input')}}
-            <div class="col-8">
-                {{form.category(class='form-control', id="example-text-input")}}
+            {{form.category.label(class='col-3 col-form-label text-left', for='example-text-input2')}}
+            <div class="col-9">
+                {{form.category(class='form-control', id="example-text-input2")}}
             </div>
         </div>
     </div>
     <div class="col-sm-12 text-right">
-        {{form.submit(class='btn btn-gradient-primary px-5 py-2 mb-2')}}
+        {{form.submit(class='btn btn-gradient-primary px-5 py-2 mb-2',value='SEND')}}
     </div>
 </form>
 
@@ -53,7 +53,7 @@
         <div class="card">
             <div class="card-body">
 
-                <h4 class="mt-0 header-title">Your Messages</h4>
+                <h4 class="mt-0 header-title">Portfolio Table</h4>
                 <div class="table-responsive">
                     <table class="table table-striped mb-0">
                         <thead>

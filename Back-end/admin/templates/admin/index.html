@@ -35,34 +35,34 @@
     </div>
     <div class="col-4">
         <div class="form-group row">
-            <label for="example-text-input" class="col-4 col-form-label text-right">Visit Office</label>
+            <label for="example-text-input1" class="col-4 col-form-label text-right">Visit Office</label>
             <div class="col-8">
                 {% if bos %}
                 {% for i in contact %}
-                    <input class="form-control" name="unvan" value='{{i.unvan}}' type="text" id="example-text-input" required>
+                    <input class="form-control" name="unvan" value='{{i.unvan}}' type="text" id="example-text-input1" required>
                 {% endfor %}
                 {% else %}
-                    <input class="form-control" name="unvan" value='Adress' type="text" id="example-text-input" required>
+                    <input class="form-control" name="unvan" value='Adress' type="text" id="example-text-input1" required>
                 {% endif %}
             </div>
         </div>
     </div>
     <div class="col-4">
         <div class="form-group row">
-            <label for="example-text-input" class="col-4 col-form-label text-right">Email Us At</label>
+            <label for="example-text-input2" class="col-4 col-form-label text-right">Email Us At</label>
             <div class="col-8">
                 {% if bos %}
                 {% for i in contact %}
-                <input class="form-control" name="email" value="{{i.email}}" type="email" id="example-text-input" required>
+                <input class="form-control" name="email" value="{{i.email}}" type="email" id="example-text-input2" required>
                 {% endfor %}
                 {% else %}
-                <input class="form-control" name="email" value="Email" type="email" id="example-text-input" required>
+                <input class="form-control" name="email" value="Email" type="email" id="example-text-input2" required>
                 {% endif %}
             </div>
         </div>
     </div>
     <div class="col-sm-12 text-right">
-        <button type="submit" class="btn btn-gradient-primary px-5 py-2">Send Message</button>
+        <button type="submit" class="btn btn-gradient-primary px-5 py-2 mb-2">Send</button>
     </div>
 </form>
 

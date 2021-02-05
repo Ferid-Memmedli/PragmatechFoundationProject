@@ -7,7 +7,7 @@
             <div class="float-right">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Edit Category</li>
+                    <li class="breadcrumb-item active">Add Category</li>
                 </ol>
             </div>
             <h4 class="page-title">Category</h4>
@@ -21,14 +21,14 @@
 <form action="{{url_for('admin.adminCategory')}}" method="POST" class="row">
     <div class="col-12">
         <div class="form-group row">
-            {{form.name.label(class='col-4 col-form-label text-right', for='example-text-input')}}
-            <div class="col-8">
+            {{form.name.label(class='col-2 col-form-label text-left', for='example-text-input')}}
+            <div class="col-10">
                 {{form.name(class='form-control', id="example-text-input")}}
             </div>
         </div>
     </div>
     <div class="col-sm-12 text-right">
-        {{form.submit(class='btn btn-gradient-primary px-5 py-2 mb-2')}}
+        {{form.submit(class='btn btn-gradient-primary px-5 py-2 mb-2',value='SEND')}}
     </div>
 </form>
 
@@ -37,7 +37,7 @@
         <div class="card">
             <div class="card-body">
 
-                <h4 class="mt-0 header-title">Your Messages</h4>
+                <h4 class="mt-0 header-title">Categories Table</h4>
                 <div class="table-responsive">
                     <table class="table table-striped mb-0">
                         <thead>
