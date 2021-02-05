@@ -56,3 +56,15 @@ class Social(db.Model):
     facebook = db.Column(db.String)
     instagram = db.Column(db.String)
     twitter = db.Column(db.String)
+
+class Category(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String,nullable=False)
+    port = db.relationship('Portfolio',backref='category',lazy=True)
+
+class Portfolio(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String,nullable=False)
+    image = db.Column(db.String,nullable=False)
+    category_id = db.Column(db.Integer,db.ForeignKey('category.id'),nullable=False)
+

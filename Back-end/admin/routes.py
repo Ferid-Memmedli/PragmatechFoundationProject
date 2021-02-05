@@ -68,8 +68,7 @@ def adminClient():
 
 @admin.route('/deleteclient/<int:id>')
 def adminclientDelete(id):
-    clnt=Client.query.get(id)
-    db.session.delete(clnt)
+    db.session.delete(Client.query.get(id))
     db.session.commit()
     return redirect('/admin/client')
 
@@ -99,24 +98,21 @@ def adminBlog():
         newName=f"blogfile{randNumber}.{f.filename.split('.')[-1]}"
         f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
         filePath=f"/{app.config['UPLOAD_PATH']}/{newName}"
-        blog=Blogs(blogTitle=request.form['title'],blogDetail=request.form['detail'],
-            blogAuthor=request.form['author'],blogImage=filePath)
-        db.session.add(blog)
+        db.session.add(Blogs(blogTitle=request.form['title'],blogDetail=request.form['detail'],
+            blogAuthor=request.form['author'],blogImage=filePath))
         db.session.commit()
         return redirect('/admin/blog')
     return render_template('admin/editBlog.html',blog=blog)
 
 @admin.route('/deleteform/<int:id>')
 def adminDelete(id):
-    form=Form.query.get(id)
-    db.session.delete(form)
+    db.session.delete(Form.query.get(id))
     db.session.commit()
     return redirect('/admin')
 
 @admin.route('/deleteblog/<int:id>')
 def blogDelete(id):
-    blog=Blogs.query.get(id)
-    db.session.delete(blog)
+    db.session.delete(Blogs.query.get(id))
     db.session.commit()
     return redirect('/admin/blog')
 
@@ -130,16 +126,44 @@ def adminSocial():
     if request.method=='POST':
         a = Social.query.filter_by(id = 1)
         a.delete()
-        social=Social(pinterest=request.form['pinterest'],facebook=request.form['facebook'],
-            instagram=request.form['instagram'],twitter=request.form['twitter'])
-        db.session.add(social)
+        db.session.add(Social(pinterest=request.form['pinterest'],facebook=request.form['facebook'],
+            instagram=request.form['instagram'],twitter=request.form['twitter']))
         db.session.commit()
         return redirect('/admin/social')
     return render_template('/admin/editSocial.html',sc=sc,bos=bos)
 
-@admin.route('/deletesocial/<int:id>')
-def socialDelete(id):
-    sc=Social.query.get(id)
-    db.session.delete(sc)
+@admin.route('/category',methods=['POST','GET'])
+def adminCategory():
+    cat=Category.query.all()
+    formcategory=CategoryForm()
+    if request.method=='POST':
+        db.session.add(Category(name=formcategory.name.data))
+        db.session.commit()
+        return redirect('/admin/category')
+    return render_template('/admin/editCategory.html',form=formcategory,cat=cat)
+
+@admin.route('/deletecategory/<int:id>')
+def categoryDelete(id):
+    db.session.delete(Category.query.get(id))
     db.session.commit()
-    return redirect('/admin/social')
+    return redirect('/admin/category')
+
+@admin.route('/portfolio',methods=['POST','GET'])
+def adminPortfolio():
+    formportfolio=PortfolioForm()
+    if request.method=='POST':
+        randNumber=random.randint(1, 90000)
+        f = request.files['image']
+        newName=f"blogfile{randNumber}.{f.filename.split('.')[-1]}"
+        f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
+        filePath=f"/{app.config['UPLOAD_PATH']}/{newName}"
+        db.session.add(Portfolio(title=formportfolio.title.data,image=filePath,category_id=formportfolio.category.data))
+        db.session.commit()
+        return redirect('/admin/portfolio')
+    return render_template('/admin/editPortfolio.html',form=formportfolio,port=Portfolio.query.all(),cat=Category.query.all())
+
+@admin.route('/deleteportfolio/<int:id>')
+def portfolioDelete(id):
+    db.session.delete(Portfolio.query.get(id))
+    db.session.commit()
+    return redirect('/admin/portfolio')

@@ -78,45 +78,4 @@
         <button type="submit" class="btn btn-gradient-primary px-5 py-2">Send</button>
     </div>
 </form>
-<div class="row">
-    <div class="col-lg-12">
-        <div class="card">
-            <div class="card-body">
-
-                <h4 class="mt-0 header-title">Your Messages</h4>
-                <div class="table-responsive">
-                    <table class="table table-striped mb-0">
-                        <thead>
-                            <tr>
-                                <th>Pinterest</th>
-                                <th>Facebook</th>
-                                <th>Instagram</th>
-                                <th>Twitter</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for i in sc %}
-                            <tr>
-                                <td>{{i.pinterest}}</td>
-                                <td>{{i.facebook}}</td>
-                                <td>{{i.instagram}}</td>
-                                <td>{{i.twitter}}</td>
-                                <td>
-                                    <a href="/admin/deletesocial/{{i.id}}"><i
-                                            class="fas fa-trash-alt text-danger font-16"></i></a>
-                                </td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                    <!--end /table-->
-                </div>
-                <!--end /tableresponsive-->
-            </div>
-            <!--end card-body-->
-        </div>
-        <!--end card-->
-    </div>
-</div>
 {% endblock %}
