@@ -21,13 +21,15 @@ def homePage():
     about=About.query.all()
     client=Client.query.all()
     social=Social.query.all()
+    portfolio=Portfolio.query.all()
+    category=Category.query.all()
     if request.method == 'POST':
         form = Form(userName=request.form['name'],userEmail=request.form['email'],
             userSubject=request.form['subject'],userMessage=request.form['comments'])
         db.session.add(form)
         db.session.commit()
         return redirect ('/')
-    return render_template('app/index.html',seo=seo,blog=blog,contact=contact,about=about,client=client,social=social)
+    return render_template('app/index.html',seo=seo,blog=blog,contact=contact,about=about,client=client,social=social,portfolio=portfolio,category=category)
 
 
 

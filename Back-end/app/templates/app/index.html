@@ -19,7 +19,7 @@
             {% endfor %}
             <ul class="flex-horizontal-start">
                 {% for i in social %}
-                <li><a href="{{i.pinterest}}" target="blank" class="ml-1x" ><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="{{i.pinterest}}" target="blank" class="ml-1x"><i class="fab fa-pinterest-p"></i></a></li>
                 <li><a href="{{i.facebook}}" target="blank" class="ml-1x"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="{{i.instagram}}" target="blank" class="ml-1x"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="{{i.twitter}}" target="blank" class="ml-1x"><i class="fab fa-twitter"></i></a></li>
@@ -126,48 +126,23 @@
         <p class="mv-2x">It is a long established fact that a reader will be of a page when established fact looking
             at its layout.</p>
         <button id="all" class="job btn btn-red btn-border-radius-6x active">ALL</button>
-        <button id="seo" class="job btn btn-red btn-border-radius-6x">SEO</button>
-        <button id="webdesign" class="job btn btn-red btn-border-radius-6x">WEBDESIGN</button>
-        <button id="work" class="job btn btn-red btn-border-radius-6x">WORK</button>
-        <button id="worpres" class="job btn btn-red btn-border-radius-6x">WORDPRES</button>
+        {% for i in category %}
+        <button id="{{i.id}}" class="job btn btn-red btn-border-radius-6x">{{i.name}}</button>
+        {% endfor %}
     </div>
     <div class="anbar row">
-        <div data-id="3" class="qutu" onclick="galery(this)"><img src="./static/img/work/1.jpg">
+        {% for i in portfolio %}
+        <div data-id="{{i.category_id}}" class="qutu" onclick="galery(this)"><img src="{{i.image}}">
             <div class="overtitle">
-                <span class="text">Categoriya</span>
-                <h4 class="text1">Project Title</h4>
+                {% for a in category %}
+                {% if a.id==i.category_id %}
+                <span class="text">{{a.name}}</span>
+                {% endif %}
+                {% endfor %}
+                <h4 class="text1">{{i.title}}</h4>
             </div>
         </div>
-        <div data-id="1" class="qutu" onclick="galery(this)"><img src="./static/img/work/2.jpg">
-            <div class="overtitle">
-                <span class="text">Categoriya</span>
-                <h4 class="text1">Project Title</h4>
-            </div>
-        </div>
-        <div data-id="2" class="qutu" onclick="galery(this)"><img src="./static/img/work/3.jpg">
-            <div class="overtitle">
-                <span class="text">Categoriya</span>
-                <h4 class="text1">Project Title</h4>
-            </div>
-        </div>
-        <div data-id="4" class="qutu" onclick="galery(this)"><img src="./static/img/work/4.jpg">
-            <div class="overtitle">
-                <span class="text">Categoriya</span>
-                <h4 class="text1">Project Title</h4>
-            </div>
-        </div>
-        <div data-id="2" class="qutu" onclick="galery(this)"><img src="./static/img/work/5.jpg">
-            <div class="overtitle">
-                <span class="text">Categoriya</span>
-                <h4 class="text1">Project Title</h4>
-            </div>
-        </div>
-        <div data-id="1" class="qutu" onclick="galery(this)"><img src="./static/img/work/6.jpg">
-            <div class="overtitle">
-                <span class="text">Categoriya</span>
-                <h4 class="text1">Project Title</h4>
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <!-----------------------------Temp div-------------------------------------->
     <i onclick="prev()" id="sol" class="fas fa-caret-left"></i>

@@ -151,84 +151,27 @@ function next() {
     }
 };
 //-----------------------------Filter galery------------------------------------
+let category = document.querySelectorAll('.job');
 let all = document.querySelector('#all');
-let seo = document.querySelector('#seo');
-let webdesign = document.querySelector('#webdesign');
-let work = document.querySelector('#work');
-let worpres = document.querySelector('#worpres');
 let qutu = document.querySelectorAll('.qutu');
+
+category.forEach(i => {
+    i.addEventListener('click', e => {
+        let categoryId = i.getAttribute('id');
+        for (let z = 0; z < qutu.length; z++) {
+            let id = qutu[z].getAttribute('data-id');
+            if (id != categoryId) {
+                qutu[z].style.display = 'none';
+            } else {
+                qutu[z].style = 'block';
+            }
+        };
+    });
+});
+
 
 all.addEventListener('click', function () {
     for (let i = 0; i < qutu.length; i++) {
         qutu[i].style.display = 'block';
     };
 });
-
-seo.addEventListener('click', function () {
-    for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('data-id');
-        if (id != 2) {
-            qutu[i].style.display = 'none';
-        } else {
-            qutu[i].style = 'block';
-        }
-    };
-});
-
-webdesign.addEventListener('click', function () {
-    for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('data-id');
-        if (id != 3) {
-            qutu[i].style.display = 'none';
-        } else {
-            qutu[i].style = 'block';
-        }
-    };
-});
-
-work.addEventListener('click', function () {
-    for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('data-id');
-        if (id != 1) {
-            qutu[i].style.display = 'none';
-        } else {
-            qutu[i].style = 'block';
-        }
-    };
-});
-
-worpres.addEventListener('click', function () {
-    for (let i = 0; i < qutu.length; i++) {
-        let id = qutu[i].getAttribute('data-id');
-        if (id != 4) {
-            qutu[i].style.display = 'none';
-        } else {
-            qutu[i].style = 'block';
-        }
-    };
-});
-
-
-
-
-// ---------------------------Formdan melumat goturmeq-------------------------------------
-// const form = document.forms[0];
-
-// form.addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     const { name, email, subject, comments } = this.elements;
-//     console.log(name.value, email.value, subject.value, comments.value);
-// });
-
-// const form = document.forms[0];
-
-// form.addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     const formData = new FormData(this);
-
-//     for (const formElement of formData) {
-//         console.log(formElement);
-//     }
-// });
-//-----------------
-
