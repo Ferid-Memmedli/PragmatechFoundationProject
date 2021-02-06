@@ -16,7 +16,7 @@ blog = Blueprint(
 @app.route('/',methods=['GET','POST'])
 def homePage():
     seo=Seo.query.all()
-    blog=Blogs.query.all()
+    blog=Blogs.query.filter_by(blogStatus=True).all()
     contact= Contact.query.all()
     about=About.query.all()
     client=Client.query.all()

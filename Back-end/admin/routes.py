@@ -167,3 +167,18 @@ def portfolioDelete(id):
     db.session.delete(Portfolio.query.get(id))
     db.session.commit()
     return redirect('/admin/portfolio')
+
+@admin.route('/true/<int:id>')
+def blogTrue(id):
+    true=Blogs.query.get(id)
+    true.blogStatus=True
+    db.session.commit()
+    return redirect('/admin/blog')
+
+@admin.route('/false/<int:id>')
+def blogFalse(id):
+    false=Blogs.query.get(id)
+    false.blogStatus=False
+    db.session.commit()
+    return redirect('/admin/blog')
+

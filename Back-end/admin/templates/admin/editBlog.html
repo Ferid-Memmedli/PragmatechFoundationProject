@@ -111,8 +111,20 @@
                                 <td>{{blog.blogDate}}</td>
                                 <td>{{blog.blogStatus}}</td>
                                 <td>
-                                    <a href="/admin/deleteblog/{{blog.id}}"><i
-                                            class="fas fa-trash-alt text-danger font-16"></i></a>
+                                    <a href="/admin/true/{{blog.id}}">
+                                        True
+                                        <i class="fas fa-check-circle text-danger font-16"></i>
+                                    </a>
+
+                                    <a href="/admin/false/{{blog.id}}">
+                                        False
+                                        <i class="fas fa-times-circle text-danger font-16"></i>
+                                    </a>
+                                    
+                                    <a href="/admin/deleteblog/{{blog.id}}">
+                                        Delete
+                                        <i class="fas fa-trash-alt text-danger font-16"></i>
+                                    </a>
                                 </td>
                             </tr>
 
