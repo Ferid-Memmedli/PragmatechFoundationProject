@@ -15,7 +15,7 @@ class Blogs(db.Model):
     blogTitle = db.Column(db.String,nullable=False)
     blogDetail = db.Column(db.Text,nullable=False)
     blogAuthor = db.Column(db.String,nullable=False)
-    blogDate = db.Column(db.Date,default=date.today())
+    blogDate = db.Column(db.String,default=datetime.now().strftime('%d %B %Y'))
     blogImage = db.Column(db.String,nullable=False)
     blogStatus = db.Column(db.Boolean)
     def __init__(self,blogTitle,blogDetail,blogAuthor,blogImage):

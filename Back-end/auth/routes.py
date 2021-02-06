@@ -21,11 +21,3 @@ def login():
 @auth.route('/logout')
 def logout():
     return render_template('auth/logout.html')
-
-# @auth.route('/register',methods=['POST','GET'])
-# def register():
-#     register=RegistrationForm()
-#     if register.validate_on_submit():
-#         flash(f'{register.username.data} account created','success')
-#         return redirect('/auth')
-#     return render_template('auth/register.html',register=register)
