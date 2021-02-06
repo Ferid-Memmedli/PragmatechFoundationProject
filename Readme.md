@@ -108,7 +108,3 @@
 ## Day 26
 - Blog.html header bolmu duzeldildi
 - DB 3 table yazildi
-
-# Back-End
-## Week 1
-- Flask folder struktor qurulmasi
