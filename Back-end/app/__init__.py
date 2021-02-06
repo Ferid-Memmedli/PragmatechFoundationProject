@@ -20,3 +20,4 @@ import forms
 from app.routes import *
 app.register_blueprint(blog)
 import admin
+import auth
