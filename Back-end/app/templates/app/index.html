@@ -12,8 +12,10 @@
     <div class="flex-spacebetween border-box pb-2x">
         {% for i in about %}
         <div class="mr-3x" id="about-logo"><img class="width-full" src="{{i.image}}"></div>
+        {% endfor %}
         <div class="pr-1x flex-spacebetween pl-1x border-box width-full" id="about-metn">
             <h2 class="mb-1x">My <span>About</span></h2>
+            {% for i in about %}
             <h4><span class="color-red">{{i.title}}</span></h4>
             <p class="mb-1x color-light-black">{{i.detail|safe}}</p>
             {% endfor %}
