@@ -23,6 +23,7 @@ def adminPage():
         db.session.add(ctc)
         db.session.commit()
         return redirect('/admin')
+
     return render_template('admin/index.html',form=form,contact=contact,bos=bos)
 
 @admin.route('/seo',methods=['GET','POST'])

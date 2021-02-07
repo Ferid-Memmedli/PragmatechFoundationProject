@@ -18,6 +18,3 @@ def login():
             return redirect('/auth')
     return render_template('auth/login.html',login=login)
 
-@auth.route('/logout')
-def logout():
-    return render_template('auth/logout.html')
