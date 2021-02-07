@@ -1,3 +1,4 @@
+from flask_migrate import current
 from app import *
 
 admin = Blueprint('admin',
@@ -112,7 +113,9 @@ def adminDelete(id):
 
 @admin.route('/deleteblog/<int:id>')
 def blogDelete(id):
-    db.session.delete(Blogs.query.get(id))
+    blog=Blogs.query.get(id)
+    # os.unlink(os.path.join(current_app.root_path,blog.blogImage))
+    db.session.delete(blog)
     db.session.commit()
     return redirect('/admin/blog')
 

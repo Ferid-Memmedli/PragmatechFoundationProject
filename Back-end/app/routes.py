@@ -1,7 +1,7 @@
 from app import app,db
 from forms import *
 from models import *
-from flask import render_template,redirect,request,url_for,Blueprint,flash
+from flask import render_template,redirect,request,url_for,Blueprint,flash,current_app
 from werkzeug.utils import secure_filename
 import random
 import os
