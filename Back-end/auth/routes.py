@@ -15,6 +15,5 @@ def login():
             return redirect('/admin')
         else:
             flash(f'Wrong Username or Password','success')
-            return redirect('/auth')
     return render_template('auth/login.html',login=login)
 

@@ -1,6 +1,5 @@
-from datetime import datetime,date
+from datetime import datetime
 from app import db
-
 
 class Form(db.Model):
     id = db.Column(db.Integer, primary_key=True)
