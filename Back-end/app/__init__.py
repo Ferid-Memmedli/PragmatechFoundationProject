@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate,MigrateCommand
 from flask_script import Manager
+from flask_login import LoginManager,UserMixin, login_manager
 
 app=Flask(__name__)
 
@@ -14,6 +15,12 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db, render_as_batch=True)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
+# login_manager=LoginManager()
+# login_manager.init_app(app)
+
+# @login_manager.user_loader
+# def load_user(user_id):
+#     return User.get(user_id)
 
 import models
 import forms
