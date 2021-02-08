@@ -37,11 +37,11 @@ def adminSeo():
         rand=random.randint(1, 90000)
         rand1=random.randint(1, 90000)
         f = request.files['file']
-        newName=f"blogfile{rand}.{f.filename.split('.')[-1]}"
+        newName=f"icon{rand}.{f.filename.split('.')[-1]}"
         f.save(os.path.join(app.config['UPLOAD_PATH'],newName))
         filePath=f"/{app.config['UPLOAD_PATH']}/{newName}" 
         h = request.files['homefile']
-        homenewName=f"blogfile{rand1}.{f.filename.split('.')[-1]}"
+        homenewName=f"home{rand1}.{f.filename.split('.')[-1]}"
         h.save(os.path.join(app.config['UPLOAD_PATH'],homenewName))
         homefilePath=f"/{app.config['UPLOAD_PATH']}/{homenewName}" 
         about = Seo.query.filter_by(id = 1)
@@ -58,7 +58,7 @@ def adminClient():
     if request.method=='POST':
         randN=random.randint(1, 90000)
         f = request.files['file']
-        newName=f"blogfile{randN}.{f.filename.split('.')[-1]}"
+        newName=f"client{randN}.{f.filename.split('.')[-1]}"
         f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
         filePath=f"/{app.config['UPLOAD_PATH']}/{newName}"
         client=Client(title=request.form['title'],detail=request.form['detail'],image=filePath)
@@ -78,7 +78,7 @@ def adminAbout():
     if request.method=='POST':
         rand=random.randint(1, 90000)
         f = request.files['file']
-        newName=f"blogfile{rand}.{f.filename.split('.')[-1]}"
+        newName=f"about{rand}.{f.filename.split('.')[-1]}"
         f.save(os.path.join(app.config['UPLOAD_PATH'],newName))
         filePath=f"/{app.config['UPLOAD_PATH']}/{newName}" 
         about = About.query.filter_by(id = 1)
@@ -96,7 +96,7 @@ def adminBlog():
     if request.method=='POST':
         randNumber=random.randint(1, 90000)
         f = request.files['file']
-        newName=f"blogfile{randNumber}.{f.filename.split('.')[-1]}"
+        newName=f"blog{randNumber}.{f.filename.split('.')[-1]}"
         f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
         filePath=f"/{app.config['UPLOAD_PATH']}/{newName}"
         db.session.add(Blogs(blogTitle=request.form['title'],blogDetail=request.form['detail'],
@@ -157,7 +157,7 @@ def adminPortfolio():
     if request.method=='POST':
         randNumber=random.randint(1, 90000)
         f = request.files['image']
-        newName=f"blogfile{randNumber}.{f.filename.split('.')[-1]}"
+        newName=f"portfolio{randNumber}.{f.filename.split('.')[-1]}"
         f.save(os.path.join(app.config['UPLOAD_PATH'],newName))   
         filePath=f"/{app.config['UPLOAD_PATH']}/{newName}"
         db.session.add(Portfolio(title=formportfolio.title.data,image=filePath,category_id=formportfolio.category.data))
