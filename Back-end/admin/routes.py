@@ -114,7 +114,7 @@ def adminDelete(id):
 @admin.route('/deleteblog/<int:id>')
 def blogDelete(id):
     blog=Blogs.query.get(id)
-    # os.unlink(os.path.join(current_app.root_path,blog.blogImage))
+    os.unlink(os.getcwd() + blog.blogImage)
     db.session.delete(blog)
     db.session.commit()
     return redirect('/admin/blog')
