@@ -6,6 +6,7 @@ from werkzeug.utils import secure_filename
 import random
 import os
 
+
 blog = Blueprint(
     'blog',
     __name__,

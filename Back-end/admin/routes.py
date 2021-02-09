@@ -10,6 +10,8 @@ template_folder='templates')
 
 @admin.route('/',methods=['GET','POST'])
 def adminPage():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     form=Form.query.all()
     contact=Contact.query.all()
     if Contact.query.get(1):
@@ -28,6 +30,8 @@ def adminPage():
 
 @admin.route('/seo',methods=['GET','POST'])
 def adminSeo():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     seo=Seo.query.all()
     if Seo.query.get(1):
         bos=True
@@ -54,6 +58,8 @@ def adminSeo():
 
 @admin.route('/client',methods=['GET','POST'])
 def adminClient():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     clnt=Client.query.all()
     if request.method=='POST':
         randN=random.randint(1, 90000)
@@ -69,12 +75,16 @@ def adminClient():
 
 @admin.route('/deleteclient/<int:id>')
 def adminclientDelete(id):
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     db.session.delete(Client.query.get(id))
     db.session.commit()
     return redirect('/admin/client')
 
 @admin.route('/about',methods=['GET','POST'])
 def adminAbout():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     if request.method=='POST':
         rand=random.randint(1, 90000)
         f = request.files['file']
@@ -92,6 +102,8 @@ def adminAbout():
 
 @admin.route('/blog',methods=['GET','POST'])
 def adminBlog():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     blog=Blogs.query.all()
     if request.method=='POST':
         randNumber=random.randint(1, 90000)
@@ -107,12 +119,16 @@ def adminBlog():
 
 @admin.route('/deleteform/<int:id>')
 def adminDelete(id):
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     db.session.delete(Form.query.get(id))
     db.session.commit()
     return redirect('/admin')
 
 @admin.route('/deleteblog/<int:id>')
 def blogDelete(id):
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     blog=Blogs.query.get(id)
     os.unlink(os.getcwd() + blog.blogImage)
     db.session.delete(blog)
@@ -121,6 +137,8 @@ def blogDelete(id):
 
 @admin.route('/social',methods=['POST','GET'])
 def adminSocial():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     sc=Social.query.all()
     if Social.query.get(1):
         bos=True
@@ -137,6 +155,8 @@ def adminSocial():
 
 @admin.route('/category',methods=['POST','GET'])
 def adminCategory():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     cat=Category.query.all()
     formcategory=CategoryForm()
     if request.method=='POST':
@@ -147,12 +167,16 @@ def adminCategory():
 
 @admin.route('/deletecategory/<int:id>')
 def categoryDelete(id):
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     db.session.delete(Category.query.get(id))
     db.session.commit()
     return redirect('/admin/category')
 
 @admin.route('/portfolio',methods=['POST','GET'])
 def adminPortfolio():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     formportfolio=PortfolioForm()
     if request.method=='POST':
         randNumber=random.randint(1, 90000)
@@ -167,6 +191,8 @@ def adminPortfolio():
 
 @admin.route('/deleteportfolio/<int:id>')
 def portfolioDelete(id):
+    if not current_user.is_authenticated:
+        return redirect('/auth')
     db.session.delete(Portfolio.query.get(id))
     db.session.commit()
     return redirect('/admin/portfolio')

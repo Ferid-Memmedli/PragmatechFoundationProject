@@ -1,5 +1,19 @@
 from datetime import datetime
-from app import db
+from app import db,login_manager,UserMixin
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(user_id)
+
+
+class User(db.Model,UserMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String,unique=True)
+    password = db.Column(db.String)
+    def __init__(self,username,password):
+        self.username=username
+        self.password=password
 
 class Form(db.Model):
     id = db.Column(db.Integer, primary_key=True)
