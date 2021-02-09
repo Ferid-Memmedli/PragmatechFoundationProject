@@ -211,3 +211,18 @@ def blogFalse(id):
     db.session.commit()
     return redirect('/admin/blog')
 
+@admin.route('/settings',methods=['POST','GET'])
+def adminSettings():
+    if not current_user.is_authenticated:
+        return redirect('/auth')
+    updateform=UpdateForm()
+    if request.method=='POST':
+        oldusername = User.query.filter_by(username=updateform.oldusername.data).first()
+        oldpassword = User.query.filter_by(password=updateform.oldpassword.data).first()
+        if oldusername and oldpassword:
+            sil = User.query.filter_by(id = 1)
+            sil.delete()
+            db.session.add(User(username=updateform.username.data,password=updateform.password.data))
+            db.session.commit()
+            return redirect('/auth')
+    return render_template('/admin/editSettings.html',updateform=updateform)
