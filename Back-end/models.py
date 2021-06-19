@@ -1,7 +1,6 @@
 from datetime import datetime
 from app import db,login_manager,UserMixin
 
-
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(user_id)

@@ -11,16 +11,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="./static/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="../../static/assets/images/favicon.ico">
 
-    <link href="./static/plugins/dropify.min.css" rel="stylesheet">
+    <link href="../../static/plugins/dropify.min.css" rel="stylesheet">
 
     <!-- App css -->
-    <link href="./static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="./static/assets/css/jquery-ui.min.css" rel="stylesheet">
-    <link href="./static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="./static/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
-    <link href="./static/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/assets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="../../static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../static/assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -30,12 +30,11 @@
         <div class="main-icon-menu">
             <a href="{{url_for('admin.adminPage')}}" class="logo logo-metrica d-block text-center">
                 <span>
-                    <img src="./static/assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                    <img src="../../static/assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
                 </span>
             </a>
             <nav class="nav">
-                <a href="#MetricaProject" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title=""
-                    data-original-title="Project" data-trigger="hover">
+                <a href="#MetricaProject" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Project" data-trigger="hover">
                     <i data-feather="aperture" class="align-self-center menu-icon icon-dual"></i>
                 </a>
                 <!--end MetricaProject-->
@@ -69,10 +68,12 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{url_for('admin.adminSocial')}}">Add Social</a></li>
                     </ul>
-                </div><!-- end Project -->
+                </div>
+                <!-- end Project -->
             </div>
             <!--end menu-body-->
-        </div><!-- end main-menu-inner-->
+        </div>
+        <!-- end main-menu-inner-->
     </div>
     <!-- end leftbar-tab-menu-->
 
@@ -82,9 +83,8 @@
         <nav class="navbar-custom">
             <ul class="list-unstyled topbar-nav float-right mb-0">
                 <li class="dropdown">
-                    <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown"
-                        href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="./static/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle" />
+                    <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="../../static/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle" />
                         <span class="ml-1 nav-user-name hidden-sm">Ferid Memmedli <i class="mdi mdi-chevron-down"></i> </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
@@ -100,7 +100,7 @@
                 <li>
                     <a href="../projects/projects-index.html">
                         <span class="responsive-logo">
-                            <img src="./static/assets/images/logo-sm.png" alt="logo-small"
+                            <img src="../../static/assets/images/logo-sm.png" alt="logo-small"
                                 class="logo-sm align-self-center" height="34">
                         </span>
                     </a>
@@ -123,10 +123,10 @@
 
             <div class="container-fluid">
                 <!-- Page-Title -->
-                {% block contentAdmin %}
-                {% endblock %}
+                {% block contentAdmin %} {% endblock %}
                 <!-- end page title end breadcrumb -->
-            </div><!-- container -->
+            </div>
+            <!-- container -->
 
             <!--  Modal content for the above example -->
         </div>
@@ -136,23 +136,23 @@
 
 
     <!-- jQuery  -->
-    <script src="./static/assets/js/jquery.min.js"></script>
-    <script src="./static/assets/js/jquery-ui.min.js"></script>
-    <script src="./static/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./static/assets/js/metismenu.min.js"></script>
-    <script src="./static/assets/js/waves.js"></script>
-    <script src="./static/assets/js/feather.min.js"></script>
-    <script src="./static/assets/js/jquery.slimscroll.min.js"></script>
-    <script src="./static/plugins/apexcharts/apexcharts.min.js"></script>
-    <script src="./static/plugins/dropify.min.js"></script>
-    <script src="./static/assets/pages/jquery.form-upload.init.js"></script>
-    <script src="./static/assets/pages/jquery.projects-index.init.js"></script>
+    <script src="../../static/assets/js/jquery.min.js"></script>
+    <script src="../../static/assets/js/jquery-ui.min.js"></script>
+    <script src="../../static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/assets/js/metismenu.min.js"></script>
+    <script src="../../static/assets/js/waves.js"></script>
+    <script src="../../static/assets/js/feather.min.js"></script>
+    <script src="../../static/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="../../static/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="../../static/plugins/dropify.min.js"></script>
+    <script src="../../static/assets/pages/jquery.form-upload.init.js"></script>
+    <script src="../../static/assets/pages/jquery.projects-index.init.js"></script>
 
-    <script src="./static/plugins/tinymce/tinymce.min.js"></script>
-    <script src="./static/assets/pages/jquery.form-editor.init.js"></script>
+    <script src="../../static/plugins/tinymce/tinymce.min.js"></script>
+    <script src="../../static/assets/pages/jquery.form-editor.init.js"></script>
 
     <!-- App js -->
-    <script src="./static/assets/js/app.js"></script>
+    <script src="../../static/assets/js/app.js"></script>
 
 </body>
 

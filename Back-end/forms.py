@@ -19,7 +19,6 @@ class UpdateForm(FlaskForm):
     oldusername = StringField('Old Username', validators=[Length(min=4, max=25),DataRequired()])
     oldpassword = PasswordField('Old Password',validators=[DataRequired()])
     username = StringField('New Username', validators=[Length(min=4, max=25),DataRequired()])
-    # email = StringField('Email Address', validators=[Email(),DataRequired()])
     password = PasswordField('New Password',
         validators=[DataRequired(),
         EqualTo('confirm', message='Passwords must match')])

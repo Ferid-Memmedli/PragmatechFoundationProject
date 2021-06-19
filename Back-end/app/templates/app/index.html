@@ -1,11 +1,7 @@
-{% extends "app/layout.html" %}
-
-{% block content_menu %}
+{% extends "app/layout.html" %} {% block content_menu %}
 <li><a class="blank" href="#blog">Blog</a></li>
 <li><a class="blank" href="#contact">Contact</a></li>
-{% endblock %}
-
-{% block content_body %}
+{% endblock %} {% block content_body %}
 
 <!-- section about -->
 <section id="about" class="flex-full-center">
@@ -33,13 +29,12 @@
 <!-- section servies -->
 <section id="servies" class="pv-10x color-bg-white">
     <h2>Our Services</h2>
-    <p class="mv-2x mb-7x border-box color-light-black">It is a long established fact that a reader will be of a
-        page when established fact looking at its
-        layout.</p>
+    <p class="mv-2x mb-7x border-box color-light-black">It is a long established fact that a reader will be of a page when established fact looking at its layout.
+    </p>
     <div class="container">
         <div class="row">
             <div class="col-4 box">
-                <div class="flex-full-center mb-2x"><img src="./static/img/svg/mbri-growing-chart.svg" alt="svg">
+                <div class="flex-full-center mb-2x"><img src="../../static/img/svg/mbri-growing-chart.svg" alt="svg">
                 </div>
                 <h4 class="mb-1x">Graphic Design</h4>
                 <div class="services"></div>
@@ -48,7 +43,7 @@
                 </p>
             </div>
             <div class="col-4 box">
-                <div class="flex-full-center mb-2x"><img src="./static/img/svg/mbri-hot-cup.svg" alt="svg"></div>
+                <div class="flex-full-center mb-2x"><img src="../../static/img/svg/mbri-hot-cup.svg" alt="svg"></div>
                 <h4 class="mb-1x">Unlimited Color</h4>
                 <div class="services"></div>
                 <p class="mb-1x">
@@ -56,7 +51,7 @@
                 </p>
             </div>
             <div class="col-4 box">
-                <div class="flex-full-center mb-2x"><img src="./static/img/svg/mbri-upload.svg" alt="svg"></div>
+                <div class="flex-full-center mb-2x"><img src="../../static/img/svg/mbri-upload.svg" alt="svg"></div>
                 <h4 class="mb-1x">Media Marketing</h4>
                 <div class="services"></div>
                 <p class="mb-1x">
@@ -64,7 +59,7 @@
                 </p>
             </div>
             <div class="col-4 box">
-                <div class="flex-full-center mb-2x"><img src="./static/img/svg/mbri-layers.svg" alt="svg"></div>
+                <div class="flex-full-center mb-2x"><img src="../../static/img/svg/mbri-layers.svg" alt="svg"></div>
                 <h4 class="mb-1x">Unlimited Wifi</h4>
                 <div class="services"></div>
                 <p class="mb-1x">
@@ -72,7 +67,7 @@
                 </p>
             </div>
             <div class="col-4 box">
-                <div class="flex-full-center mb-2x"><img src="./static/img/svg/mbri-website-theme.svg" alt="svg">
+                <div class="flex-full-center mb-2x"><img src="../../static/img/svg/mbri-website-theme.svg" alt="svg">
                 </div>
                 <h4 class="mb-1x">Responsive Design</h4>
                 <div class="services"></div>
@@ -81,7 +76,7 @@
                 </p>
             </div>
             <div class="col-4 box">
-                <div class="flex-full-center mb-2x"><img src="./static/img/svg/mbri-edit.svg" alt="svg"></div>
+                <div class="flex-full-center mb-2x"><img src="../../static/img/svg/mbri-edit.svg" alt="svg"></div>
                 <h4 class="mb-1x">Easy to customize</h4>
                 <div class="services"></div>
                 <p class="mb-1x">
@@ -100,13 +95,12 @@
 <section id="client" class="pv-10x">
     <div class="container flex-columun-around">
         <h2>Our Client</h2>
-        <p class="flex-full-center m-2x color-light-black">It is a long established fact that a reader will be of a
-            page when established fact looking at its layout.</p>
+        <p class="flex-full-center m-2x color-light-black">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
         <div id="baba">
             <div id="ata">
                 {% for i in client %}
                 <div class="slayt flex-columun-around">
-                    <div class="svg-dirnaq"><img src="./static/img/svg/mbri-quote-left.svg"></div>
+                    <div class="svg-dirnaq"><img src="../../static/img/svg/mbri-quote-left.svg"></div>
                     <div class="lg flex-full-center"><img src="{{i.image}}"></div>
                     <p class="flex-full-center color-light-black">{{i.detail}}</p>
                     <div class="alt flex-full-center">{{i.title}}</div>
@@ -125,22 +119,16 @@
 <section id="portfolio" class="pv-10x">
     <div class="port">
         <h2>Our Work</h2>
-        <p class="mv-2x">It is a long established fact that a reader will be of a page when established fact looking
-            at its layout.</p>
-        <button id="all" class="job btn btn-red btn-border-radius-6x active">ALL</button>
-        {% for i in category %}
-        <button id="{{i.id}}" class="job btn btn-red btn-border-radius-6x">{{i.name}}</button>
-        {% endfor %}
+        <p class="mv-2x">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+        <button id="all" class="job btn btn-red btn-border-radius-6x active">ALL</button> {% for i in category %}
+        <button id="{{i.id}}" class="job btn btn-red btn-border-radius-6x">{{i.name}}</button> {% endfor %}
     </div>
     <div class="anbar row">
         {% for i in portfolio %}
         <div data-id="{{i.category_id}}" class="qutu" onclick="galery(this)"><img src="{{i.image}}">
             <div class="overtitle">
-                {% for a in category %}
-                {% if a.id==i.category_id %}
-                <span class="text">{{a.name}}</span>
-                {% endif %}
-                {% endfor %}
+                {% for a in category %} {% if a.id==i.category_id %}
+                <span class="text">{{a.name}}</span> {% endif %} {% endfor %}
                 <h4 class="text1">{{i.title}}</h4>
             </div>
         </div>
@@ -160,15 +148,13 @@
     <div class="an">
         <div class="qutu1 mv-2x">
             <h2>Our Blog</h2>
-            <p class="m-2x">It is a long established fact that a reader will be of a page when established fact
-                looking at its
-                layout.</p>
+            <p class="m-2x">It is a long established fact that a reader will be of a page when established fact looking at its layout.
+            </p>
         </div>
         <div class="qutu2 m-2x">
             {% for blog in blog %}
             <div class="oxu"><img src="{{blog.blogImage}}">
-                <h2 class="mt-1x"><a href="/blog/{{blog.id}}"
-                        style="color: #212529;text-decoration: none;">{{blog.blogTitle}}</a></h2>
+                <h2 class="mt-1x"><a href="/blog/{{blog.id}}" style="color: #212529;text-decoration: none;">{{blog.blogTitle}}</a></h2>
                 <div class="izahat">
                     <p class="tarix mv-1x">{{blog.blogDate}} </p><span class="color-red">{{blog.blogAuthor}}</span>
                     <!-- <p class="meqale">{{blog.blogDetail|safe}}</p> -->

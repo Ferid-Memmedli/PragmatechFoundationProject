@@ -2,21 +2,17 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    {% for i in seo %}
+    <meta charset='utf-8'> {% for i in seo %}
     <title>
         {{i.title}}
     </title>
     {% endfor %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/reset.css">
-    <link rel="stylesheet" href="./static/css/style.css">
-
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
 </head>
 
 <body>
@@ -36,8 +32,7 @@
                     <li><a class="blank" href="{{ url_for('homePage') }}#servies">Services</a></li>
                     <li><a class="blank" href="{{ url_for('homePage') }}#client">Client</a></li>
                     <li><a class="blank" href="{{ url_for('homePage') }}#portfolio">Portfolio</a></li>
-                    {% block content_menu %}
-                    {% endblock %}
+                    {% block content_menu %} {% endblock %}
                 </ul>
             </div>
         </nav>
@@ -56,14 +51,13 @@
                 </div>
                 <span id="typed"></span>
             </div>
-            <div class="dubl-down width-full"><a href="#about" class="down color-white">
-                    <i class="fas fa-angle-double-down"></i></a></div>
+            <div class="dubl-down width-full">
+                <a href="#about" class="down color-white">
+                    <i class="fas fa-angle-double-down"></i></a>
+            </div>
         </div>
     </header>
-    {% endfor %}
-    {% block content_body %}
-
-    {% endblock %}
+    {% endfor %} {% block content_body %} {% endblock %}
     <!-- section contact-->
     <section id="contact" class="pv-10x">
         <div class="container">
@@ -71,8 +65,7 @@
                 <h2 class="col-12">Contact</h2>
             </div>
             <div class="row width-full metin">
-                <p class="col-12">It is a long established fact that a reader will be of a page when established fact
-                    looking at its layout.</p>
+                <p class="col-12">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
             </div>
             <div class="row width-full icons width-full mv-3x">
 
@@ -99,24 +92,20 @@
                 <div class="container-full">
                     <div class="row width-full">
                         <div class="col-6">
-                            <input name="name" id="name" type="text" class="form-control" maxlength="50"
-                                placeholder="Your Name*" required>
+                            <input name="name" id="name" type="text" class="form-control" maxlength="50" placeholder="Your Name*" required>
                         </div>
                         <div class="col-6">
-                            <input name="email" id="email" type="email" class="form-control" maxlength="50"
-                                placeholder="Your Email*" required>
+                            <input name="email" id="email" type="email" class="form-control" maxlength="50" placeholder="Your Email*" required>
                         </div>
                     </div>
                     <div class="row width-full">
                         <div class="col-12">
-                            <input name="subject" type="text" class="form-control" id="subject" maxlength="100"
-                                placeholder="Your Subject.." required>
+                            <input name="subject" type="text" class="form-control" id="subject" maxlength="100" placeholder="Your Subject.." required>
                         </div>
                     </div>
                     <div class="row width-full">
                         <div class="col-12">
-                            <textarea style="height: 140px;" name="comments" id="comments" rows="4" class="form-control"
-                                placeholder="Your message..." required></textarea>
+                            <textarea style="height: 140px;" name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..." required></textarea>
                         </div>
                     </div>
                     <div class="row width-full send">
@@ -156,13 +145,12 @@
     </footer>
 
 </body>
-<script src="./static/jscript/kutubhane/particles.js"></script>
-<script src="./static/jscript/kutubhane/app.js"></script>
-<script src="./static/jscript/kutubhane/typed.js"></script>
-<script src="./static/jscript/ijs.js"></script>
+<script src="../../static/jscript/kutubhane/particles.js"></script>
+<script src="../../static/jscript/kutubhane/app.js"></script>
+<script src="../../static/jscript/kutubhane/typed.js"></script>
+<script src="../../static/jscript/ijs.js"></script>
 <script>
-
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
             typeSpeed: 200,
